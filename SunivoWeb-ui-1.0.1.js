@@ -279,7 +279,20 @@
             return new Universe();
         },
         upload: function(){
-
+            if($('.x-upload-btn').length){
+                $('body').on('click','.x-upload-btn',function(e){
+                    var $target = $(e.target),$input = $target.prev(),id,$file,$div = $target.closest('.x-upload-module');
+                    if(!$div.find('[type="file"]').length){
+                        id = util.randomNumber(2) + $input.attr('id');
+                        $file = $('<input type="file" style="display: none;" name="'+ $input.attr('name') +'" id="' + util.randomNumber(2) + $input.attr('id') + '" />');
+                        $div.append($file);
+                        $div.find('[type="file"]').on('change',function(e){
+                            $div.find('.x-upload-text').val(e.target.value);
+                        });
+                    }
+                    $div.find('[type="file"]').click();
+                });
+            }
         },
         /**
          * 内置方法locationCus用来解析url，匹配成功后调用loactionController执行相应显示逻辑，每次清空页面显示的时候navUtil提供refresh方法清空。
