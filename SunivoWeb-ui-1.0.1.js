@@ -9,12 +9,15 @@
  * console检查，IE6-7没有console，IE8-9可能会出错
  * @type {*|{log: Function}}
  */
-var console = console || {
-    log : function(){
-        return false;
-    }
-};
 (function($,_,w){
+    var AnonymousFun = function (){},
+        console = w.console || {
+        log: AnonymousFun,
+        warn: AnonymousFun,
+        error: AnonymousFun,
+        info: AnonymousFun
+    };
+    w.console = w.console || console;
     var SW = function(){},
         /**
          * defaultConfig和Defmodal是关于方法createModal的初始化参数
@@ -276,20 +279,7 @@ var console = console || {
             return new Universe();
         },
         upload: function(){
-            if($('.x-upload-btn').length){
-                $('body').on('click','.x-upload-btn',function(e){
-                    var $target = $(e.target),$input = $target.prev(),id,$file,$div = $target.closest('.x-upload-module');
-                    if(!$div.find('[type="file"]').length){
-                        id = util.randomNumber(2) + $input.attr('id');
-                        $file = $('<input type="file" style="display: none;" name="'+ $input.attr('name') +'" id="' + util.randomNumber(2) + $input.attr('id') + '" />');
-                        $div.append($file);
-                        $div.find('[type="file"]').on('change',function(e){
-                            $div.find('.x-upload-text').val(e.target.value);
-                        });
-                    }
-                    $div.find('[type="file"]').click();
-                });
-            }
+
         },
         /**
          * 内置方法locationCus用来解析url，匹配成功后调用loactionController执行相应显示逻辑，每次清空页面显示的时候navUtil提供refresh方法清空。
