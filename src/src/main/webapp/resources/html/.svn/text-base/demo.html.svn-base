@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <style type="text/css">
+        .gangkouline{ }
+        .gangkouline:after{ display: table; content: ""; clear: both;}
+        ul,li{ margin: 0 ; padding: 0; list-style: none;}
+        .gangkoufloat {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #CACACA;
+            font-size: 12px;
+            overflow: hidden;
+            position: absolute;
+            width: 242px;
+            z-index: 999;
+            padding:0 0 10px;
+            display: none;
+        }
+        .gangkoufloattab {
+            height: 445px;
+            overflow: auto;
+            position: relative;
+        }
+        .gangkoufloattab h3{ background-color:#f5f5f5; margin: 0; padding: 10px; border-bottom: 1px solid #DCDCDC;}
+        .gangkoufloattab p{ border-bottom: 1px solid #DCDCDC; margin: 0; padding:4px 10px;}
+        .gangkoufloattab p:hover{ background-color:#f0f0f0;}
+        .gangkoufloat ul{ position: absolute; right: 20px; top:50px; z-index: 1000;}
+        .gangkoufloat li{ padding:1px 4px;}
+        .gangkoufloat li a{ color:#666; text-decoration:none;}
+        .text-center{ text-align: center;}
+        .m-loading{text-align: center;}
+    </style>
+</head>
+<body>
+<input type="text" class="portSelector" id="yc1"/>
+<input type="text" class="portSelector" id="yc2"/>
+<script type="text/javascript" src="../thirdparty/script/jquery-1.9.1.js"></script>
+<script type="text/javascript" src=../customize/script/port-Selector.js></script>
+<script type="text/javascript">
+    $('#yc1').portSelector();
+    //$('#yc2').portSelector();
+</script>
+</body>
+</html>

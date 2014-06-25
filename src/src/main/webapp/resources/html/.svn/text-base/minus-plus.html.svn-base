@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SunivoWeb | Demo</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="Huazz Tsai">
+<meta name="keyword" content="">
+<link rel="shortcut icon" href="../customize/ico/favicon.png">
+<link rel="apple-touch-icon" href="../customize/ico/favicon.png">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../script/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../customize/css/sunivoweb.frame.css"/>
+<link rel="stylesheet" href="../customize/css/reset.css"/>
+<link rel="stylesheet" href="../customize/css/sunivoweb_style.css">
+<script type="text/javascript" src="../customize/script/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<div class="index-nav-container">
+            <ul class="index-nav">
+                <li><a href="../../index.html">首页</a></li>
+                <li  class="active"><a href="components.html">组件</a></li>
+                <li><a href="#">JavaScript插件</a></li>
+            </ul>
+</div>
+<div class="component-banner-bg">
+  <div class="component-banner">\</div>
+</div>
+<div class="component-content clearfix"> 
+  <!--左边列表-->
+  <ul class="component-list" id="pordAttr">
+    <li><a class="on" href="javascript:void(0);" grop="Index_box" nav="IndexTab_0">Bootstrap</a>
+      <ul class="component-second-list" grop="Index_box" nav="IndexTab_0" id="plug1">
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);" grop="Index_box" nav="IndexTab_1">Sunivo</a>
+      <ul class="component-second-list" grop="Index_box" nav="IndexTab_1" style="display:none;" id="plug2">
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);" grop="Index_box" nav="IndexTab_2">Plugin</a>
+      <ul class="component-second-list" grop="Index_box" nav="IndexTab_2" style="display:none;" id="plug3">
+      </ul>
+    </li>
+  </ul>
+  <!--右边具体插件-->
+<style>
+.step-plus{width:30px; height:30px; background:url(../customize/images/icon_11.png) ;}
+.step-minus{width:30px; height:30px; background:url(../customize/images/icon_11.png) -30px 0;}
+</style>
+
+  <div class="component-substance">
+    <h1>实物产品添加</h1>
+    <!--插件编译人、编译时间-->
+    <label>王淼　发布日期：2014-03-26</label>
+    <div class="component-block">
+      <h2>★ 案例</h2>
+    </div>
+    <div class="">
+      <h3>静态案例</h3>
+    </div>
+    <div class="bs-docs-example"> 
+    <table style="width:100%;" class="minus-plus-wap">
+      <tr data-minus-plus><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td><a href="javascript:void(0)"><i class="step-minus"></i></a></td></tr>
+    </table>
+    <a href="javascript:void(0)"><i class="step-plus"></i></a>
+
+    </div>
+    <!--添加插件代码-->
+    <pre class="prettyprint linenums">
+    <ol class="linenums">
+<li>&lt;table style=&quot;width:100%;&quot; <span class="text-success">class=</span><span class="text-warning">&quot;minus-plus-cont&quot;</span>&gt;</li><li>  &lt;tr <span class="text-warning">data-minus-plus</span>&gt;</li><li>    &lt;td&gt;数据&lt;/td&gt;</li><li>    &lt;td&gt;数据&lt;/td&gt;</li><li>    &lt;td&gt;数据&lt;/td&gt;</li><li>    &lt;td&gt;数据&lt;/td&gt;</li><li>    &lt;td&gt;数据&lt;/td&gt;</li><li>    &lt;td&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;i <span class="text-success">class=</span><span class="text-warning">&quot;step-minus&quot;</span>&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;</li><li>  &lt;/tr&gt;</li><li>&lt;/table&gt;</li><li>&lt;a href=&quot;javascript:void(0)&quot;&gt;&lt;i <span class="text-success">class=</span><span class="text-warning">&quot;step-plus&quot;</span>&gt;&lt;/i&gt;&lt;/a&gt;<br></li></ol></pre>
+    <h2>★ 调用方式</h2>
+    <div class=""  style="font-size:14px;">
+      <h3>通过data-minus-plus属性</h3>
+      <br />
+      <p>分别设置增加按钮，删除按钮样式名<span class="text-warning">step-minus</span>，<span class="text-warning">step-plus</span>；</p>
+      <p>在需要被增加对象列上加<span class="text-warning">data-minus-plus</span>属性</p>
+      <p>在需要增加的地方外框加样式名<span class="text-warning">minus-plus-wap</span></p>
+    
+    </div>
+    
+    
+  </div>
+</div>
+<!--底部-->
+<div class="foot">
+  <p>本网站所列开源项目的中文版文档全部由Sunivo Web成员翻译整理</p>
+  <p>Powered by Sunivo Web Team 站长统计</p>
+</div>
+<script type="text/javascript" src="../customize/script/sunivoweb.frame.js"></script> 
+<script type="text/javascript" src="../customize/script/sunivoweb.app.js"></script> 
+<script type="text/javascript" src="../customize/script/ports.js"></script> 
+<script type="text/javascript" src="../customize/script/portSelector.js"></script> 
+<script>(function($){$.initover = function(fn) {$(document).one('initover', fn);}})(jQuery);</script>
+<script type="text/javascript" src="../customize/script/handlebars.js"></script>
+<script type="text/javascript" src="../customize/script/sunivoweb-left-nav.js"></script>
+<script id="table-template" type="text/x-handlebars-template">
+      {{#each plug1}}
+        {{#if link}}
+          <li>
+		    <a href="{{link}}">{{title}}</a>
+          </li>
+        {{/if}}
+      {{/each}}
+	  
+	  
+      {{#each plug2}}
+        {{#if link}}
+          <li>
+		    <a href="{{link}}">{{title}}</a>
+          </li>
+        {{/if}}
+      {{/each}}
+	  
+      {{#each plug3}}
+        {{#if link}}
+          <li>
+		    <a href="{{link}}">{{title}}</a>
+          </li>
+        {{/if}}
+      {{/each}}
+</script>
+<script type="text/javascript"> 
+$(document).ready(function(){                  
+	 $(".step-minus").click(function(){ 
+	   if ($("[data-minus-plus]").size() > 1) {  
+	   $(this).parents("[data-minus-plus]").remove();  
+		 } else { 
+		  alert("至少保留一个");  
+		 }  
+	 }); 
+	
+	  $(".step-plus").click(function(){
+		  if($("[data-minus-plus]").size() < 20){
+			  $(".minus-plus-wap").append($("[data-minus-plus]:first").clone(true));
+			  }else{
+				  alert("最多只能增加20个");  
+				  }
+		  }
+	  );
+}); 
+
+</script>
+</body>
+</html>

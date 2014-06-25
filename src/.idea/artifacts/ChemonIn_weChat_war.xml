@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ChemonIn-weChat:war">
+    <output-path>E:/Chemon3.0dev/trunk/src/ChemonIn-weChat/target</output-path>
+    <root id="archive" name="ChemonIn-weChat.war">
+      <element id="artifact" artifact-name="ChemonIn-weChat:war exploded" />
+    </root>
+  </artifact>
+</component>

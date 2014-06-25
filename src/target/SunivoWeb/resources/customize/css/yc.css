@@ -1,0 +1,11 @@
+/*coding by yangcheng*/
+.x-td-noBothSideBorder { border-left: none!important; border-right: none!important;}
+.x-dl-log { margin-bottom: 0px; color: #A0A0A0; font-size: 85%; margin-top: 0px;}
+.x-dl-log dt { float: left; width: 50px; padding-top:5px; padding-bottom: 5px;}
+.x-dl-log dd { width: 400px; padding-top:5px; padding-bottom: 5px;}
+.x-center { text-align: center;}
+.download .x-module { border: 1px solid #cccccc;}
+.download .x-module:hover { border: 1px solid #419e12;}
+.x-txt-purple { color: #c33ed3;}
+.x-txt-green { color: #15c256;}
+.x-txt-yellow { color: #bbcc03;}

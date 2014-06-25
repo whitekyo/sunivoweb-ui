@@ -1,0 +1,11 @@
+@charset "utf-8";
+/***min****/
+.navbar-toggle{display:none;}
+.q-collapse {
+    position: relative;
+    transition: height 0.35s ease 0s;
+}
+.scrollspy-example { height: 200px;overflow: auto; position:relative;}
+.bs-callout { border-left: 3px solid #EEEEEE; margin: 20px 0;padding: 20px;}
+.bs-callout-danger {background-color: #f7fdfc;border-color: #9eeede;}
+

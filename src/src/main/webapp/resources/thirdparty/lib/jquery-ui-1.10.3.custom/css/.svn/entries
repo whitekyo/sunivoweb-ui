@@ -1,0 +1,31 @@
+10
+
+dir
+362
+http://192.168.1.222:18080/svn/SunivoWeb/trunk/src/src/main/webapp/resources/thirdparty/lib/jquery-ui-1.10.3.custom/css
+http://192.168.1.222:18080/svn/SunivoWeb
+
+
+
+2014-04-08T06:49:32.090200Z
+276
+wangyuxing
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cda42343-5937-4010-8c24-7dc5f4cb5e57
+
+ui-lightness
+dir
+

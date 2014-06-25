@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SunivoWeb | Demo</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="Huazz Tsai">
+<meta name="keyword" content="">
+<link rel="shortcut icon" href="../customize/ico/favicon.png">
+<link rel="apple-touch-icon" href="../customize/ico/favicon.png">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../script/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../customize/css/sunivoweb.frame.css"/>
+<link rel="stylesheet" href="../customize/css/reset.css"/>
+<link rel="stylesheet" href="../customize/css/sunivoweb_style.css">
+<script type="text/javascript" src="../customize/script/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<div class="index-nav-container">
+            <ul class="index-nav">
+                <li><a href="../../index.html">首页</a></li>
+                <li  class="active"><a href="components.html">组件</a></li>
+                <li><a href="#">JavaScript插件</a></li>
+            </ul>
+</div>
+<div class="component-banner">
+</div>
+<div class="component-content clearfix"> 
+  <!--左边列表-->
+  <ul class="component-list" id="pordAttr">
+    <li><a class="" href="javascript:void(0);" grop="Index_box" nav="IndexTab_1">Sunivo</a>
+      <ul id="plug2" nav="IndexTab_1" grop="Index_box" class="component-second-list" style="display:none;">
+        <li>
+          <a class="" href="###">loading层</a>
+          <ul style="display:none;">
+            <li><a href="1.html">1</a></li>
+          </ul>
+        </li>
+        <li><a href="###">nav点击版</a></li> <!--nav.jsp -->
+        <li><a href="###">chosen</a></li> <!-- -->
+        <li><a href="###">datetimepicker</a></li>
+        <li>
+          <a href="###">港口控件</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);" grop="Index_box" nav="IndexTab_0">Bootstrap</a>
+      <ul class="component-second-list" grop="Index_box" nav="IndexTab_0" style="display:none;" id="plug1">
+        <li><a href="UI-modal.jsp">模态对话框</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);" grop="Index_box" nav="IndexTab_2">Plugin</a>
+      
+    </li>
+  </ul>
+  <script type="text/javascript">
+  function control(context){
+    if(context.next().length){
+        showNav(context);
+    }
+  }
+  function showNav(context){
+    if(!context.hasClass('nav-show')){
+      context.next().show(200,function(){
+        context.addClass('nav-show nav-active');
+        if(context.parent().parent()[0].id == 'pordAttr'){
+            context.addClass('on');
+          }else{
+            context.addClass('second-on');
+        }
+      });  
+    }else{
+      context.next().hide(200,function(){
+        context.removeClass('nav-show nav-active');
+      });
+      if(context.parent().parent()[0].id == 'pordAttr'){
+            context.removeClass('on');
+          }else{
+            context.removeClass('second-on');
+        }
+    } 
+  }
+      $(document).ready(function(){
+        $("#pordAttr a").click(function(e){
+          control($(e.target));  
+        });
+          /*$(this).find("ul").show(200); 
+          //$(this).attr("class","on nav-active nav-show");
+          $(this).addClass('on nav-active nav-show');
+        },function(){
+          $(this).find("ul").hidden(200); 
+          //$(this).attr("class","on nav-active nav-show");
+          $(this).removeClass('on nav-active nav-show');
+        });*/
+
+      });
+  </script> 
+
+  <!--右边具体插件-->
+  <div class="component-substance">
+    <h1>模态对话框 modal.js </h1>
+    <!--插件编译人、编译时间-->
+    <label>金振源　发布日期：2014-03-23</label>
+    <div class="component-block">
+      <h2>★ 案例</h2>
+      模态对话框是一类简洁、灵活的的弹框，他们具有精简的功能和友好的默认行为。</div>
+    <div class="">
+      <h3>静态案例</h3>
+      带有标题、正文、页脚按钮的对话框。</div>
+    <div class="bs-docs-example"> 
+      <!--添加插件案例--> 
+    </div>
+    <!--添加插件代码-->
+    <pre class="prettyprint linenums"><ol class="linenums"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li></ol>
+</pre>
+    <h2>★ 调用方式</h2>
+    <div class="">
+      <h3>通过data属性</h3>
+      无需编写JavaScript代码即可生成一个对话框。在一个主控元素，例如按钮，上设置data-toggle="modal"，然后再设置data-target="#foo" 或href="#foo" 用以指向某个将要被启动的对话框。</div>
+    <pre class="prettyprint linenums"><ol class="linenums"><li>1</li></ol>
+</pre>
+    <div class="">
+      <h3>通过JavaScript</h3>
+      仅用一行JavaScript代码即可启动id为myModal的对话框：</div>
+  </div>
+</div>
+<!--底部-->
+<div class="foot">
+  <p>本网站所列开源项目的中文版文档全部由Sunivo Web成员翻译整理</p>
+  <p>Powered by Sunivo Web Team 站长统计</p>
+</div>
+<script type="text/javascript" src="../customize/script/sunivoweb.frame.js"></script> 
+<script type="text/javascript" src="../customize/script/sunivoweb.app.js"></script> 
+<script type="text/javascript" src="../customize/script/ports.js"></script> 
+<script type="text/javascript" src="../customize/script/portSelector.js"></script> 
+<script>(function($){$.initover = function(fn) {$(document).one('initover', fn);}})(jQuery);</script>
+<script type="text/javascript" src="../customize/script/handlebars.js"></script>
+<script type="text/javascript" src="../customize/js/underscore-1.6.js"></script>
+<script type="text/javascript" src="../customize/js/SunivoWeb-ui.js"></script>
+<script type="text/javascript">
+  var a = new sw();
+  a.navLocation(window.location.href,$('#pordAttr'));
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DEMO | VALIDATE</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="Huazz Tsai">
+<meta name="keyword" content="">
+<link rel="shortcut icon" href="../ico/favicon.png">
+<link rel="apple-touch-icon" href="../ico/favicon.png">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../script/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../lib/bootstrap/docs/assets/css/bootstrap.css"/>
+<link rel="stylesheet" href="../lib/chosen/chosen/chosen.css"/>
+<link rel="stylesheet" href="../lib/icheck/skins/minimal/_all.css"/>
+<link rel="stylesheet" href="../lib/bootstrap-datepicker/css/datepicker.css"/>
+<link rel="stylesheet" href="../lib/bootstrap-timepicker/css/bootstrap-timepicker.css"/>
+<link rel="stylesheet" href="../style/reset.css"/>
+<style>
+
+</style>
+<script type="text/javascript" src="../script/jquery-1.9.1.min.js"></script>
+<script>(function($){$.initover = function(fn) {$(document).one('initover', fn);}})(jQuery);</script>
+</head>
+<body class="bg">
+    <nav class="navbar navbar-fixed-top topbar" id="topbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="index.html" class="brand">DEMO</a>
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">基本组件 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#table">表格</a></li>
+                            <li><a href="index.html#form">表单</a></li>
+                            <li><a href="index.html#button">按钮</a></li>
+                            <li><a href="index.html#form">表单</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-split">
+                        <a href="">独立菜单</a>
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">001</a></li>
+                            <li><a href="">002</a></li>
+                            <li><a href="">003</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="validate.html">表单验证</a></li>
+                </ul><!-- nav end-->
+                <ul class="nav pull-right">
+                    <li class="navbar-text">欢迎你，游客！</li>
+                    <li><a href="#loginModal" data-toggle="modal">登录</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">分享 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:chemon.share.sina();">新浪微博</a></li>
+                            <li><a href="javascript:chemon.share.qq();">腾讯微博</a></li>
+                            <li><a href="javascript:chemon.share.twitter();">Twitter</a></li>
+                            <li><a href="javascript:chemon.share.facebook();">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><div class="undertopbar"></div><!-- topbar end-->
+
+    <div class="container main">
+        <ul class="breadcrumb">
+            <li><a href="javascript:window.history.back();">Go back</a></li>
+            <li class="divider">|</li>
+            <li><a href="">Home</a></li>
+            <li class="divider">&gt;</li>
+            <li><a href="">Demo</a></li>
+            <li class="divider">&gt;</li>
+            <li class="active">Validate</li>
+        </ul>
+        <form action="" method="post" class="form-horizontal" vicky>
+            <legend>VALIDATE FORM</legend>
+            <div class="control-group v-group">
+                <label class="control-label" for="form_username">Username</label>
+                <div class="controls">
+                    <input type="text" vi name="username" id="form_username" />
+                    <small class="help-inline v-info">*</small>
+                </div>
+            </div>
+            <div class="control-group v-group">
+                <label class="control-label" for="form_password">Password</label>
+                <div class="controls">
+                    <input type="password" vi name="password" id="form_password"/>
+                    <small class="help-inline v-info">*</small>
+                </div>
+            </div>
+            <div class="control-group v-group">
+                <label class="control-label" for="form_repassword">RePassword</label>
+                <div class="controls">
+                    <input type="password" vi name="repassword" id="form_repassword"/>
+                    <small class="help-inline v-info">*</small>
+                </div>
+            </div>
+            <div class="control-group v-group">
+                <label class="control-label" for="form_date">Date</label>
+                <div class="controls">
+                    <input type="text" vi name="date" id="form_date"/>
+                    <small class="help-inline v-info">*</small>
+                </div>
+            </div>
+            <div class="control-group v-group">
+                <label class="control-label" for="form_mobile">Mobile</label>
+                <div class="controls">
+                    <input type="text" vi name="mobile" id="form_mobile"/>
+                    <small class="help-inline v-info">*</small>
+                </div>
+            </div>
+            <div class="control-group v-group">
+                <label class="control-label" for="form_email">Email</label>
+                <div class="controls">
+                    <input type="text" vi name="email" id="form_email"/>
+                    <small class="help-inline v-info">*</small>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+                <button type="button" class="btn">CANCEL</button>
+            </div>
+        </form>
+    </div>
+
+<!-- script -->
+<script type="text/javascript">
+$.initover(function() {
+    /*$("form[vicky]").vicky({
+        "username" : {
+            "empty"     : "用户名不能为空",
+            "size"      : [6, 10],
+            "info"      : "请输入用户名",
+            "error"     : "用户名不合法",
+            "success"   : "ok",
+            "ajax"      : ["../service/validate1.php", "username", "用户名重复"]
+        },
+        "password" : {
+            "empty"     : "密码不能为空",
+            "regex"     : [/^[0-9a-zA-Z]+$/],
+            "size"      : [6, 18],
+            "info"      : "请输入密码",
+            "error"     : "密码不合法",
+            "equal"     : "repassword"
+        },
+        "date" : {
+            "regex"     : ["date"],
+            "info"      : "请选择日期",
+            "error"     : "日期格式不正确"
+        }
+    });*/
+});
+</script>
+<script type="text/javascript" src="../script/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../lib/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="../script/json2.min.js"></script>
+<script type="text/javascript" src="../lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="../lib/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="../lib/chosen/chosen/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="../lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="../script/jquery.form.min.js"></script>
+<script type="text/javascript" src="../script/ports.js"></script>
+<script type="text/javascript" src="../script/portSelector.js"></script>
+<script type="text/javascript" src="../script/chemon.app.js"></script>
+<script type="text/javascript">
+    $(function() {
+        app.init();
+//    app.initWithContext('handleDatepicker,handleChosen','#form');
+    });
+</script>
+</body>
+</html>

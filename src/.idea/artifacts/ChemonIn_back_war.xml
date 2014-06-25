@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ChemonIn-back:war">
+    <output-path>E:/Chemon3.0dev/trunk/src/ChemonIn-back/target</output-path>
+    <root id="archive" name="ChemonIn-back.war">
+      <element id="artifact" artifact-name="ChemonIn-back:war exploded" />
+    </root>
+  </artifact>
+</component>

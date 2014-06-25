@@ -2,25 +2,26 @@
  * Created with IntelliJ IDEA.
  * User: yangcheng
  * Date: 14-3-24
- * Time: 下午9:05
+ * Time: 涓嬪崍9:05
  * To change this template use File | Settings | File Templates.
  */
 /**
- * console检查，IE6-7没有console，IE8-9可能会出错
+ * console妫�煡锛孖E6-7娌℃湁console锛孖E8-9鍙兘浼氬嚭閿�
  * @type {*|{log: Function}}
  */
 (function($,_,w){
-    var AnonymousFun = function (){},
-        console = w.console || {
-        log: AnonymousFun,
-        warn: AnonymousFun,
-        error: AnonymousFun,
-        info: AnonymousFun
+    /*针对IE8，9需要在F12中才能调用console，在debug状态中查看console*/
+
+    var anonymity = function(){},console = w.console || {
+        info: anonymity,
+        log: anonymity,
+        warn: anonymity,
+        error: anonymity
     };
     w.console = w.console || console;
     var SW = function(){},
         /**
-         * defaultConfig和Defmodal是关于方法createModal的初始化参数
+         * defaultConfig鍜孌efmodal鏄叧浜庢柟娉昪reateModal鐨勫垵濮嬪寲鍙傛暟
          */
             defaultConfig = {
             defaults: false,
@@ -46,34 +47,22 @@
         Defmodal = {
             Wrap : '<div class="modal fade" style="display: none;" id="#">',
             Header: '<div class="modal-header">#',
-            //Close: '<a class="close" data-dismiss="modal" event="cancel">×</a>',
+            //Close: '<a class="close" data-dismiss="modal" event="cancel">脳</a>',
             Body: '<div class="modal-body">',
-            Footer: '<div class="modal-footer"><a href="#" class="btn btn-primary" data-dismiss="modal" event="ensure">确定</a><a href="#" class="btn" data-dismiss="modal" event="cancel">取消</a></div>'
+            Footer: '<div class="modal-footer"><a href="#" class="btn btn-primary" data-dismiss="modal" event="ensure">纭畾</a><a href="#" class="btn" data-dismiss="modal" event="cancel">鍙栨秷</a></div>'
         },
         GlobalModalQueue = [];
-    //工具类
+    //宸ュ叿绫�
     var util = {
-        //检查浏览器版本,如果是IE浏览器返回版本号，其他浏览器返回false
+        //isbrowser依赖client
         isbrowser: function(){
-            var oldReg = /MSIE\s(.*?);/,
-                newReg = /Trident\/(.*?);/,
-                appVersion = navigator.appVersion,
-                newIe = {
-                    'Trident/7.0;':'11',
-                    'Trident/6.0;':'10',
-                    'Trident/5.0;':'9',
-                    'Trident/4.0;':'8'
-                };
-            if(oldReg.test(appVersion)||newReg.test(appVersion)){
-                if(appVersion.match(oldReg)){
-                    return parseInt(appVersion.match(oldReg)[1],10);
-                }else if(appVersion.match(newReg)){
-                    return parseInt(newIe[appVersion.match(newReg)[0]],10);
+            var client = SW.client();
+            for(var i in client['browser']){
+                if(i == 'ie'){
+                    return parseFloat(client['browser'][i]);
                 }else{
                     return false;
                 }
-            }else{
-                return false;
             }
         },
         isJQueryDom: function(j){
@@ -86,20 +75,13 @@
                 pwd += $chars.charAt(Math.floor(Math.random()*48));
             }
             return pwd;
-        },
-        simpleReplace: function(target,source){
-            for(var key in source){
-                if(!target[key]){
-                    target[key] = source[key];
-                }
-            }
         }
     };
-    //为loading设置，如下为单例模式
+    //涓簂oading璁剧疆锛屽涓嬩负鍗曚緥妯″紡
     var Universe;
     function getSingleInstance(){
         var instance;
-        //loading制造工厂，生产loading效果
+        //loading鍒堕�宸ュ巶锛岀敓浜oading鏁堟灉
         function loadFactory(){
             var loadDom = '<div class="x-load" style="display: none;"><img src="../customize/img/yc/loading5.GIF"/></div>';
             return $(loadDom);
@@ -123,7 +105,7 @@
         return Universe;
     }
     Universe = getSingleInstance();
-    //nav工具类
+    //nav宸ュ叿绫�
     var navUtil = {
         isRootElement: function(context){
             return context.parent().parent()[0].id == 'pordAttr';
@@ -172,13 +154,13 @@
             _context.find('a').removeClass('nav-show nav-active second-on on');
         }
     };
-    //错误提示
-    var errorinfoTmpl = $("<div class='alert'><button type='button' class='close' data-dismiss='alert'>×</button><h4></h4><div class='info'></div></div>"),errArr = [],formArr = [];
+    //閿欒鎻愮ず
+    var errorinfoTmpl = $("<div class='alert'><button type='button' class='close' data-dismiss='alert'>脳</button><h4></h4><div class='info'></div></div>"),errArr = [],formArr = [];
     SW.prototype = {
         constructor:SW,
-        //UI类
+        //UI绫�
         /**
-         * createModal方法主要是解析配置参数，查询modal队列。如果没有则通过内置方法createModalFactory创建一个根据配置参数设定的modal
+         * createModal鏂规硶涓昏鏄В鏋愰厤缃弬鏁帮紝鏌ヨmodal闃熷垪銆傚鏋滄病鏈夊垯閫氳繃鍐呯疆鏂规硶createModalFactory鍒涘缓涓�釜鏍规嵁閰嶇疆鍙傛暟璁惧畾鐨刴odal
          *
          */
         createModal: function(config){
@@ -231,7 +213,7 @@
                         }
                     }
                     if(cfg.hasClose){
-                        tmplModal = tmplModal.replace(/#/g,'<a class="close" data-dismiss="modal" event="cancel">×</a>');
+                        tmplModal = tmplModal.replace(/#/g,'<a class="close" data-dismiss="modal" event="cancel">脳</a>');
                     }else{
                         tmplModal.replace(/#/g,'');
                     }
@@ -295,7 +277,7 @@
             }
         },
         /**
-         * 内置方法locationCus用来解析url，匹配成功后调用loactionController执行相应显示逻辑，每次清空页面显示的时候navUtil提供refresh方法清空。
+         * 鍐呯疆鏂规硶locationCus鐢ㄦ潵瑙ｆ瀽url锛屽尮閰嶆垚鍔熷悗璋冪敤loactionController鎵ц鐩稿簲鏄剧ず閫昏緫锛屾瘡娆℃竻绌洪〉闈㈡樉绀虹殑鏃跺�navUtil鎻愪緵refresh鏂规硶娓呯┖銆�
          * @param _url
          * @param _context
          */
@@ -323,7 +305,7 @@
             locationCus(_url,_context);
         },
         /**
-         * 与navLocation公用navUtil内置方法包，内置方法controller执行相应逻辑
+         * 涓巒avLocation鍏敤navUtil鍐呯疆鏂规硶鍖咃紝鍐呯疆鏂规硶controller鎵ц鐩稿簲閫昏緫
          * @param _context
          */
         nav: function(_context){
@@ -351,8 +333,8 @@
             });
         },
         /**
-         * 处理表单数字的格式化
-         * 需要引入autoNumeric.js
+         * 澶勭悊琛ㄥ崟鏁板瓧鐨勬牸寮忓寲
+         * 闇�寮曞叆autoNumeric.js
          */
         autoNumeric: function(){
             var ctx = arguments.length > 0 ? arguments[0] : null;
@@ -365,24 +347,24 @@
             }
         },
         /**
-         * 错误提示,将所有信息存储在内置数组errArr中统一保存。错误提示，主要维护这个数组，如果数组中没有值，则没有错误提示，否则提示错误信息
-         * context为form表单，dom为当前被验证的控件
+         * 閿欒鎻愮ず,灏嗘墍鏈変俊鎭瓨鍌ㄥ湪鍐呯疆鏁扮粍errArr涓粺涓�繚瀛樸�閿欒鎻愮ず锛屼富瑕佺淮鎶よ繖涓暟缁勶紝濡傛灉鏁扮粍涓病鏈夊�锛屽垯娌℃湁閿欒鎻愮ず锛屽惁鍒欐彁绀洪敊璇俊鎭�
+         * context涓篺orm琛ㄥ崟锛宒om涓哄綋鍓嶈楠岃瘉鐨勬帶浠�
          */
         errorInfo: function(context,type,str,dom,location){
             var id = context.attr('id')? context.attr('id'): util.randomNumber(4),form,tmpl;
             var title,errText = '',obj = {},delObj;
             switch (type){
                 case "alert-block":
-                    title = "警告 !";//Warning
+                    title = "璀﹀憡 !";//Warning
                     break;
                 case "alert-error":
-                    title = "错误 !";//Error
+                    title = "閿欒 !";//Error
                     break;
                 case "alert-success":
-                    title = "成功 !";//Success
+                    title = "鎴愬姛 !";//Success
                     break;
                 default:
-                    title = "信息 !";//Info
+                    title = "淇℃伅 !";//Info
             }
             form = findFormById(formArr,id)[0];
             if(!form){
@@ -400,7 +382,7 @@
                 var _arr = str.split(':');
                 if(!findErrorByName(form.errArr,_arr[0]).length){
                     obj.name = _arr[0];
-                    obj.content = obj.name + '项：' + _arr[1];
+                    obj.content = obj.name + '椤癸細' + _arr[1];
                     obj.flag = true;
                     obj.context = dom;
                     form.errArr.push(obj);
@@ -455,8 +437,8 @@
             }
         },
         /**
-         * form上下伸缩
-         * fold方法解析dom上的配置参数，_createFoldTab方法是根据配置参数创建伸缩框。并添加到指定dom上。
+         * form涓婁笅浼哥缉
+         * fold鏂规硶瑙ｆ瀽dom涓婄殑閰嶇疆鍙傛暟锛宊createFoldTab鏂规硶鏄牴鎹厤缃弬鏁板垱寤轰几缂╂銆傚苟娣诲姞鍒版寚瀹歞om涓娿�
          */
         fold: function(){
             if($('[data-fold]').length){
@@ -531,11 +513,11 @@
             return $div;
         },
         /**
-         * 置顶
+         * 缃《
          */
         stick: function(flag){
             $('.main-footer').append('<div class="backWaperWaper" style="float:right;"><div class="backWaper"><a href=""><i class="icoAll ico-25"></i></a></div></div>');
-            if(flag && !$('.ico-24').length){//一个页面只有一个置顶
+            if(flag && !$('.ico-24').length){//涓�釜椤甸潰鍙湁涓�釜缃《
                 var $backToTopFun = function() {
                     var st = $(document).scrollTop();
                     st > 0? $(".ico-24").fadeIn(200) : $(".ico-24").hide();
@@ -546,7 +528,7 @@
                     $("html, body").animate({ scrollTop: 0 }, 500);
 
                 });
-                //绑定滚动事件
+                //缁戝畾婊氬姩浜嬩欢
                 $(window).bind("scroll", $backToTopFun);
             }
         },
@@ -658,29 +640,29 @@
             qq: function () { //QQ
                 window.open("http://v.t.qq.com/share/share.php?title=" + encodeURIComponent(document.title) + "&info=" + this.info + "&url=" + encodeURIComponent(location.href) + "&source=bookmark", "_blank", this.style);
             },
-            sina: function () { //新浪
+            sina: function () { //鏂版氮
                 window.open('http://v.t.sina.com.cn/share/share.php?title=' + encodeURIComponent(document.title) + "&info=" + this.info + '&url=' + encodeURIComponent(location.href) + '&source=bookmark', "_blank", this.style);
             },
-            renren: function () { //人人
+            renren: function () { //浜轰汉
                 window.open('http://share.renren.com/share/buttonshare.do?link='+ encodeURIComponent(location.href) + encodeURIComponent(document.title) + "&info=" + this.info + '&url=' + encodeURIComponent(location.href) + '&source=bookmark', "_blank", this.style);
             },
-            douban: function () { //多看
+            douban: function () { //澶氱湅
                 window.open('http://www.douban.com/recommend/?url=' + encodeURIComponent(location.href) + "&info=" + this.info + '&title=' + encodeURIComponent(location.href), "douban", this.style);
             },
-            wangyi: function() { //网易
+            wangyi: function() { //缃戞槗
                 window.open('http://t.163.com/article/user/checkLogin.do?title=' + encodeURIComponent(document.title) + '&url=' + encodeURIComponent(location.href) + "&source=bookmark", "_blank", this.style);
             },
-            twitter: function() { //推特
+            twitter: function() { //鎺ㄧ壒
                 window.open("https://twitter.com/intent/tweet?url=" + encodeURIComponent(location.href) + "&title=" + encodeURIComponent(document.title) + "&text=" + this.info_us + " " + encodeURIComponent(location.href) + "&source=bookmark", "_blank", this.style);
             },
-            facebook: function() { //脸书
+            facebook: function() { //鑴镐功
                 window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(location.href) + "&title=" + encodeURIComponent(document.title), "_blank", this.style);
             }
         },
         /**
-         * 验证，两种模式，一种集成bootstrap的tooltip的提示，另外一种集成本库的errorInfo方法，将错误信息放置指定位置
-         * BubbleTip:冒泡提示
-         * FixTip:固定位置提示
+         * 楠岃瘉锛屼袱绉嶆ā寮忥紝涓�闆嗘垚bootstrap鐨則ooltip鐨勬彁绀猴紝鍙﹀涓�闆嗘垚鏈簱鐨別rrorInfo鏂规硶锛屽皢閿欒淇℃伅鏀剧疆鎸囧畾浣嶇疆
+         * BubbleTip:鍐掓场鎻愮ず
+         * FixTip:鍥哄畾浣嶇疆鎻愮ず
          */
         formValidation: function(options){
             var obj = {
@@ -692,10 +674,10 @@
                 ignore: ".chzn-search input",
                 debug: true,
                 onfocusout: function( element, event ) {
-                    if ( !this.checkable(element) && (element.name in this.submitted || !this.optional(element)) ) { //submit之后触发。
+                    if ( !this.checkable(element) && (element.name in this.submitted || !this.optional(element)) ) { //submit涔嬪悗瑙﹀彂銆�
                         this.element(element);
                     }
-                    if ( this.settings.errorPlacement && options.errorPlacement&&options.automaticTest) { //支持每个控件自我检测 coding by yangcheng
+                    if ( this.settings.errorPlacement && options.errorPlacement) { //鏀寔姣忎釜鎺т欢鑷垜妫�祴 coding by yangcheng
                         var validator = $(event.currentTarget).data('validator');
                         if($(element).parent().hasClass('chzn-search')){
                             element = $(element).closest('.chzn-container').prev()[0];
@@ -708,12 +690,8 @@
             if(options.rules){
                 obj.rules = options.rules;
             }
-            if(options.errorPlacement||options.unhighlight){
-                util.simpleReplace(obj,{errorPlacement:options.errorPlacement,unhighlight:options.unhighlight});
-            }
-
             /**
-             * 将原生select与其生成的chosen式的select进行关联。核心是监听原生select上的事件，关联后，chosen就可以将触发事件转移到其原生的select身上，再通过select的验证，再作用于chosen上，本功能只限于页面拥有chosen的情况。
+             * 灏嗗師鐢焥elect涓庡叾鐢熸垚鐨刢hosen寮忕殑select杩涜鍏宠仈銆傛牳蹇冩槸鐩戝惉鍘熺敓select涓婄殑浜嬩欢锛屽叧鑱斿悗锛宑hosen灏卞彲浠ュ皢瑙﹀彂浜嬩欢杞Щ鍒板叾鍘熺敓鐨剆elect韬笂锛屽啀閫氳繃select鐨勯獙璇侊紝鍐嶄綔鐢ㄤ簬chosen涓婏紝鏈姛鑳藉彧闄愪簬椤甸潰鎷ユ湁chosen鐨勬儏鍐点�
              */
             function workForChosenRelevance(){
                 var message = ['required','remote','email','url','date','dateISO','number','digits','creditcard','equalTo','maxlength','minlength','rangelength','range','max','min'];
@@ -785,7 +763,7 @@
                     placement: 'top',
                     trigger: 'hover'
                 };
-                util.simpleReplace(obj,{
+                _.extend(obj,{
                     errorPlacement: function (errors, element) {
                         var error = errors[0];
                         var target = element;
@@ -815,7 +793,7 @@
                     location: 'top'
                 };
                 options = _.extend(options,defaults);
-                util.simpleReplace(obj,{
+                _.extend(obj,{
                     errorPlacement: function (errors, element) {
                         var error = errors[0];
                         var target = element;
@@ -838,18 +816,18 @@
             options._context.validate();
         },
         /**
-         * 设置为首页
+         * 璁剧疆涓洪椤�
          */
         setHome: function(url){
             if (document.all) {
                 document.body.style.behavior='url(#default#homepage)';
                 document.body.setHomePage(url);
             }else{
-                alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+                alert("鎮ㄥソ,鎮ㄧ殑娴忚鍣ㄤ笉鏀寔鑷姩璁剧疆椤甸潰涓洪椤靛姛鑳�璇锋偍鎵嬪姩鍦ㄦ祻瑙堝櫒閲岃缃椤甸潰涓洪椤�");
             }
         },
         /**
-         * 添加到收藏夹
+         * 娣诲姞鍒版敹钘忓す
          * @param sURL
          * @param sTitle
          */
@@ -861,12 +839,12 @@
                 try{
                     window.sidebar.addPanel(sTitle, sURL, "");
                 }catch (e) {
-                    alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+                    alert("鍔犲叆鏀惰棌澶辫触锛岃浣跨敤Ctrl+D杩涜娣诲姞,鎴栨墜鍔ㄥ湪娴忚鍣ㄩ噷杩涜璁剧疆.");
                 }
             }
         },
         /**
-         * 邮箱自动补全
+         * 閭鑷姩琛ュ叏
          */
         emailAutocomplete: function() {
             var ctx = arguments.length > 0 ? arguments[0] : null,
@@ -919,10 +897,7 @@
                     if($(self).val() == "" && placeholder != null) {
                         $(self).addClass("m-placeholder-input")
                         $(self).wrap('<div style="display:inline-block; position:relative" class="x-placeholder-ie-layout"></div>');
-                        $(self).after('<span class="placeholer">'+placeholder+'</span>')
-                        //$(self).val(placeholder);
-                        //originalColor[i] = $(self).css('color');
-                        //$(self).css('color', '#9e9d9d');
+                        $(self).after('<span class="placeholer">'+placeholder+'</span>');
                     }
                 }
                 texts.focus(function() {
@@ -945,10 +920,7 @@
                     if($(self).html() == "" && placeholder != null) {
                         $(self).addClass("m-placeholder-input")
                         $(self).wrap('<div style="display:inline-block; position:relative"></div>');
-                        $(self).after('<span class="placeholer">'+placeholder+'</span>')
-                        //$(self).val(placeholder);
-                        //originalColor[i] = $(self).css('color');
-                        //$(self).css('color', '#9e9d9d');
+                        $(self).after('<span class="placeholer">'+placeholder+'</span>');
                     }
                 }
                 texts.focus(function() {
@@ -967,13 +939,12 @@
                 var top = $input.position().top;
                 var setting = $.extend({
                     position:"absolute",
-                    left:left,
-                    top:top+4+'px',
+                    left:(left + $input.offset().left - $father.offset().left) + 'px',
+                    top:(top + $input.offset().top - $father.offset().top )+'px',
                     padding:"5px 0 0 5px",
                     color: $input.css('color'),
                     width: $input.width()/2+'px'
                 },options);
-                console.log(top);
                 $(this).css(setting);
             });
             $(".placeholer").click(function(){
@@ -981,7 +952,7 @@
                 $(this).prev('.m-placeholder-input').focus();
             });
         },
-        /*新版错误信息*/
+        /*鏂扮増閿欒淇℃伅*/
         infoTip: function(){
             var _ = arguments[0],
                 title,
@@ -1008,10 +979,9 @@
             _.append(errorinfoTmpl);
         },
         /**
-         * form分页
+         * form鍒嗛〉
          */
         turn2Page : function() {
-            console.log(1);
             var number = arguments.length > 0 ? arguments[0] : 1;
             var page = $("#page");
             //var filterForm = $("#filterForm");
@@ -1023,7 +993,7 @@
             filterForm.submit();
         },
         /**
-         * ajax分页
+         * ajax鍒嗛〉
          */
         ajaxTurn2Page: function(){
             var contextSel = arguments.length > 0 ? arguments[0] : null;
@@ -1068,7 +1038,6 @@
                     that.turn2Page(number,$form);
                 });
             }else if($ajaxPage.length){
-                console.log($ajaxPage);
                 $ajaxPage.on('click',function(e){
                     var target = e.target,number = target.getAttribute('number'),contextSel = target.getAttribute('contextSel'),baseUrl = target.getAttribute('baseUrl');
                     that.ajaxTurn2Page(contextSel,baseUrl,number);
@@ -1076,8 +1045,151 @@
             }
         }
     };
+    var clientSniff = {
+        client: function(){
+            var engine = {
+                    ie: 0,
+                    gecko: 0,
+                    webkit: 0,
+                    khtml: 0,
+                    opera: 0,
+                    ver: null
+                },
+                browser = {
+                    ie: 0,
+                    firefox: 0,
+                    safari: 0,
+                    konq: 0,
+                    opera: 0,
+                    chrome: 0,
+                    ver: null
+                },
+                system = {
+                    win: false,
+                    mac: false,
+                    xll: false,
+                    iphone: false,
+                    ipod: false,
+                    ipad: false,
+                    ios: false,
+                    android: false,
+                    nokiaN: false,
+                    winMobile: false,
+                    wii: false,
+                    ps: false
+                },
+            //检测呈现引擎和浏览器
+                ua = navigator.userAgent;
+            if(window.opera){
+                engine.ver = browser.ver = window.opera.version();
+                engine.opera = browser.opera = parseFloat(engine.ver);
+            }else if(/AppleWebKit\/(\S+)/.test(ua)){
+                engine.ver = RegExp["$1"];
+                engine.webkit = parseFloat(engine.ver);
+                if(/Chrome\/(\S+)/.test(ua)){
+                    browser.ver = RegExp["$1"];
+                    browser.chrome = parseFloat(browser.ver);
+                }else if(/Version\/(\S+)/.test(ua)){
+                    browser.ver = RegExp["$1"];
+                    browser.safari = parseFloat(browser.ver);
+                }else {
+                    var safariVersion = 1;
+                    if(engine.webkit < 100){
+                        safariVersion = 1;
+                    }else if(engine.webkit < 312){
+                        safariVersion = 1.2;
+                    }else if(engine.webkit < 412){
+                        safariVersion = 1.3;
+                    }else {
+                        safariVersion = 2;
+                    }
+                    browser.safari = browser.ver = safariVersion;
+                }
+            }else if(/KHTML\/(\S+)/.test(ua) || /Konqueror\/([^;]+)/.test(ua)){
+                engine.ver = browser.ver = RegExp["$1"];
+                engine.khtml = browser.konq = parseFloat(engine.ver);
+            }else if(/rv:([^\)]+)\) Gecko\/\d{8}/.test(ua)){
+                engine.ver = RegExp["$1"];
+                engine.gecko = parseFloat(engine.ver);
+                if(/Firefox\/(\S+)/.test(ua)){
+                    browser.ver = RegExp["$1"];
+                    browser.firefox = parseFloat(browser.ver);
+                }
+            }else if(/MSIE ([^;]+)/.test(ua)){
+                engine.ver = browser.ver = RegExp["$1"];
+                engine.ie = browser.ie = parseFloat(engine.ver);
+            }else if(/Trident\/(\S+)/.test(ua)){
+                engine.ver = browser.ver = parseFloat(RegExp["$1"]) + 4;
+                engine.ie = browser.ie = parseFloat(engine.ver);
+            }
+            browser.ie = engine.ie;
+            browser.opera = engine.opera;
+            var p = navigator.platform;
+            system.win = p.indexOf("Win") == 0;
+            system.mac = p.indexOf("Mac") == 0;
+            system.xll = (p == "Xll") || (p.indexOf("Linux") == 0);
+            if(system.win){
+                if(/Win(?:dows )?([^do]{2})\s?(\d+\.\d+)?/.test(ua)){
+                    if(RegExp["$1"] == "NT"){
+                        switch(RegExp["$2"]){
+                            case "5.0":
+                                system.win = "2000";
+                                break;
+                            case "5.1":
+                                system.win = "XP"
+                                break;
+                            case "6.0":
+                                system.win = "Vista"
+                                break;
+                            case "6.1":
+                                system.win = "7";
+                                break;
+                            default :
+                                system.win = "NT";
+                                break;
+                        }
+                    }else if(RegExp["$1"] == "9x"){
+                        system.win = "ME";
+                    }else {
+                        system.win = RegExp["$1"];
+                    }
+                }
+            }
+            system.iphone = ua.indexOf("iPhone") > -1;
+            system.ipod = ua.indexOf("iPod") > -1;
+            system.ipad = ua.indexOf("iPad") > -1;
+            system.nokiaN = ua.indexOf("NokiaN") > -1;
 
+            if(system.win == "CE"){
+                system.winMobile = system.win;
+            }else if(system.win == "Ph"){
+                if(/Window Phone OS (\d+.\d+)/.test(ua)){
+                    system.win = "Phone";
+                    system.winMobile = parseFloat(RegExp["$1"]);
+                }
+            }
+            if(system.mac && ua.indexOf("Mobile") > -1){
+                if(/CPU (?:iPhone )?OS(\d+_\d+)/.test(ua)){
+                    system.ios = parseFloat(RegExp.$1.replace("_","."));
+                }else {
+                    system.ios = 2;
+                }
+            }
+            if(/Android (\d+\.\d+)/.test(ua)){
+                system.android = parseFloat(RegExp.$1);
+            }
+            system.wii = ua.indexOf("Wii") > -1;
+            system.ps = /playstation/i.test(ua);
+            return {
+                engine: engine,
+                browser: browser,
+                system: system
+            };
+        }
+    };
+    _.extend(SW,clientSniff);
     _.extend(SW.prototype,util);
+    _.extend(SW.prototype,clientSniff);
     var app = function(){
         SW.call(this);
     };
@@ -1173,7 +1285,7 @@
             this.$element.hide();
             this.backdrop(function () {
                 that.removeBackdrop();
-                that.options.boxback(); // 触发回调函数
+                that.options.boxback(); // 瑙﹀彂鍥炶皟鍑芥暟
             });
         },
         removeBackdrop: function () {
@@ -1236,11 +1348,11 @@
         callback = callback || (function() {});
         var _pageLan = $("html").attr("lang") || '';
         if (_pageLan.toUpperCase() == 'EN') lan = 'en';
-        var $box = $("<div class='modal fade hide alert-box'><div class='modal-body'>" + str1 + "</div><div class='modal-footer'><button class='btn btn-warning callback-btn' type='button' data-dismiss='box'>" + ((lan && lan == "en") ? "OK" : "确定") + "</button></div></div>").appendTo(document.body);
+        var $box = $("<div class='modal fade hide alert-box'><div class='modal-body'>" + str1 + "</div><div class='modal-footer'><button class='btn btn-warning callback-btn' type='button' data-dismiss='box'>" + ((lan && lan == "en") ? "OK" : "纭畾") + "</button></div></div>").appendTo(document.body);
         $box.box({boxback : function() {
             $box.remove(); setTimeout(callback, 400); $box = null;
         }}).box("show");
-        // return str1; //不能有返回值
+        // return str1; //涓嶈兘鏈夎繑鍥炲�
     };
 
     window.confirm = function(str2, callback, lan) {
@@ -1251,8 +1363,8 @@
         callback = callback || function() {};
         var _pageLan = $("html").attr("lang") || '';
         if (_pageLan.toUpperCase() == 'EN') lan = 'en';
-        var $box = (lan && lan == "en") ? $("<div class='modal fade hide alert-box x-shopping-confirm'><div class='modal-body'>" + str2 + "</div><div class='modal-footer'><button class='btn' type='button' data-dismiss='box'>No</button><button class='btn btn-warning callback-btn' type='button' data-dismiss='box'>Yes</button></div></div>") :
-            $("<div class='modal fade hide alert-box x-shopping-confirm'><div class='modal-body'>" + str2 + "</div><div class='modal-footer'><a class='x-affirm callback-btn' href='javascript:void(0);' data-dismiss='box'>确认</a><a class='x-cancel'  style='margin-left: 25px;' data-dismiss='box' href='javascript:void(0);'>取消</a></div></div>");
+        var $box = (lan && lan == "en") ? $("<div class='modal fade hide alert-box'><div class='modal-body'>" + str2 + "</div><div class='modal-footer'><button class='btn' type='button' data-dismiss='box'>No</button><button class='btn btn-warning callback-btn' type='button' data-dismiss='box'>Yes</button></div></div>") :
+            $("<div class='modal fade hide alert-box'><div class='modal-body'>" + str2 + "</div><div class='modal-footer'><button class='btn btn-warning callback-btn' type='button' data-dismiss='box'>纭畾</button><button class='btn' type='button' data-dismiss='box'>鍙栨秷</button></div></div>");
         $box.appendTo(document.body);
         $box.box({boxback : function() {$box.remove();}})
             .find(".callback-btn").one("click", function() {setTimeout(callback, 450);});

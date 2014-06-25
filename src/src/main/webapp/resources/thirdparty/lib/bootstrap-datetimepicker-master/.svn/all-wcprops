@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/bootstrap-datetimepicker-master
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/bootstrap-datetimepicker-master/LICENSE
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/bootstrap-datetimepicker-master/.travis.yml
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/bootstrap-datetimepicker-master/.gitignore
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/bootstrap-datetimepicker-master/README.md
+END
+minify.sh
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/bootstrap-datetimepicker-master/minify.sh
+END
+.gitattributes
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/bootstrap-datetimepicker-master/.gitattributes
+END
+bower.json
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/bootstrap-datetimepicker-master/bower.json
+END

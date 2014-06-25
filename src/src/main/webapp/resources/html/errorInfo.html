@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SunivoWeb | ErrorInfo</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="Huazz Tsai">
+<meta name="keyword" content="">
+<link rel="shortcut icon" href="../customize/ico/favicon.png">
+<link rel="apple-touch-icon" href="../customize/ico/favicon.png">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../script/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../customize/css/sunivoweb.frame.css"/>
+<link rel="stylesheet" href="../customize/css/reset.css"/>
+<link rel="stylesheet" href="../customize/css/sunivoweb_style.css"/>
+<link rel="stylesheet" href="../customize/css/k-plugin.css"/>
+<script type="text/javascript" src="../thirdparty/script/jquery-1.9.1.min.js"></script>
+
+</head>
+<body>
+<div class="k-ichcek">
+  <h1>QR Code</h1>
+  <!--插件编译人、编译时间-->
+  <label>作者:王玉兴 版本：0.1 　发布日期：2014-03-27</label>
+
+  <div class="component-block">
+    <h2>★ 案例</h2>
+    错误信息 
+</div>
+  <h3>静态案例</h3> 
+<div class="bs-docs-example"> 
+    <!--添加插件案例-->
+  <div class="form-horizontal"> 
+    <div class="alert alert-block">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <h4>Warning !</h4>
+        <div class="info">put your warning info here !</div>
+    </div>
+    
+    <div class="alert alert-error">
+        <button class="close" data-dismiss="alert" type="button">×</button>
+        <h4>Error !</h4>
+        <div class="info">put your error info here !</div>
+    </div>
+    
+    <div class="alert alert-success">
+        <button class="close" data-dismiss="alert" type="button">×</button>
+        <h4>Success !</h4>
+        <div class="info">put your success info here !</div>
+    </div>
+    
+    <div class="alert alert-info">
+        <button class="close" data-dismiss="alert" type="button">×</button>
+        <h4>Info !</h4>
+        <div class="info">put your info here !</div>
+    </div>
+    
+    <div id="test"></div>
+    <span class="btn btn-primary" id="clickTest">点击测试</span>
+  </div>
+    
+    
+  </div>
+  <!--添加插件代码-->
+  <pre class="prettyprint linenums"><ol class="linenums"><li>&lt;div <span class="text-warning">id=</span><span class="text-success">&quot;test&quot;</span>&gt;&lt;/div&gt;</li><li>&lt;script <span class="text-warning">type=</span><span class="text-success">&quot;text/javascript&quot;</span>&gt;</li><li> $(function(){</li><li> $(&quot;#test&quot;).errorinfo(&quot;alert-info&quot;,&quot;This is test info&quot;);</li><li> })</li><li>/*</li><li>说明：</li><li>errorinfo()接受任意多个参数,第一个为显示类型，第二个以及以后参数为显示内容</li><li>*/</li></pre>
+</div>
+
+</body>
+<script type="text/javascript" src="../customize/script/sunivoweb.frame.js"></script>
+<script type="text/javascript">
+!(function($,window){
+	$.fn.errorinfo = function(){
+		var dom = $("<div class='alert'><button type='button' class='close' data-dismiss='alert'>×</button><h4></h4></div>");
+		var _ = $(this),
+				title,
+				div = "" ,
+				type = arguments[0];
+		switch (type){
+			case "alert-block":
+				title = "Waring !";
+				break;
+			case "alert-error":
+				title = "Error !";
+				break;
+			case "alert-success":
+				title = "Success !";
+				break;
+			default:
+				title = "Info !";
+			}
+		var num = arguments.length;
+		for(var i = 1; i < num ; i++){
+			div = div + "<div class='info'>"+arguments[i]+"</div>"
+			}
+		dom.addClass(type).append(div).find("h4").html(title);
+		_.append(dom);
+		function hide(){
+			dom.fadeOut(2000,function(){
+				dom.empty();
+				});
+			}
+		setTimeout(hide,2000);
+		//dom.fadeOut(2000);
+		}
+	})(jQuery,window)
+</script>
+<script type="text/javascript">
+$(function(){
+	$("#clickTest").click(function(){
+		$("#test").errorinfo("alert-success","error1","error2","error3","error4");
+		})
+	})
+
+    $('#id1').on('click',function(){
+        $("#test").errorinfo("alert-success","error1","error2","error3","error4");
+    });
+</script>
+</html>

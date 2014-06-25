@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>标准分页</title>
+    <link rel="stylesheet" href="../customize/lib/bootstrap/docs/assets/css/bootstrap.css" type="text/css"/>
+    <style type="text/css">
+
+        /*.x-load {
+            background-color: #b7b7be;
+            position: relative;
+            text-align: center;
+            z-index: 1040;
+            opacity: 0.8;
+            filter:alpha(opacity=80);
+            width: inherit;
+            height: auto;
+        }
+        .x-load img {
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+        }*/
+
+    </style>
+</head>
+<body>
+<form action="www.baidu.com" class="formPage">
+    <div class="pagination pagination-centered">
+        <ul>
+            <li><a href="#" class="prevPage">Prev</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="nextPage">Next</a></li>
+            <input type="hidden" class="currentNumber" value="1"/>
+        </ul>
+    </div>
+</form>
+<!--<div class="load">
+    <img src="../customize/img/yc/loading4.GIF" />
+</div>-->
+<div style=" border: 1px solid red; width: 100px;" id="div1">
+    <div style="height: 100px;"></div>
+    <div style="height: 100px;"></div>
+    <div style="height: 100px;"></div>
+</div>
+<a href="#" class="btn add">yangcheng</a>
+<a href="#" class="btn add1">yang</a>
+<script type="text/javascript" src="../customize/lib/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../customize/lib/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../customize/js/underscore-1.6.js"></script>
+<script type="text/javascript" src="../customize/js/SunivoWeb-ui.js"></script>
+<script type="text/javascript">
+    var a = new sw();
+    var instance1 = a.loading();
+    //instance1.create();
+    /*setTimeout(function(){
+        instance1.remove();
+    },3000);*/
+    var o1 = a.createModal({
+        defaults: true,
+        hasHeader: true,
+        fillHeader: 'yangchengas打扫打扫打扫的',
+        hasClose: false,
+        fillClose: '',
+        hasBody: true,
+        fillBody: '时间诶',
+        hasBtn: false,
+        fillBtn: '',
+        //showNow: true,
+        hasDefFooter: true,
+        defBtnEvent: {
+            ensure: function(e){
+            },
+            cancel: function(e){
+            }
+        },
+        bindEvent: $('.add')
+    });
+    var o2 = a.createModal({
+        custom: $('#myModal'),
+        /*callback: function(){
+            $('.remove').on('click',function(){
+                o2.modal('hide');
+            });
+        },
+        url: 'demo.html',*/
+        bindEvent: $('.add1')
+    });
+</script>
+</body>
+</html>

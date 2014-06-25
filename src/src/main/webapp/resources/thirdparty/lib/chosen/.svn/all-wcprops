@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen/package.json
+END
+LICENSE.md
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen/LICENSE.md
+END
+Cakefile
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen/Cakefile
+END
+example.proto.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen/example.proto.html
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen/.gitignore
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen/README.md
+END
+example.jquery.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen/example.jquery.html
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/SunivoWeb/!svn/ver/276/trunk/src/src/main/webapp/resources/thirdparty/lib/chosen/VERSION
+END

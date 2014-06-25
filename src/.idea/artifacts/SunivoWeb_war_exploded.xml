@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SunivoWeb:war exploded">
+    <output-path>$PROJECT_DIR$/target/SunivoWeb</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SunivoWeb/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SunivoWeb" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

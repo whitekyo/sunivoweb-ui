@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SunivoWeb | Demo</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="Huazz Tsai">
+<meta name="keyword" content="">
+<link rel="shortcut icon" href="../customize/ico/favicon.png">
+<link rel="apple-touch-icon" href="../customize/ico/favicon.png">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../script/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../customize/css/sunivoweb.frame.css"/>
+<link rel="stylesheet" href="../customize/css/reset.css"/>
+<link rel="stylesheet" href="../customize/css/sunivoweb_style.css">
+<link rel="stylesheet" href="../customize/css/case.css">
+<script type="text/javascript" src="../customize/script/jquery-1.9.1.min.js"></script>
+<script>(function($){$.initover = function(fn) {$(document).one('initover', fn);}})(jQuery);</script>
+<style type="text/css">
+h3, h4 {
+	font-weight: normal;
+}
+section {
+	margin-bottom: 40px;
+}
+section > h3 {
+	border-bottom: 2px solid #ddd;
+}
+.imgbox {
+	border: 1px solid #ddd;
+	width: 218px;
+	height: 218px;
+	margin-top: 8px;
+	background-color: #fafafa;
+}
+.hack {
+	margin-bottom: 10px;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-style: italic;
+}
+/* hack */
+.hack {
+	background: yellowgreen;  /*for all*/
+	background: orange\9;  /*IE6+*/
+	background: #008000\0;  /*IE8+*/
+ *background: cyan;   /*IE7、IE6*/
+	_background: red;  /*IE6*/
+}
+:root .hack {
+	background: blue\9;  /*IE9+*/
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+.hack {
+	background: deeppink;
+}  /*webkit*/
+}
+</style>
+</head>
+<body>
+<div class="index-nav-container">
+            <ul class="index-nav">
+                <li><a href="../../index.html">首页</a></li>
+                <li  class="active"><a href="components.html">组件</a></li>
+                <li><a href="#">JavaScript插件</a></li>
+            </ul>
+</div>
+<div class="component-banner-bg">
+  <div class="component-banner"> </div>
+</div>
+<div class="component-content clearfix"> 
+  <!--左边列表-->
+  <ul class="component-list" id="pordAttr">
+    <li><a class="on" href="javascript:void(0);" grop="Index_box" nav="IndexTab_0">Bootstrap</a>
+      <ul class="component-second-list" grop="Index_box" nav="IndexTab_0">
+        <li><a href="#">modal</a></li>
+        <li><a href="#">tooltip</a></li>
+        <li><a href="#">collapse</a></li>
+        <li><a href="#">carousel</a></li>
+        <li><a href="#">typehed</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);" grop="Index_box" nav="IndexTab_1">项目插件</a>
+      <ul class="component-second-list" grop="Index_box" nav="IndexTab_1" style="display:none;">
+        <li><a href="#">modal</a></li>
+        <li><a href="#">tooltip</a></li>
+        <li><a href="#">collapse</a></li>
+        <li><a href="#">carousel</a></li>
+        <li><a href="#">typehed</a></li>
+      </ul>
+    </li>
+    <li><a href="javascript:void(0);" grop="Index_box" nav="IndexTab_2">Plugin</a>
+      <ul class="component-second-list" grop="Index_box" nav="IndexTab_2" style="display:none;">
+        <li><a href="#">modal</a></li>
+        <li><a href="#">tooltip</a></li>
+        <li><a href="#">collapse</a></li>
+        <li><a href="#">carousel</a></li>
+        <li><a href="#">typehed</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!--右边具体插件-->
+  <div class="component-substance">
+    <h1>模态对话框 modal.js </h1>
+    <!--插件编译人、编译时间-->
+    <label>金振源　发布日期：2014-03-26</label>
+    <div class="component-block">
+      <h2>★ 案例</h2>
+      模态对话框是一类简洁、灵活的的弹框，他们具有精简的功能和友好的默认行为。</div>
+    <div class="">
+      <h3>静态案例</h3>
+      带有标题、正文、页脚按钮的对话框。 </div>
+    <div class="bs-docs-example" style=" background:#c2c0c0;"> 
+      <!--添加插件案例-->
+      <div class="modal" style="position:relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%; box-shadow:1px 1px 3px #fff;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h3>对话框标题</h3>
+        </div>
+        <div class="modal-body">
+          <p>One fine body…</p>
+        </div>
+        <div class="modal-footer"> <a href="#" class="btn">关闭</a> <a href="#" class="btn btn-primary">Save changes</a> </div>
+      </div>
+      <!--添加插件案例 end--> 
+    </div>
+    <!--添加插件代码-->
+    <pre class="prettyprint"><ol class="linenums "><li>&lt; div class=&quot; modal&quot; &gt; </li><li> &lt; div class=&quot;modal-header&quot; &gt;</li><li>  &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;</li><li>  &lt; h3 &gt;对话框标题&lt;/ h3 &gt;</li><li> &lt;/ div &gt;</li><li> &lt; div class=&quot;modal-body&quot; &gt;</li><li>  &lt; p &gt;One fine body…&lt; /p &gt;</li><li> &lt;/ div &gt;</li><li> &lt; div class=&quot;modal-footer&quot;&gt;</li><li>  &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;关闭&lt;/a&gt;</li><li>  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/a&gt;</li><li>&lt;/ div&gt;</li><li>&lt;/ div&gt;</li></ol>
+    </pre>
+    <div class="bs-docs-example" style=" background:#c2c0c0;"> <a class="btn btn-primary btn-large" role="button" href="#myModal" data-toggle="modal">查看演示案例</a> </div>
+    <!--modal-->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+      </div>
+      <div class="modal-body">
+        <p>One fine body…</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    <!--modal end-->
+    
+    <h2>★ 调用方式</h2>
+    <div class="">
+      <h3>通过data属性</h3>
+      无需编写JavaScript代码即可生成一个对话框。在一个主控元素，例如按钮，上设置data-toggle="modal"，然后再设置data-target="#foo" 或href="#foo" 用以指向某个将要被启动的对话框。
+    </div>
+    <pre class="prettyprint linenums"><ol class="linenums"><li>&lt;button type=&quot;button&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Launch modal&lt;/button&gt;</li></ol></pre>
+     <div class="">
+      <h3>通过JavaScript</h3>
+      仅用一行JavaScript代码即可启动id为myModal的对话框：
+    </div>
+    <pre class="prettyprint linenums"><ol class="linenums"><li>$('#myModal').modal(options)</li></ol></pre>
+    <div class="">
+      <h3>方法</h3>
+      <h3>.modal(options)</h3>
+      让你指定的内容变成一个模态对话框。接受一个可选的参数object.
+    </div>
+    <pre class="prettyprint linenums"><ol class="linenums"><li> $('#myModal').modal({</li><li>   keyboard: false</li><li> })</li></ol></pre>
+     <div class="">
+      <h3>.modal('toggle')</h3>
+      手动打开或隐藏一个模态对话框。
+    </div>
+    <pre class="prettyprint linenums"><ol class="linenums"><li>$('#myModal').modal('toggle')</li></ol></pre> 
+    <div class="">
+      <h3>.modal('show')</h3>
+      手动打开一个模态对话框。
+    </div>
+    <pre class="prettyprint linenums"><ol class="linenums"><li>$('#myModal').modal('show')</li></ol></pre> 
+     <div class="">
+      <h3>close</h3>
+      按模式或自定义关闭 任意各异html元素 添加：
+    </div>
+    <pre class="prettyprint linenums"><ol class="linenums"><li>data-dismiss="modal"</li></ol></pre> 
+    <div class="">
+      <h3>.modal('hide')</h3>
+      手动隐藏一个模态对话框。
+    </div>
+    <pre class="prettyprint linenums"><ol class="linenums"><li>$('#myModal').modal('hide')</li></ol></pre> 
+    <div class="">
+      <h3>事件</h3>
+      组件中的模态对话框对外暴露了一些事件允许你监听。
+    </div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="o-tabel">
+      <tr>
+        <th scope="col" width="30%" height="35">事件</th>
+        <th scope="col" width="70%">描述</th>
+      </tr>
+      <tr>
+        <td>show</td>
+        <td>当show方法被调用时，此事件将被立即触发。</td>
+      </tr>
+      <tr>
+        <td>shown</td>
+        <td>当模态对话框呈现到用户面前时（会等待过渡效果执行结束）此事件被触发。</td>
+      </tr>
+      <tr>
+        <td>hide</td>
+        <td>当hide方法被调用时，此事件被立即触发。</td>
+      </tr>
+      <tr>
+        <td>hidden</td>
+        <td>当模态对话框被隐藏（而且过渡效果执行完毕）之后，此事件将被触发。</td>
+      </tr>
+    </table>
+
+    <pre class="prettyprint linenums"><ol class="linenums"><li>$('#myModal').on('hidden', function () {</li><li>})</li></ol></pre> 
+    
+    <div class="">
+      <h3>选项</h3>
+      上面的选项都可以通过data属性或JavaScript代码传递给组件。对于data属性，将选项名称附着于data-字符串之后，就像data-backdrop=" "一样。
+    </div>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="o-tabel">
+          <tr>
+            <th width="10%" scope="col">名称</th>
+            <th width="10%" scope="col">类型</th>
+            <th width="10%" scope="col">默认值</th>
+            <th width="70%" scope="col">描述</th>
+          </tr>
+          <tr>
+            <td>backdrop</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>为模态对话框添加一个背景元素。另外，为背景指定static时，点击模态对话框的外部区域不会将其关闭。</td>
+          </tr>
+          <tr>
+            <td>keyboard</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>按下esc键时关闭模态对话框</td>
+          </tr>
+          <tr>
+            <td>show</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>初始化时即显示模态对话框</td>
+          </tr>
+          <tr>
+            <td>remote</td>
+            <td>path</td>
+            <td>false</td>
+            <td>如果提供了远程url地址，就会通过 jQuery的load方法加载内容并注入到.modal-body中。如果你使用的是data属性api，你还可以使用href标签指定远程数据源。案例如下：</td>
+          </tr>
+        </table>
+
+
+    <pre class="prettyprint linenums"><ol class="linenums"><li> &lt;a data-toggle=&quot;modal&quot; href=&quot;remote.html&quot; data-target=&quot;#modal&quot;&gt;click me&lt;/a&gt; </li></ol></pre> 
+    
+  </div>
+</div>
+<!--底部-->
+<div class="foot">
+  <p>本网站所列开源项目的中文版文档全部由Sunivo Web成员翻译整理</p>
+  <p>Powered by Sunivo Web Team 站长统计</p>
+</div>
+<!-- script --> 
+
+<script type="text/javascript" src="../customize/script/sunivoweb.frame.js"></script> 
+<script type="text/javascript" src="../customize/script/sunivoweb.app.js"></script> 
+<script type="text/javascript" src="../customize/script/ports.js"></script> 
+<script type="text/javascript" src="../customize/script/portSelector.js"></script> 
+<script type="text/javascript" src="../customize/script/handlebars.js"></script> 
+<script type="text/javascript" src="../customize/script/sunivoweb-left-nav.js"></script> 
+<script type="text/javascript">
+$(function() {
+    app.init();
+//    app.initWithContext('handleDatepicker,handleChosen','#form');
+});
+//左侧导航
+$(function() { 
+    var elm = $('#pordAttr'); 
+    var startPos = $(elm).offset().top; 
+    $.event.add(window, "scroll", function() { 
+        var p = $(window).scrollTop(); 
+        $(elm).css('position',((p) > startPos) ? 'fixed' : 'static'); 
+        $(elm).css('top',((p) > startPos) ? '0px' : ''); 
+    }); 
+}); 
+//左侧导航伸缩
+    $("a[grop='Index_box']").click(function() {
+
+        $("a[grop='Index_box'][nav!='" + $(this).attr("nav") + "']").attr("class", "");
+        $(this).attr("class", "on");
+        $("ul[grop='Index_box'][nav!='" + $(this).attr("nav") + "']").hide(200);
+        $("ul[grop='Index_box'][nav='" + $(this).attr("nav") + "']").show(200);
+    });
+</script>
+</body>
+</html>
