@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8"/>
     <title>upload</title>
+    <style type="text/css">
+    </style>
 </head>
 <body>
-<input type="file" id="yc" class="x-upload"/>
+<input type="file" id="yc"/>
+
 <script type="text/javascript" src="../underscore-1.6.js"></script>
 <script type="text/javascript" src="../jQuery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/SunivoWeb-upload.js"></script>
 <script type="text/javascript" src="../SunivoWeb-ui-1.0.1.js"></script>
 <script type="text/javascript">
+    var a = new sw();
+    a.upload({
+        context: $('#yc')
+    });
 </script>
 </body>
 </html>

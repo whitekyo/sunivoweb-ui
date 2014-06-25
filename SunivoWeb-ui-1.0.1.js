@@ -260,21 +260,14 @@
         loading: function(){
             return new Universe();
         },
-        upload: function(){
-            if($('.x-upload-btn').length){
-                $('body').on('click','.x-upload-btn',function(e){
-                    var $target = $(e.target),$input = $target.prev(),id,$file,$div = $target.closest('.x-upload-module');
-                    if(!$div.find('[type="file"]').length){
-                        id = util.randomNumber(2) + $input.attr('id');
-                        $file = $('<input type="file" style="display: none;" name="'+ $input.attr('name') +'" id="' + util.randomNumber(2) + $input.attr('id') + '" />');
-                        $div.append($file);
-                        $div.find('[type="file"]').on('change',function(e){
-                            $div.find('.x-upload-text').val(e.target.value);
-                        });
-                    }
-                    $div.find('[type="file"]').click();
+        upload: function(param){
+            var context = param.context;
+            if(context){
+                context.each(function(){
+                    SW.createFormForUpload($(this));
                 });
             }
+
         },
         /**
          * 鍐呯疆鏂规硶locationCus鐢ㄦ潵瑙ｆ瀽url锛屽尮閰嶆垚鍔熷悗璋冪敤loactionController鎵ц鐩稿簲鏄剧ず閫昏緫锛屾瘡娆℃竻绌洪〉闈㈡樉绀虹殑鏃跺�navUtil鎻愪緵refresh鏂规硶娓呯┖銆�
@@ -1190,6 +1183,31 @@
     _.extend(SW,clientSniff);
     _.extend(SW.prototype,util);
     _.extend(SW.prototype,clientSniff);
+    //存放静态方法
+    var tool = {
+        createFormForUpload: function(context){
+            var $a = $('<a href="javascript:void(0);">上传</a>'),cssRule;
+            context.wrap('<div style="position: relative;"></div>');
+            context.css({
+                'z-index': '2',
+                opacity: 0,
+                position: 'absolute'
+            });
+            cssRule = this.getLayoutFromContextForUpload(context);
+            context.parent().append($a.css(cssRule));
+        },
+        getLayoutFromContextForUpload: function(tg){
+            var $parent = tg.parent(),parentLayout = $parent.offset(),tgLayout = tg.offset();
+            return {
+                left: tgLayout.left - parentLayout.left,
+                top: tgLayout.top - parentLayout.top,
+                position: 'absolute',
+                'z-index': '1'
+            };
+
+        }
+    };
+    _.extend(SW,tool);
     var app = function(){
         SW.call(this);
     };
