@@ -261,10 +261,13 @@
             return new Universe();
         },
         upload: function(param){
-            var context = param.context;
+            var context = param.context,async = param.async,i;
             if(context){
                 context.each(function(){
-                    SW.createFormForUpload($(this));
+                    SW.createFormForUpload($(this),param);
+                    if(!_.isEmpty(async)){
+                        SW.bindUploadEvent($(this),async);
+                    }
                 });
             }
 
@@ -1185,26 +1188,39 @@
     _.extend(SW.prototype,clientSniff);
     //存放静态方法
     var tool = {
-        createFormForUpload: function(context){
+        createFormForUpload: function(context,param){
             var $a = $('<a href="javascript:void(0);">上传</a>'),cssRule;
             context.wrap('<div style="position: relative;"></div>');
             context.css({
                 'z-index': '2',
                 opacity: 0,
-                position: 'absolute'
+                position: 'absolute',
+                'cursor' : 'pointer'
             });
-            cssRule = this.getLayoutFromContextForUpload(context);
+            cssRule = this.getLayoutFromContextForUpload(context,param);
             context.parent().append($a.css(cssRule));
+            context.css({
+                width: $a.width(),
+                height: $a.height()
+            });
         },
-        getLayoutFromContextForUpload: function(tg){
-            var $parent = tg.parent(),parentLayout = $parent.offset(),tgLayout = tg.offset();
-            return {
+        getLayoutFromContextForUpload: function(tg,param){
+            var $parent = tg.parent(),parentLayout = $parent.offset(),tgLayout = tg.offset(),_cssRule = param.cssRule || {};
+            return $.extend({
                 left: tgLayout.left - parentLayout.left,
                 top: tgLayout.top - parentLayout.top,
                 position: 'absolute',
                 'z-index': '1'
-            };
+            },_cssRule);
 
+        },
+        bindUploadEvent: function(context,async){
+            $.extend(async,{
+                secureuri:false
+            });
+            context.on('change',function(){
+                $.ajaxFileUpload(async);
+            });
         }
     };
     _.extend(SW,tool);
@@ -1227,165 +1243,3 @@
     };
     window.sw = app;
 })(jQuery,_,window);
-
-// BOX ALERT
-!(function($) {
-    var Box = function (element, options) {
-        this.options = options;
-        this.$element = $(element).delegate('[data-dismiss="box"]', 'click.dismiss.box', $.proxy(this.hide, this));
-        this.options.remote && this.$element.find('.box-body').load(this.options.remote);
-    };
-    Box.prototype = {
-        constructor: Box,
-        toggle: function () {
-            return this[!this.isShown ? 'show' : 'hide']();
-        },
-        show: function () {
-            var that = this;
-            // , e = $.Event('boxshow')
-            // this.$element.trigger(e)
-            if (this.isShown) return;
-            this.isShown = true;
-            this.escape();
-            this.backdrop(function () {
-                var transition = $.support.transition && that.$element.hasClass('fade');
-                if (!that.$element.parent().length) {
-                    that.$element.appendTo(document.body); //don't move boxs dom position
-                }
-                that.$element.show();
-                if (transition) {
-                    that.$element[0].offsetWidth; // force reflow
-                }
-                that.$element.addClass('in').attr('aria-hidden', false);
-            });
-        },
-        hide: function (e) {
-            e && e.preventDefault();
-            //var that = this;
-            if (!this.isShown) return;
-            this.isShown = false;
-            this.escape();
-            $(document).off('focusin.box');
-            this.$element.removeClass('in').attr('aria-hidden', true);
-            $.support.transition && this.$element.hasClass('fade') ? this.hideWithTransition() : this.hidebox();
-        },
-        enforceFocus: function () {
-            var that = this;
-            $(document).on('focusin.box', function (e) {
-                if (that.$element[0] !== e.target && !that.$element.has(e.target).length) {
-                    that.$element.focus();
-                }
-            });
-        },
-        escape: function () {
-            var that = this;
-            if (this.isShown && this.options.keyboard) {
-                this.$element.on('keyup.dismiss.box', function ( e ) {
-                    e.which == 27 && that.hide();
-                });
-            } else if (!this.isShown) {
-                this.$element.off('keyup.dismiss.box');
-            }
-        },
-        hideWithTransition: function () {
-            var that = this,timeout = setTimeout(function () {
-                that.$element.off($.support.transition.end);
-                that.hidebox();
-            }, 500);
-
-            this.$element.one($.support.transition.end, function () {
-                clearTimeout(timeout);
-                that.hidebox();
-            });
-        },
-        hidebox: function () {
-            var that = this;
-            this.$element.hide();
-            this.backdrop(function () {
-                that.removeBackdrop();
-                that.options.boxback(); // 瑙﹀彂鍥炶皟鍑芥暟
-            });
-        },
-        removeBackdrop: function () {
-            this.$backdrop && this.$backdrop.remove();
-            this.$backdrop = null;
-        },
-        backdrop: function (callback) {
-            var /*that = this,*/animate = this.$element.hasClass('fade') ? 'fade' : '';
-            if (this.isShown && this.options.backdrop) {
-                var doAnimate = $.support.transition && animate;
-                this.$backdrop = $('<div class="box-backdrop ' + animate + '" />').appendTo(document.body);
-                // this.$backdrop.click(
-                //   this.options.backdrop == 'static' ?
-                //     $.proxy(this.$element[0].focus, this.$element[0])
-                //   : $.proxy(this.hide, this)
-                // )
-                if (doAnimate) this.$backdrop[0].offsetWidth; // force reflow
-                this.$backdrop.addClass('in');
-                if (!callback) return;
-                doAnimate ? this.$backdrop.one($.support.transition.end, callback) : callback();
-            } else if (!this.isShown && this.$backdrop) {
-                this.$backdrop.removeClass('in');
-                $.support.transition && this.$element.hasClass('fade')?
-                    this.$backdrop.one($.support.transition.end, callback) :
-                    callback();
-            } else if (callback) {
-                callback();
-            }
-        }
-    };
-
-    $.fn.box = function (option) {
-        return this.each(function () {
-            var $this = $(this), data = $this.data('box'),
-                options = $.extend({}, $.fn.box.defaults, $this.data(), typeof option == 'object' && option);
-            if (!data) $this.data('box', (data = new Box(this, options)));
-            if (typeof option == 'string') data[option]() ;
-            else if (options.show) data.show();
-        });
-    };
-    $.fn.box.defaults = {
-        backdrop: true,
-        keyboard: false,
-        show: true,
-        boxback : function(){}
-    };
-
-    $.fn.box.Constructor = Box;
-
-})(jQuery);
-
-// ALERT BOX
-!(function($, window) {
-    window.alert = function(str1, callback, lan) {
-        str1 = str1 + "";
-        str1 = str1.replace(/</g, "&lt;");
-        str1 = str1.replace(/>/g, "&gt;");
-        str1 = str1.replace(/\//g, "&#47;");
-        if (typeof callback === "string") {lan = callback; callback = undefined;}
-        callback = callback || (function() {});
-        var _pageLan = $("html").attr("lang") || '';
-        if (_pageLan.toUpperCase() == 'EN') lan = 'en';
-        var $box = $("<div class='modal fade hide alert-box'><div class='modal-body'>" + str1 + "</div><div class='modal-footer'><button class='btn btn-warning callback-btn' type='button' data-dismiss='box'>" + ((lan && lan == "en") ? "OK" : "纭畾") + "</button></div></div>").appendTo(document.body);
-        $box.box({boxback : function() {
-            $box.remove(); setTimeout(callback, 400); $box = null;
-        }}).box("show");
-        // return str1; //涓嶈兘鏈夎繑鍥炲�
-    };
-
-    window.confirm = function(str2, callback, lan) {
-        str2 = str2 + "";
-        str2 = str2.replace(/</g, "&lt;");
-        str2 = str2.replace(/>/g, "&gt;");
-        str2 = str2.replace(/\//g, "&#47;");
-        callback = callback || function() {};
-        var _pageLan = $("html").attr("lang") || '';
-        if (_pageLan.toUpperCase() == 'EN') lan = 'en';
-        var $box = (lan && lan == "en") ? $("<div class='modal fade hide alert-box'><div class='modal-body'>" + str2 + "</div><div class='modal-footer'><button class='btn' type='button' data-dismiss='box'>No</button><button class='btn btn-warning callback-btn' type='button' data-dismiss='box'>Yes</button></div></div>") :
-            $("<div class='modal fade hide alert-box'><div class='modal-body'>" + str2 + "</div><div class='modal-footer'><button class='btn btn-warning callback-btn' type='button' data-dismiss='box'>纭畾</button><button class='btn' type='button' data-dismiss='box'>鍙栨秷</button></div></div>");
-        $box.appendTo(document.body);
-        $box.box({boxback : function() {$box.remove();}})
-            .find(".callback-btn").one("click", function() {setTimeout(callback, 450);});
-        // return str2;
-    };
-})(jQuery, window);
