@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/js/ajaxfileupload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload/js/ajaxfileupload.js" afterPath="$PROJECT_DIR$/upload/js/ajaxfileupload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload/demo.html" afterPath="$PROJECT_DIR$/upload/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,7 +31,7 @@
       <file leaf-file-name="SunivoWeb-ui-1.0.1.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="267" column="24" selection-start="9619" selection-end="9619" vertical-scroll-proportion="0.0" vertical-offset="5787" max-vertical-offset="6817">
+            <state line="267" column="42" selection-start="9637" selection-end="9637" vertical-scroll-proportion="0.0" vertical-offset="4002" max-vertical-offset="6290">
               <folding>
                 <element signature="e#10008#10887#0" expanded="false" />
                 <element signature="e#10897#11007#0" expanded="false" />
@@ -68,22 +68,34 @@
                 <element signature="e#42699#42960#0" expanded="false" />
                 <element signature="e#42990#43752#0" expanded="false" />
                 <element signature="e#43782#49437#0" expanded="false" />
-                <marker date="1403775415979" expanded="true" signature="1272:1286" placeholder="..." />
-                <marker date="1403775415979" expanded="true" signature="2702:2716" placeholder="..." />
-                <marker date="1403775415979" expanded="true" signature="16912:16938" placeholder="..." />
-                <marker date="1403775415979" expanded="true" signature="19503:19515" placeholder="..." />
-                <marker date="1403775415979" expanded="true" signature="37843:37882" placeholder="..." />
-                <marker date="1403775415979" expanded="true" signature="38858:38897" placeholder="..." />
-                <marker date="1403775415979" expanded="true" signature="49736:49755" placeholder="..." />
+                <element signature="e#49624#50193#0" expanded="false" />
+                <element signature="e#50252#50624#0" expanded="false" />
+                <element signature="e#50674#50901#0" expanded="false" />
+                <marker date="1403848243738" expanded="true" signature="1272:1286" placeholder="..." />
+                <marker date="1403848243738" expanded="true" signature="2702:2716" placeholder="..." />
+                <marker date="1403848243738" expanded="true" signature="16912:16938" placeholder="..." />
+                <marker date="1403848243738" expanded="true" signature="19503:19515" placeholder="..." />
+                <marker date="1403848243738" expanded="true" signature="37843:37882" placeholder="..." />
+                <marker date="1403848243738" expanded="true" signature="38858:38897" placeholder="..." />
+                <marker date="1403848243738" expanded="true" signature="49736:49755" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="56" selection-start="416" selection-end="416" vertical-scroll-proportion="0.3184438" vertical-offset="0" max-vertical-offset="850">
+            <state line="16" column="21" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="867">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxfileupload.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/upload/js/ajaxfileupload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="204" column="53" selection-start="7458" selection-end="7458" vertical-scroll-proportion="4.8166666" vertical-offset="0" max-vertical-offset="3655">
               <folding />
             </state>
           </provider>
@@ -107,8 +119,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js" />
         <option value="$PROJECT_DIR$/upload/demo.html" />
+        <option value="$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js" />
+        <option value="$PROJECT_DIR$/upload/js/ajaxfileupload.js" />
       </list>
     </option>
   </component>
@@ -144,6 +157,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,7 +210,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +218,8 @@
     <property name="options.lastSelected" value="vcs.Subversion" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="D:/" />
+    <property name="last_opened_file_path" value="E:/web-plug" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -213,6 +227,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -223,12 +245,8 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -236,10 +254,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -276,11 +290,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -300,6 +314,73 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1210" column="110" selection-start="50482" selection-end="50576" vertical-scroll-proportion="0.0" vertical-offset="6817" max-vertical-offset="6817">
+          <folding>
+            <element signature="e#10008#10887#0" expanded="false" />
+            <element signature="e#10897#11007#0" expanded="false" />
+            <element signature="e#11039#11941#0" expanded="false" />
+            <element signature="e#11951#12025#0" expanded="false" />
+            <element signature="e#12057#12462#0" expanded="false" />
+            <element signature="e#12472#12643#0" expanded="false" />
+            <element signature="e#12702#15725#0" expanded="false" />
+            <element signature="e#15735#15858#0" expanded="false" />
+            <element signature="e#15883#17049#0" expanded="false" />
+            <element signature="e#17107#19358#0" expanded="false" />
+            <element signature="e#19368#19398#0" expanded="false" />
+            <element signature="e#19428#20216#0" expanded="false" />
+            <element signature="e#20250#21139#0" expanded="false" />
+            <element signature="e#21173#21808#0" expanded="false" />
+            <element signature="e#21846#22811#0" expanded="false" />
+            <element signature="e#22841#23160#0" expanded="false" />
+            <element signature="e#23190#24791#0" expanded="false" />
+            <element signature="e#26991#27158#0" expanded="false" />
+            <element signature="e#27200#34645#0" expanded="false" />
+            <element signature="e#34655#34690#0" expanded="false" />
+            <element signature="e#34721#35002#0" expanded="false" />
+            <element signature="e#35012#35096#0" expanded="false" />
+            <element signature="e#35140#35510#0" expanded="false" />
+            <element signature="e#35520#35556#0" expanded="false" />
+            <element signature="e#35595#36709#0" expanded="false" />
+            <element signature="e#36719#36757#0" expanded="false" />
+            <element signature="e#36796#40249#0" expanded="false" />
+            <element signature="e#40300#41129#0" expanded="false" />
+            <element signature="e#41139#41173#0" expanded="false" />
+            <element signature="e#41205#41661#0" expanded="false" />
+            <element signature="e#41671#41705#0" expanded="false" />
+            <element signature="e#41739#42656#0" expanded="false" />
+            <element signature="e#42699#42960#0" expanded="false" />
+            <element signature="e#42990#43752#0" expanded="false" />
+            <element signature="e#43782#49437#0" expanded="false" />
+            <element signature="e#49624#50193#0" expanded="false" />
+            <element signature="e#50252#50624#0" expanded="false" />
+            <element signature="e#50674#50901#0" expanded="false" />
+            <marker date="1403848243738" expanded="true" signature="1272:1286" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="2702:2716" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="16912:16938" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="19503:19515" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="37843:37882" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="38858:38897" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="49736:49755" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="21" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/js/ajaxfileupload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="50" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="3587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1210" column="4" selection-start="50288" selection-end="50339" vertical-scroll-proportion="0.0" vertical-offset="20570" max-vertical-offset="20978">
@@ -339,13 +420,16 @@
             <element signature="e#42699#42960#0" expanded="false" />
             <element signature="e#42990#43752#0" expanded="false" />
             <element signature="e#43782#49437#0" expanded="false" />
-            <marker date="1403775415979" expanded="true" signature="1272:1286" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="2702:2716" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="16912:16938" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="19503:19515" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="37843:37882" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="38858:38897" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="49736:49755" placeholder="..." />
+            <element signature="e#49624#50193#0" expanded="false" />
+            <element signature="e#50252#50624#0" expanded="false" />
+            <element signature="e#50674#50901#0" expanded="false" />
+            <marker date="1403848243738" expanded="true" signature="1272:1286" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="2702:2716" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="16912:16938" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="19503:19515" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="37843:37882" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="38858:38897" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="49736:49755" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -396,13 +480,16 @@
             <element signature="e#42699#42960#0" expanded="false" />
             <element signature="e#42990#43752#0" expanded="false" />
             <element signature="e#43782#49437#0" expanded="false" />
-            <marker date="1403775415979" expanded="true" signature="1272:1286" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="2702:2716" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="16912:16938" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="19503:19515" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="37843:37882" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="38858:38897" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="49736:49755" placeholder="..." />
+            <element signature="e#49624#50193#0" expanded="false" />
+            <element signature="e#50252#50624#0" expanded="false" />
+            <element signature="e#50674#50901#0" expanded="false" />
+            <marker date="1403848243738" expanded="true" signature="1272:1286" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="2702:2716" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="16912:16938" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="19503:19515" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="37843:37882" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="38858:38897" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="49736:49755" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -453,27 +540,30 @@
             <element signature="e#42699#42960#0" expanded="false" />
             <element signature="e#42990#43752#0" expanded="false" />
             <element signature="e#43782#49437#0" expanded="false" />
-            <marker date="1403775415979" expanded="true" signature="1272:1286" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="2702:2716" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="16912:16938" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="19503:19515" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="37843:37882" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="38858:38897" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="49736:49755" placeholder="..." />
+            <element signature="e#49624#50193#0" expanded="false" />
+            <element signature="e#50252#50624#0" expanded="false" />
+            <element signature="e#50674#50901#0" expanded="false" />
+            <marker date="1403848243738" expanded="true" signature="1272:1286" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="2702:2716" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="16912:16938" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="19503:19515" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="37843:37882" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="38858:38897" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="49736:49755" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/js/ajaxfileupload.js">
+    <entry file="file://$PROJECT_DIR$/upload/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3553">
+        <state line="16" column="21" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="267" column="24" selection-start="9619" selection-end="9619" vertical-scroll-proportion="0.0" vertical-offset="5787" max-vertical-offset="6817">
+        <state line="267" column="42" selection-start="9637" selection-end="9637" vertical-scroll-proportion="0.0" vertical-offset="4002" max-vertical-offset="6290">
           <folding>
             <element signature="e#10008#10887#0" expanded="false" />
             <element signature="e#10897#11007#0" expanded="false" />
@@ -510,20 +600,23 @@
             <element signature="e#42699#42960#0" expanded="false" />
             <element signature="e#42990#43752#0" expanded="false" />
             <element signature="e#43782#49437#0" expanded="false" />
-            <marker date="1403775415979" expanded="true" signature="1272:1286" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="2702:2716" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="16912:16938" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="19503:19515" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="37843:37882" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="38858:38897" placeholder="..." />
-            <marker date="1403775415979" expanded="true" signature="49736:49755" placeholder="..." />
+            <element signature="e#49624#50193#0" expanded="false" />
+            <element signature="e#50252#50624#0" expanded="false" />
+            <element signature="e#50674#50901#0" expanded="false" />
+            <marker date="1403848243738" expanded="true" signature="1272:1286" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="2702:2716" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="16912:16938" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="19503:19515" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="37843:37882" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="38858:38897" placeholder="..." />
+            <marker date="1403848243738" expanded="true" signature="49736:49755" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/demo.html">
+    <entry file="file://$PROJECT_DIR$/upload/js/ajaxfileupload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="56" selection-start="416" selection-end="416" vertical-scroll-proportion="0.3184438" vertical-offset="0" max-vertical-offset="850">
+        <state line="204" column="53" selection-start="7458" selection-end="7458" vertical-scroll-proportion="4.8166666" vertical-offset="0" max-vertical-offset="3655">
           <folding />
         </state>
       </provider>

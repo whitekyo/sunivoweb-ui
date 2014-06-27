@@ -1218,7 +1218,7 @@
             $.extend(async,{
                 secureuri:false
             });
-            context.on('change',function(){
+            context.parent().on('change',context,function(){//处理file控件只能触发一次的黑色魔法
                 $.ajaxFileUpload(async);
             });
         }
