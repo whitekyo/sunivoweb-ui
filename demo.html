@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript" src="sw_define-min-1.0.1.js"></script>
+<script type="text/javascript">
+
+    sw_define('main',function(){
+        console.log('第一次声明');
+    });
+
+    sw_execute('main');
+    sw_define('main',function(){
+        console.log('第二次声明');
+    });
+    sw_execute('main');
+
+    //自定义方法
+    sw_define('getName',function(age,name){
+        return '我叫' + name + ',年龄' + age;
+    });
+    sw_define('findMine',function(callback){
+        return callback();
+    });
+    sw_define('A-project',function(){
+        var content = sw_always('getName',['25','杨成']);
+        console.log(content);
+        console.log(sw_always('findMine',[function(){
+            return '我是程序员';
+        }]));
+    });
+    sw_define('B-project',function(){
+        var content = sw_always('getName',['25','妮妮']);
+        console.log(content);
+    });
+    sw_execute('A-project');
+    sw_execute('B-project');
+</script>
+</body>
+</html>
