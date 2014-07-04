@@ -24,7 +24,7 @@
             }
         }
     };
-    _global.delete = function(name){
+    _global.deleteEle = function(name){
         for(var i=0;globalQueue[i];i++){
             if(globalQueue[i].name == name){
                 return globalQueue.splice(i,1)[0];
@@ -50,14 +50,14 @@
         delete _callback;
     };
     w.sw_execute = function(name,arr){
-        var o = _global.delete(name);
+        var o = _global.deleteEle(name);
         if(!o) return ;
-        return o.callback.apply(this,arr);
+        return o.callback.apply(this,arr||[]);
     };
     w.sw_always = function(name,arr){
         var o = _global.findByName(name);
         if(!o) return ;
-        return o.callback.apply(this,arr);
+        return o.callback.apply(this,arr||[]);
     };
     w.sw_getGlobal = function(){
         var _arr = [];
