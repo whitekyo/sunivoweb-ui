@@ -533,8 +533,7 @@
                 t = $("input.date-picker", ctx);
             if (!t.length) return 0;
             if (!$.fn.datetimepicker) return console.log('handleDatepicker init failed! datetimepicker is undefined!');
-            var format = t.data("format") || "yyyy-mm-dd",startDate = t.data("startdate") || new Date(),endDate =t.data("beforedate")=="now"? new Date() : t.data("enddate") || Infinity,
-
+            var format = t.data("format") || "yyyy-mm-dd",startDate = t.data("startdate") || new Date(),endDate = t.data("enddate") || Infinity,
                 opt = {
                     format:format,
                     startDate:startDate,
@@ -634,25 +633,25 @@
             style: "toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=400",
             info: "SunivoWeb, 简洁、直观的前端开发框架，让web开发更迅速、简单。",
             info_us : "I am very interested in SunivoWeb! ",
-            qq: function () { //QQ
+            qq: function () {
                 window.open("http://v.t.qq.com/share/share.php?title=" + encodeURIComponent(document.title) + "&info=" + this.info + "&url=" + encodeURIComponent(location.href) + "&source=bookmark", "_blank", this.style);
             },
-            sina: function () { //鏂版氮
+            sina: function () {
                 window.open('http://v.t.sina.com.cn/share/share.php?title=' + encodeURIComponent(document.title) + "&info=" + this.info + '&url=' + encodeURIComponent(location.href) + '&source=bookmark', "_blank", this.style);
             },
-            renren: function () { //浜轰汉
+            renren: function () {
                 window.open('http://share.renren.com/share/buttonshare.do?link='+ encodeURIComponent(location.href) + encodeURIComponent(document.title) + "&info=" + this.info + '&url=' + encodeURIComponent(location.href) + '&source=bookmark', "_blank", this.style);
             },
-            douban: function () { //澶氱湅
+            douban: function () {
                 window.open('http://www.douban.com/recommend/?url=' + encodeURIComponent(location.href) + "&info=" + this.info + '&title=' + encodeURIComponent(location.href), "douban", this.style);
             },
-            wangyi: function() { //缃戞槗
+            wangyi: function() {
                 window.open('http://t.163.com/article/user/checkLogin.do?title=' + encodeURIComponent(document.title) + '&url=' + encodeURIComponent(location.href) + "&source=bookmark", "_blank", this.style);
             },
-            twitter: function() { //鎺ㄧ壒
+            twitter: function() {
                 window.open("https://twitter.com/intent/tweet?url=" + encodeURIComponent(location.href) + "&title=" + encodeURIComponent(document.title) + "&text=" + this.info_us + " " + encodeURIComponent(location.href) + "&source=bookmark", "_blank", this.style);
             },
-            facebook: function() { //鑴镐功
+            facebook: function() {
                 window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(location.href) + "&title=" + encodeURIComponent(document.title), "_blank", this.style);
             }
         },
@@ -976,7 +975,7 @@
             _.append(errorinfoTmpl);
         },
         /**
-         * form鍒嗛〉
+         * form page
          */
         turn2Page : function() {
             var number = arguments.length > 0 ? arguments[0] : 1;
@@ -990,12 +989,16 @@
             filterForm.submit();
         },
         /**
-         * ajax鍒嗛〉
+         * ajax page
          */
         ajaxTurn2Page: function(){
             var contextSel = arguments.length > 0 ? arguments[0] : null;
             var baseUrl = arguments.length > 1 ? arguments[1] : "#";
             var number = arguments.length > 2 ? arguments[2] : "1";
+            var content = arguments.length > 3? arguments[3]: window;
+            var callback = arguments.length > 4? arguments[4] : function(){};
+            this.element = content;
+            var that = this;
             $(contextSel).trigger({
                 type : "startLoad",
                 number : number
@@ -1010,12 +1013,7 @@
             var param = $.extend({
                 number : number
             }, this._serializeAjax(form));
-            $(contextSel).load(baseUrl, param, function() {
-                $(contextSel).trigger({
-                    type : "pageLoaded",
-                    number : number
-                });
-            });
+            $(contextSel).load(baseUrl, param, $.proxy(that.callback,that));
         },
         _serializeAjax: function(context){
             var obj=new Object();
@@ -1026,8 +1024,11 @@
             });
             return obj;
         },
-        initPage: function(){
+        initPage: function(callback){
             var $formPage = $('.turnPage'),$ajaxPage = $('.ajaxTurnPage'),that = this;
+            if(callback){
+                that.callback = callback;
+            }
             if($formPage.length){
                 $formPage.closest('form').on('click','.turnPage',function(e){
                     var $target = $(e.target),number = e.target.getAttribute('number'),$form = $target.closest('form');
@@ -1036,8 +1037,19 @@
                 });
             }else if($ajaxPage.length){
                 $ajaxPage.on('click',function(e){
-                    var target = e.target,number = target.getAttribute('number'),contextSel = target.getAttribute('contextSel'),baseUrl = target.getAttribute('baseUrl');
-                    that.ajaxTurn2Page(contextSel,baseUrl,number);
+                    var target = e.target,number = parseInt(target.getAttribute('number')),contextSel = target.getAttribute('contextSel'),baseUrl = target.getAttribute('baseUrl'),action = target.getAttribute('action');
+                    var pageNumber = $(target).closest('.pagination').attr('pageNumber');
+                    if(!number){
+                        number = parseInt($(target).closest('.pagination').attr('currentPage'));
+                    }
+                    if(action){
+                        if(action == 'prev'){
+                            number = number - 1 > 0 ? number - 1:1;
+                        }else if(action == 'next'){
+                            number = number + 1 > pageNumber ? pageNumber : number + 1;
+                        }
+                    }
+                    that.ajaxTurn2Page(contextSel,baseUrl,number,target,callback);
                 });
             }
         }

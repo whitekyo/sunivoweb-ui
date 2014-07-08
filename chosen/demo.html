@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>chosen-demo</title>
+    <link rel="stylesheet" href="js/chosen/chosen/chosen.css"/>
+    <style type="text/css">
+        .sel { width: 200px;}
+    </style>
+</head>
+<body>
+<select name="" id="" class="chosen sel">
+    <option value="1">张三</option>
+    <option value="2">李四</option>
+    <option value="3">王五</option>
+</select>
+<script type="text/javascript" src="../jQuery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../underscore-1.6.js"></script>
+<script type="text/javascript" src="js/chosen/chosen/chosen.jquery.js"></script>
+<script type="text/javascript" src="js/SunivoWeb-ui-1.0.2.js"></script>
+<script type="text/javascript">
+    var chosen = new sw();
+    chosen.chosen();
+    $('.sel').change(function(){
+
+    });
+</script>
+</body>
+</html>
