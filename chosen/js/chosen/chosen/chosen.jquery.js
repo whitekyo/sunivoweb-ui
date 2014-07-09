@@ -1011,7 +1011,6 @@ Copyright (c) 2011 by Harvest
     Chosen.prototype.choice_cancel = function(){
         var _element = this.form_field,_target = $(_element).next();
         if(!_element.multiple){
-            console.log('read me');
             _target.on('mouseenter',function(){
                 if($(this).find('span').html()){
                     $(this).find('.x-chose-cancel').show();

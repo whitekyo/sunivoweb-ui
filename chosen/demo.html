@@ -24,9 +24,6 @@
 <script type="text/javascript">
     var chosen = new sw();
     chosen.chosen();
-    $('.sel').change(function(){
-
-    });
     $('.yc').on('click',function(){
         var o = $('select').find('option:last');
         o[0].selected = true;
@@ -35,6 +32,8 @@
     $('.y').on('click',function(){
         console.log($('.sel').val());
     });
+    $('.sel').trigger('liszt:open');
+    $('.sel').trigger('liszt:activate');
 </script>
 </body>
 </html>
