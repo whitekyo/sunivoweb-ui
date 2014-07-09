@@ -112,7 +112,6 @@ Copyright (c) 2011 by Harvest
       this.set_up_html();
       this.register_observers();
       this.finish_setup();
-      console.log(options);
       if(options&&options.choice_cancel){
           this.choice_cancel();
       }

@@ -1,61 +1,0 @@
-10
-
-dir
-362
-http://192.168.1.222:18080/svn/SunivoWeb/trunk/src/src/main/webapp/resources/thirdparty/lib
-http://192.168.1.222:18080/svn/SunivoWeb
-
-
-
-2014-05-13T07:08:37.172514Z
-351
-yangcheng
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-cda42343-5937-4010-8c24-7dc5f4cb5e57
-
-bootstrap
-dir
-
-bootstrap-datepicker
-dir
-
-bootstrap-datetimepicker-master
-dir
-
-bootstrap-timepicker
-dir
-
-chart
-dir
-
-chosen
-dir
-
-icheck
-dir
-
-jquery-qrcode-master
-dir
-
-jquery-ui-1.10.3.custom
-dir
-
-jquery-validation-1.11.1
-dir
-
-jquery.validationEngine
-dir
-

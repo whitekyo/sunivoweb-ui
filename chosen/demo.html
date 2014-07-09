@@ -14,6 +14,8 @@
     <option value="2">李四</option>
     <option value="3">王五</option>
 </select>
+<a href="javascript:void(0);" class="yc">点我改变</a>
+<a href="javascript:void(0);" class="y">获取当前值</a>
 <script type="text/javascript" src="../jQuery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../underscore-1.6.js"></script>
@@ -24,6 +26,14 @@
     chosen.chosen();
     $('.sel').change(function(){
 
+    });
+    $('.yc').on('click',function(){
+        var o = $('select').find('option:last');
+        o[0].selected = true;
+        $('.sel').trigger("liszt:updated");
+    });
+    $('.y').on('click',function(){
+        console.log($('.sel').val());
     });
 </script>
 </body>

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="SunivoWeb:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="SunivoWeb.war">
-      <element id="artifact" artifact-name="SunivoWeb:war exploded" />
-    </root>
-  </artifact>
-</component>
