@@ -590,7 +590,10 @@
         chosen : function() {
             var ctx = arguments.length > 0 ? arguments[0] : null,
                 t = $("select.chosen", ctx);
-            if (!t.length) return 0;
+            if (!t.length){
+                if(util.isJQueryDom(ctx)) t = ctx
+                else return 0
+            };
             if (!$.fn.chosen) return console.log('handleChosen init failed! chosen is undefined!');
             return t.chosen({allow_single_deselect: true});
         },
@@ -598,35 +601,24 @@
             var ctx = arguments.length > 0 ? arguments[0] : null,
                 t= $("input.icheck", ctx),
                 _types = ['blue', 'orange', 'red', 'green', 'yellow', 'grey', 'pink', 'purple', 'white'];
-            if (!t.length&&util.isJQueryDom(ctx)) return 0;
-            if (!$.fn.iCheck) return console.log('handleIcheck init failed! icheck is undefined!');
-            if(!ctx||util.isJQueryDom(ctx)){
-                return t.each(function() {
-                    var $this = $(this), _type = '-blue', i, j;
-                    for (i = 0, j = _types.length; i < j; i++) {
-                        if ($this.hasClass(_types[i])) {
-                            _type = '-' + _types[i];break;
-                        }
-                    }
-                    $this.iCheck({
-                        checkboxClass : ('icheckbox_minimal' + _type),
-                        radioClass : ('iradio_minimal' + _type)
-                    });
-                });
-            }else if($.isArray(ctx)&&ctx.length&&util.isJQueryDom(ctx[0])){
-                $(ctx).each(function(){
-                    var  _type = '-blue', i, j;
-                    for (i = 0, j = _types.length; i < j; i++) {
-                        if (this.hasClass(_types[i])) {
-                            _type = '-' + _types[i];break;
-                        }
-                    }
-                    this.iCheck({
-                        checkboxClass : ('icheckbox_minimal' + _type),
-                        radioClass : ('iradio_minimal' + _type)
-                    });
-                });
+            console.log(t);
+            if (!t.length){
+                if(util.isJQueryDom(ctx)) t = ctx
+                else return 0
             }
+            if (!$.fn.iCheck) return console.log('handleIcheck init failed! icheck is undefined!');
+            t.each(function(){
+                var $this = $(this), _type = '-blue', i, j;
+                for (i = 0, j = _types.length; i < j; i++) {
+                    if ($this.hasClass(_types[i])) {
+                        _type = '-' + _types[i];break;
+                    }
+                }
+                $this.iCheck({
+                    checkboxClass : ('icheckbox_minimal' + _type),
+                    radioClass : ('iradio_minimal' + _type)
+                });
+            });
 
         },
         share : {

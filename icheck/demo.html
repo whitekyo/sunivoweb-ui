@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>icheck</title>
+    <link rel="stylesheet" href="skins/minimal/_all.css"/>
+</head>
+<body>
+<h2>默认初始化页面上所有标有icheck类名的checkbox框</h2>
+<input type="checkbox" class="icheck"/>
+<h2>异步初始化icheck</h2>
+<div class="insertDiv"></div>
+<a href="javascript:void(0);" class="addScript">点我插入一段脚本</a>
+<h2>初始化div下的某一个或某一些icheck</h2>
+<a href="javascript:void(0);" class="initIcheck">点我初始化第二个icheck</a>
+<input type="checkbox" class="icheck" />
+<input type="checkbox" id="check2"/>
+<script type="text/javascript" src="demo/js/jquery.js"></script>
+<script type="text/javascript" src="jquery.icheck.min.js"></script>
+<script type="text/javascript" src="../underscore-1.6.js"></script>
+<script type="text/javascript" src="../SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js"></script>
+<script type="text/javascript">
+    var icheck = new sw(),
+            htmlFramgent = '<div class="newScript"><input type="checkbox" class="icheck"/></div>';
+    icheck.icheck();
+    $('.addScript').on('click',function(){
+        $('.insertDiv').append(htmlFramgent);
+        icheck.icheck($('.newScript'));
+    });
+    $('.initIcheck').on('click',function(){
+        icheck.icheck($('#check2'));
+    });
+</script>
+</body>
+</html>

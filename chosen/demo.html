@@ -6,34 +6,50 @@
     <link rel="stylesheet" href="js/chosen/chosen/chosen.css"/>
     <style type="text/css">
         .sel { width: 200px;}
+        #sel1 { width: 200px;}
+        #sel2 { width: 200px;}
     </style>
 </head>
 <body>
+<h2>异步进来的脚本，进行初始化</h2>
 <select name="" id="" class="chosen sel">
+    <option value=""></option>
     <option value="1">张三</option>
     <option value="2">李四</option>
     <option value="3">王五</option>
 </select>
-<a href="javascript:void(0);" class="yc">点我改变</a>
-<a href="javascript:void(0);" class="y">获取当前值</a>
+<a href="javascript:void(0);" class="addScript">点我插入一段脚本</a>
+<h2>我想为一个div下某一个select进行初始化</h2>
+<div class="all">
+    <select name="" id="sel1" class="chosen">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+    <select name="" id="sel2">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+</div>
+<a href="javascript:void(0);" class="newAnother">点我初始化第二个select</a>
 <script type="text/javascript" src="../jQuery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../underscore-1.6.js"></script>
 <script type="text/javascript" src="js/chosen/chosen/chosen.jquery.js"></script>
-<script type="text/javascript" src="js/SunivoWeb-ui-1.0.2.js"></script>
+<script type="text/javascript" src="../SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js"></script>
 <script type="text/javascript">
-    var chosen = new sw();
+    var chosen = new sw(),
+        htmlFragment = '<div class="newScript"><select class="chosen"><option value="1">1</option><option value="2">2</option></select></div>';
     chosen.chosen();
-    $('.yc').on('click',function(){
-        var o = $('select').find('option:last');
-        o[0].selected = true;
-        $('.sel').trigger("liszt:updated");
+    $('.addScript').on('click',function(){
+        $('body').append(htmlFragment);
+        chosen.chosen($('.newScript'));
     });
-    $('.y').on('click',function(){
-        console.log($('.sel').val());
+    $('.newAnother').on('click',function(){
+        $('#sel2').addClass('chosen');
+        chosen.chosen($('#sel2'));
     });
-    $('.sel').trigger('liszt:open');
-    $('.sel').trigger('liszt:activate');
 </script>
 </body>
 </html>

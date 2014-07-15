@@ -112,9 +112,6 @@ Copyright (c) 2011 by Harvest
       this.set_up_html();
       this.register_observers();
       this.finish_setup();
-      if(options&&options.choice_cancel){
-          this.choice_cancel();
-      }
     }
 
     AbstractChosen.prototype.set_default_values = function() {
@@ -333,7 +330,7 @@ Copyright (c) 2011 by Harvest
       if (this.is_multiple) {
         container_div.html('<ul class="chzn-choices"><li class="search-field"><input type="text" value="' + this.default_text + '" class="default" autocomplete="off" style="width:25px;" /></li></ul><div class="chzn-drop" style="left:-9000px;"><ul class="chzn-results"></ul></div>');
       } else {
-        container_div.html('<a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>' + this.default_text + '</span><i class="x-chose-cancel"></i><div><b></b></div></a><div class="chzn-drop" style="left:-9000px;"><div class="chzn-search"><input type="text" autocomplete="off" /></div><ul class="chzn-results"></ul></div>');
+        container_div.html('<a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>' + this.default_text + '</span><div><b></b></div></a><div class="chzn-drop" style="left:-9000px;"><div class="chzn-search"><input type="text" autocomplete="off" /></div><ul class="chzn-results"></ul></div>');
       }
       //this.form_field_jq.hide().after(container_div); // MARK replace to the next line  - caihuazhi 08.17
       this.form_field_jq.after(container_div); // replace for the prev line
@@ -1006,22 +1003,6 @@ Copyright (c) 2011 by Harvest
         string += this.generate_random_char();
       }
       return string;
-    };
-
-    Chosen.prototype.choice_cancel = function(){
-        var _element = this.form_field,_target = $(_element).next();
-        if(!_element.multiple){
-            _target.on('mouseenter',function(){
-                if($(this).find('span').html()){
-                    $(this).find('.x-chose-cancel').show();
-                }
-            }).on('mouseleave',function(){
-                $(this).find('.x-chose-cancel').hide();
-            }).on('click','.x-chose-cancel',function(){
-                $(this).prev().html('');
-            });
-        }
-
     };
 
     return Chosen;

@@ -2,7 +2,147 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider/js/slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/aero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/aero@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/arrow-bottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/arrow-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/blue@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/flat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/flat@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/futurico/futurico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/futurico/futurico@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/green@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/grey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/grey@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/header-line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/icheck.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-fork.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-github.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-lab.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-options.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-star.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/line@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/minimal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/minimal@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/orange@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/pink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/pink@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/polaris/polaris.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/polaris/polaris@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/purple@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/square.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/square@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/white@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/yellow@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/_all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/_all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/_all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/_all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/aero.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/custom.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/flat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/futurico/futurico.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/jquery.icheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/jquery.icheck.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/line.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-bold.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/pink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/polaris/polaris.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/purple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/square.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/yellow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/zepto.icheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/zepto.icheck.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/js/zepto.js" />
+      <change type="DELETED" beforePath="D:\workspace-yc\sunivoweb\sunivoweb-ui\chosen\js\SunivoWeb-ui-1.0.2.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css" afterPath="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js" afterPath="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chosen/demo.html" afterPath="$PROJECT_DIR$/chosen/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sunivoweb-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,37 +165,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="demo.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chosen/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="4" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.78591955" vertical-offset="31" max-vertical-offset="748">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chosen.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="354" column="175" selection-start="8166" selection-end="8166" vertical-scroll-proportion="0.0" vertical-offset="5615" max-vertical-offset="6324">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chosen.jquery.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748">
+            <state line="39" column="75" selection-start="1392" selection-end="1392" vertical-scroll-proportion="-17.653847" vertical-offset="204" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SunivoWeb-ui-1.0.2.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chosen/js/SunivoWeb-ui-1.0.2.js">
+        <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="582" column="38" selection-start="22610" selection-end="22610" vertical-scroll-proportion="0.0" vertical-offset="9894" max-vertical-offset="21471">
+            <state line="603" column="27" selection-start="23520" selection-end="23520" vertical-scroll-proportion="0.0" vertical-offset="9884" max-vertical-offset="21233">
+              <folding>
+                <marker date="1405405744398" expanded="false" signature="1272:1286" placeholder="..." />
+                <marker date="1405405744398" expanded="false" signature="2702:2716" placeholder="..." />
+                <marker date="1405405744398" expanded="false" signature="16912:16938" placeholder="..." />
+                <marker date="1405405744398" expanded="false" signature="19503:19515" placeholder="..." />
+                <marker date="1405405744398" expanded="false" signature="37258:37297" placeholder="..." />
+                <marker date="1405405744398" expanded="false" signature="38273:38312" placeholder="..." />
+                <marker date="1405405744398" expanded="false" signature="49963:49982" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/icheck/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="7" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.685879" vertical-offset="0" max-vertical-offset="694">
               <folding />
             </state>
           </provider>
@@ -92,12 +231,13 @@
         <option value="E:/项目/logway/trunk/src/logway-web-in/src/main/webapp/RES/html/demo.html" />
         <option value="E:/项目/logway/trunk/src/logway-web/src/main/webapp/RES/html/demo.html" />
         <option value="$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js" />
-        <option value="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
         <option value="$PROJECT_DIR$/chosen/js/jquery-migrate-1.2.1.min.js" />
+        <option value="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js" />
         <option value="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css" />
         <option value="$PROJECT_DIR$/chosen/js/SunivoWeb-ui-1.0.2.js" />
-        <option value="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js" />
         <option value="$PROJECT_DIR$/chosen/demo.html" />
+        <option value="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
+        <option value="$PROJECT_DIR$/icheck/demo.html" />
       </list>
     </option>
   </component>
@@ -133,7 +273,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -162,23 +301,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="slider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="icheck" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="vcs.Subversion" />
-    <property name="last_opened_file_path" value="E:/杂" />
+    <property name="last_opened_file_path" value="E:/项目/V2.0" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -186,6 +322,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\slider\js" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\chosen\js" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\upload\js" />
@@ -240,7 +377,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -255,11 +392,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -279,6 +416,40 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748">
+          <folding>
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chosen/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="4" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="354" column="175" selection-start="8166" selection-end="8166" vertical-scroll-proportion="0.0" vertical-offset="5615" max-vertical-offset="6324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748">
+          <folding>
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chosen/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="4" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="748">
@@ -296,14 +467,10 @@
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chosen/js/SunivoWeb-ui-1.0.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="582" column="38" selection-start="22610" selection-end="22610" vertical-scroll-proportion="0.0" vertical-offset="9894" max-vertical-offset="21471">
-          <folding />
+          <folding>
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -324,20 +491,16 @@
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="14" selection-start="2873" selection-end="2873" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="3468">
-          <folding />
+          <folding>
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/jquery-migrate-1.2.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="6876" selection-end="6876" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chosen/js/SunivoWeb-ui-1.0.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="582" column="38" selection-start="22610" selection-end="22610" vertical-scroll-proportion="0.0" vertical-offset="9617" max-vertical-offset="21471">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/demo.html">
@@ -470,15 +633,6 @@
         <state line="12" column="37" selection-start="405" selection-end="405" vertical-scroll-proportion="0.29310346" vertical-offset="0" max-vertical-offset="696" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1257" column="20" selection-start="52156" selection-end="52156" vertical-scroll-proportion="5.747532" vertical-offset="17294" max-vertical-offset="21471">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/lib/chosen.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7208" />
@@ -499,40 +653,67 @@
         <state line="17" column="14" selection-start="568" selection-end="568" vertical-scroll-proportion="0.20689656" vertical-offset="145" max-vertical-offset="867" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css">
+    <entry file="file://$PROJECT_DIR$/slider/js/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="354" column="175" selection-start="8166" selection-end="8166" vertical-scroll-proportion="0.0" vertical-offset="6018" max-vertical-offset="6324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chosen/js/SunivoWeb-ui-1.0.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="582" column="38" selection-start="22610" selection-end="22610" vertical-scroll-proportion="0.0" vertical-offset="9617" max-vertical-offset="21471">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748">
+        <state line="113" column="26" selection-start="3269" selection-end="3269" vertical-scroll-proportion="-18.407408" vertical-offset="1339" max-vertical-offset="17340">
+          <folding>
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="54" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.5323529" vertical-offset="743" max-vertical-offset="6324">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slider/js/slider.js">
+    <entry file="file://$PROJECT_DIR$/icheck/demo/js/zepto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icheck/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="603" column="27" selection-start="23520" selection-end="23520" vertical-scroll-proportion="0.0" vertical-offset="9884" max-vertical-offset="21233">
           <folding>
-            <marker date="1404906258547" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1404906258547" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1405405744398" expanded="false" signature="1272:1286" placeholder="..." />
+            <marker date="1405405744398" expanded="false" signature="2702:2716" placeholder="..." />
+            <marker date="1405405744398" expanded="false" signature="16912:16938" placeholder="..." />
+            <marker date="1405405744398" expanded="false" signature="19503:19515" placeholder="..." />
+            <marker date="1405405744398" expanded="false" signature="37258:37297" placeholder="..." />
+            <marker date="1405405744398" expanded="false" signature="38273:38312" placeholder="..." />
+            <marker date="1405405744398" expanded="false" signature="49963:49982" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="4" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.78591955" vertical-offset="31" max-vertical-offset="748">
+        <state line="39" column="75" selection-start="1392" selection-end="1392" vertical-scroll-proportion="-17.653847" vertical-offset="204" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icheck/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="7" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.685879" vertical-offset="0" max-vertical-offset="694">
           <folding />
         </state>
       </provider>
