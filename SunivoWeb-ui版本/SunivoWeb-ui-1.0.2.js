@@ -5,10 +5,7 @@
  * Time: 涓嬪崍9:05
  * To change this template use File | Settings | File Templates.
  */
-/**
- * console妫�煡锛孖E6-7娌℃湁console锛孖E8-9鍙兘浼氬嚭閿�
- * @type {*|{log: Function}}
- */
+
 (function($,_,w){
     /*针对IE8，9需要在F12中才能调用console，在debug状态中查看console*/
 
@@ -21,7 +18,7 @@
     w.console = w.console || console;
     var SW = function(){},
         /**
-         * defaultConfig鍜孌efmodal鏄叧浜庢柟娉昪reateModal鐨勫垵濮嬪寲鍙傛暟
+         * defaultConfig和Defmodal是关于方法createModal的初始化参数
          */
             defaultConfig = {
             defaults: false,
@@ -47,12 +44,14 @@
         Defmodal = {
             Wrap : '<div class="modal fade" style="display: none;" id="#">',
             Header: '<div class="modal-header">#',
-            //Close: '<a class="close" data-dismiss="modal" event="cancel">脳</a>',
             Body: '<div class="modal-body">',
             Footer: '<div class="modal-footer"><a href="#" class="btn btn-primary" data-dismiss="modal" event="ensure">纭畾</a><a href="#" class="btn" data-dismiss="modal" event="cancel">鍙栨秷</a></div>'
         },
         GlobalModalQueue = [];
-    //宸ュ叿绫�
+    /**
+     * 工具类
+     * @type {{isbrowser: isbrowser, isJQueryDom: isJQueryDom, randomNumber: randomNumber}}
+     */
     var util = {
         //isbrowser依赖client
         isbrowser: function(){
@@ -77,11 +76,11 @@
             return pwd;
         }
     };
-    //涓簂oading璁剧疆锛屽涓嬩负鍗曚緥妯″紡
+    //为loading设置，如下为单例模式
     var Universe;
     function getSingleInstance(){
         var instance;
-        //loading鍒堕�宸ュ巶锛岀敓浜oading鏁堟灉
+        //loading制造工厂，生产loading效果
         function loadFactory(){
             var loadDom = '<div class="x-load" style="display: none;"><img src="../customize/img/yc/loading5.GIF"/></div>';
             return $(loadDom);
@@ -105,7 +104,7 @@
         return Universe;
     }
     Universe = getSingleInstance();
-    //nav宸ュ叿绫�
+    //nav工具类
     var navUtil = {
         isRootElement: function(context){
             return context.parent().parent()[0].id == 'pordAttr';
@@ -154,13 +153,13 @@
             _context.find('a').removeClass('nav-show nav-active second-on on');
         }
     };
-    //閿欒鎻愮ず
+    //错误提示
     var errorinfoTmpl = $("<div class='alert'><button type='button' class='close' data-dismiss='alert'>脳</button><h4></h4><div class='info'></div></div>"),errArr = [],formArr = [];
     SW.prototype = {
         constructor:SW,
         //UI绫�
         /**
-         * createModal鏂规硶涓昏鏄В鏋愰厤缃弬鏁帮紝鏌ヨmodal闃熷垪銆傚鏋滄病鏈夊垯閫氳繃鍐呯疆鏂规硶createModalFactory鍒涘缓涓�釜鏍规嵁閰嶇疆鍙傛暟璁惧畾鐨刴odal
+         * createModal方法主要是解析配置参数，查询modal队列。如果没有则通过内置方法createModalFactory创建一个根据配置参数设定的modal
          *
          */
         createModal: function(config){
@@ -273,7 +272,7 @@
 
         },
         /**
-         * 鍐呯疆鏂规硶locationCus鐢ㄦ潵瑙ｆ瀽url锛屽尮閰嶆垚鍔熷悗璋冪敤loactionController鎵ц鐩稿簲鏄剧ず閫昏緫锛屾瘡娆℃竻绌洪〉闈㈡樉绀虹殑鏃跺�navUtil鎻愪緵refresh鏂规硶娓呯┖銆�
+         * 内置方法locationCus用来解析url，匹配成功后调用loactionController执行相应显示逻辑，每次清空页面显示的时候navUtil提供refresh方法清空。
          * @param _url
          * @param _context
          */
@@ -301,7 +300,7 @@
             locationCus(_url,_context);
         },
         /**
-         * 涓巒avLocation鍏敤navUtil鍐呯疆鏂规硶鍖咃紝鍐呯疆鏂规硶controller鎵ц鐩稿簲閫昏緫
+         * 与navLocation公用navUtil内置方法包，内置方法controller执行相应逻辑
          * @param _context
          */
         nav: function(_context){
@@ -329,8 +328,8 @@
             });
         },
         /**
-         * 澶勭悊琛ㄥ崟鏁板瓧鐨勬牸寮忓寲
-         * 闇�寮曞叆autoNumeric.js
+         * 处理表单数字的格式化
+         * 需要引入autoNumeric.js
          */
         autoNumeric: function(){
             var ctx = arguments.length > 0 ? arguments[0] : null;
@@ -343,24 +342,24 @@
             }
         },
         /**
-         * 閿欒鎻愮ず,灏嗘墍鏈変俊鎭瓨鍌ㄥ湪鍐呯疆鏁扮粍errArr涓粺涓�繚瀛樸�閿欒鎻愮ず锛屼富瑕佺淮鎶よ繖涓暟缁勶紝濡傛灉鏁扮粍涓病鏈夊�锛屽垯娌℃湁閿欒鎻愮ず锛屽惁鍒欐彁绀洪敊璇俊鎭�
-         * context涓篺orm琛ㄥ崟锛宒om涓哄綋鍓嶈楠岃瘉鐨勬帶浠�
+         * 错误提示,将所有信息存储在内置数组errArr中统一保存。错误提示，主要维护这个数组，如果数组中没有值，则没有错误提示，否则提示错误信息
+         * context为form表单，dom为当前被验证的控件
          */
         errorInfo: function(context,type,str,dom,location){
             var id = context.attr('id')? context.attr('id'): util.randomNumber(4),form,tmpl;
             var title,errText = '',obj = {},delObj;
             switch (type){
                 case "alert-block":
-                    title = "璀﹀憡 !";//Warning
+                    title = "警告 !";//Warning
                     break;
                 case "alert-error":
-                    title = "閿欒 !";//Error
+                    title = "错误 !";//Error
                     break;
                 case "alert-success":
-                    title = "鎴愬姛 !";//Success
+                    title = "成功 !";//Success
                     break;
                 default:
-                    title = "淇℃伅 !";//Info
+                    title = "信息 !";//Info
             }
             form = findFormById(formArr,id)[0];
             if(!form){
@@ -378,7 +377,7 @@
                 var _arr = str.split(':');
                 if(!findErrorByName(form.errArr,_arr[0]).length){
                     obj.name = _arr[0];
-                    obj.content = obj.name + '椤癸細' + _arr[1];
+                    obj.content = obj.name + '项：' + _arr[1];
                     obj.flag = true;
                     obj.context = dom;
                     form.errArr.push(obj);
@@ -433,8 +432,8 @@
             }
         },
         /**
-         * form涓婁笅浼哥缉
-         * fold鏂规硶瑙ｆ瀽dom涓婄殑閰嶇疆鍙傛暟锛宊createFoldTab鏂规硶鏄牴鎹厤缃弬鏁板垱寤轰几缂╂銆傚苟娣诲姞鍒版寚瀹歞om涓娿�
+         * form上下伸缩
+         * fold方法解析dom上的配置参数，_createFoldTab方法是根据配置参数创建伸缩框。并添加到指定dom上。
          */
         fold: function(){
             if($('[data-fold]').length){
@@ -509,11 +508,11 @@
             return $div;
         },
         /**
-         * 缃《
+         * 置顶
          */
         stick: function(flag){
             $('.main-footer').append('<div class="backWaperWaper" style="float:right;"><div class="backWaper"><a href=""><i class="icoAll ico-25"></i></a></div></div>');
-            if(flag && !$('.ico-24').length){//涓�釜椤甸潰鍙湁涓�釜缃《
+            if(flag && !$('.ico-24').length){//一个页面只有一个置顶
                 var $backToTopFun = function() {
                     var st = $(document).scrollTop();
                     st > 0? $(".ico-24").fadeIn(200) : $(".ico-24").hide();
@@ -524,7 +523,7 @@
                     $("html, body").animate({ scrollTop: 0 }, 500);
 
                 });
-                //缁戝畾婊氬姩浜嬩欢
+                //绑定滚动事件
                 $(window).bind("scroll", $backToTopFun);
             }
         },
@@ -648,9 +647,9 @@
             }
         },
         /**
-         * 楠岃瘉锛屼袱绉嶆ā寮忥紝涓�闆嗘垚bootstrap鐨則ooltip鐨勬彁绀猴紝鍙﹀涓�闆嗘垚鏈簱鐨別rrorInfo鏂规硶锛屽皢閿欒淇℃伅鏀剧疆鎸囧畾浣嶇疆
-         * BubbleTip:鍐掓场鎻愮ず
-         * FixTip:鍥哄畾浣嶇疆鎻愮ず
+         * 验证，两种模式，一种集成bootstrap的tooltip的提示，另外一种集成本库的errorInfo方法，将错误信息放置指定位置
+         * BubbleTip:冒泡提示
+         * FixTip:固定位置提示
          */
         formValidation: function(options){
             var obj = {
@@ -679,7 +678,7 @@
                 obj.rules = options.rules;
             }
             /**
-             * 灏嗗師鐢焥elect涓庡叾鐢熸垚鐨刢hosen寮忕殑select杩涜鍏宠仈銆傛牳蹇冩槸鐩戝惉鍘熺敓select涓婄殑浜嬩欢锛屽叧鑱斿悗锛宑hosen灏卞彲浠ュ皢瑙﹀彂浜嬩欢杞Щ鍒板叾鍘熺敓鐨剆elect韬笂锛屽啀閫氳繃select鐨勯獙璇侊紝鍐嶄綔鐢ㄤ簬chosen涓婏紝鏈姛鑳藉彧闄愪簬椤甸潰鎷ユ湁chosen鐨勬儏鍐点�
+             * 将原生select与其生成的chosen式的select进行关联。核心是监听原生select上的事件，关联后，chosen就可以将触发事件转移到其原生的select身上，再通过select的验证，再作用于chosen上，本功能只限于页面拥有chosen的情况。
              */
             function workForChosenRelevance(){
                 var message = ['required','remote','email','url','date','dateISO','number','digits','creditcard','equalTo','maxlength','minlength','rangelength','range','max','min'];
@@ -804,18 +803,18 @@
             options._context.validate();
         },
         /**
-         * 璁剧疆涓洪椤�
+         * 设置为首页
          */
         setHome: function(url){
             if (document.all) {
                 document.body.style.behavior='url(#default#homepage)';
                 document.body.setHomePage(url);
             }else{
-                alert("鎮ㄥソ,鎮ㄧ殑娴忚鍣ㄤ笉鏀寔鑷姩璁剧疆椤甸潰涓洪椤靛姛鑳�璇锋偍鎵嬪姩鍦ㄦ祻瑙堝櫒閲岃缃椤甸潰涓洪椤�");
+                alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
             }
         },
         /**
-         * 娣诲姞鍒版敹钘忓す
+         * 添加到收藏夹
          * @param sURL
          * @param sTitle
          */
@@ -827,12 +826,12 @@
                 try{
                     window.sidebar.addPanel(sTitle, sURL, "");
                 }catch (e) {
-                    alert("鍔犲叆鏀惰棌澶辫触锛岃浣跨敤Ctrl+D杩涜娣诲姞,鎴栨墜鍔ㄥ湪娴忚鍣ㄩ噷杩涜璁剧疆.");
+                    alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
                 }
             }
         },
         /**
-         * 閭鑷姩琛ュ叏
+         * 邮箱自动补全
          */
         emailAutocomplete: function() {
             var ctx = arguments.length > 0 ? arguments[0] : null,
@@ -940,7 +939,7 @@
                 $(this).prev('.m-placeholder-input').focus();
             });
         },
-        /*鏂扮増閿欒淇℃伅*/
+        /*新版错误信息*/
         infoTip: function(){
             var _ = arguments[0],
                 title,

@@ -2,147 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/aero.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/aero.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/aero.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/aero@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/aero@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/aero@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/arrow-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/arrow-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/flat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/flat@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/futurico/futurico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/futurico/futurico@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/green@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/green@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/green@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/grey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/grey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/grey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/header-line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/icheck.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-fork.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-github.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-lab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-options.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/ie/icon-star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/line@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/minimal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/minimal@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/orange@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/orange@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/orange@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/pink@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/pink@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/pink@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/polaris/polaris.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/polaris/polaris@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/purple@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/purple@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/purple@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/red@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/red@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/red@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/square.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/square@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/white@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/yellow@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/yellow@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/yellow@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/_all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/_all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/minimal/_all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/_all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/aero.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/aero.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/aero.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/custom.styl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/futurico/futurico.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/grey.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/grey.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/grey.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/jquery.icheck.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/jquery.icheck.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/line.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-bold.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/montserrat-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/orange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/orange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/orange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/pink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/pink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/pink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/polaris/polaris.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/purple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/purple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/purple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/square.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/flat/yellow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/line/yellow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/skins/square/yellow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/zepto.icheck.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/zepto.icheck.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icheck/demo/js/zepto.js" />
-      <change type="DELETED" beforePath="D:\workspace-yc\sunivoweb\sunivoweb-ui\chosen\js\SunivoWeb-ui-1.0.2.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css" afterPath="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js" afterPath="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chosen/demo.html" afterPath="$PROJECT_DIR$/chosen/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sunivoweb-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -174,27 +34,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SunivoWeb-ui-1.0.2.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SunivoWeb-ui-1.0.2.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="603" column="27" selection-start="23520" selection-end="23520" vertical-scroll-proportion="0.0" vertical-offset="9884" max-vertical-offset="21233">
+            <state line="1114" column="47" selection-start="46352" selection-end="46352" vertical-scroll-proportion="0.3125884" vertical-offset="18615" max-vertical-offset="21216">
               <folding>
-                <marker date="1405405744398" expanded="false" signature="1272:1286" placeholder="..." />
-                <marker date="1405405744398" expanded="false" signature="2702:2716" placeholder="..." />
-                <marker date="1405405744398" expanded="false" signature="16912:16938" placeholder="..." />
-                <marker date="1405405744398" expanded="false" signature="19503:19515" placeholder="..." />
-                <marker date="1405405744398" expanded="false" signature="37258:37297" placeholder="..." />
-                <marker date="1405405744398" expanded="false" signature="38273:38312" placeholder="..." />
-                <marker date="1405405744398" expanded="false" signature="49963:49982" placeholder="..." />
+                <element signature="e#0#156#0" expanded="false" />
+                <marker date="1405408550289" expanded="false" signature="1187:1201" placeholder="..." />
+                <marker date="1405408550289" expanded="true" signature="2632:2646" placeholder="..." />
+                <marker date="1405408550289" expanded="false" signature="16720:16746" placeholder="..." />
+                <marker date="1405408550289" expanded="false" signature="19310:19322" placeholder="..." />
+                <marker date="1405408550289" expanded="false" signature="36957:36996" placeholder="..." />
+                <marker date="1405408550289" expanded="false" signature="37972:38011" placeholder="..." />
+                <marker date="1405408550289" expanded="false" signature="49659:49678" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/icheck/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="7" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.685879" vertical-offset="0" max-vertical-offset="694">
+            <state line="30" column="36" selection-start="1211" selection-end="1211" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -236,8 +97,8 @@
         <option value="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css" />
         <option value="$PROJECT_DIR$/chosen/js/SunivoWeb-ui-1.0.2.js" />
         <option value="$PROJECT_DIR$/chosen/demo.html" />
-        <option value="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
         <option value="$PROJECT_DIR$/icheck/demo.html" />
+        <option value="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
       </list>
     </option>
   </component>
@@ -288,20 +149,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icheck" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -689,21 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="603" column="27" selection-start="23520" selection-end="23520" vertical-scroll-proportion="0.0" vertical-offset="9884" max-vertical-offset="21233">
-          <folding>
-            <marker date="1405405744398" expanded="false" signature="1272:1286" placeholder="..." />
-            <marker date="1405405744398" expanded="false" signature="2702:2716" placeholder="..." />
-            <marker date="1405405744398" expanded="false" signature="16912:16938" placeholder="..." />
-            <marker date="1405405744398" expanded="false" signature="19503:19515" placeholder="..." />
-            <marker date="1405405744398" expanded="false" signature="37258:37297" placeholder="..." />
-            <marker date="1405405744398" expanded="false" signature="38273:38312" placeholder="..." />
-            <marker date="1405405744398" expanded="false" signature="49963:49982" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chosen/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="75" selection-start="1392" selection-end="1392" vertical-scroll-proportion="-17.653847" vertical-offset="204" max-vertical-offset="1020">
@@ -713,8 +545,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/icheck/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="7" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.685879" vertical-offset="0" max-vertical-offset="694">
+        <state line="30" column="36" selection-start="1211" selection-end="1211" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="680">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1114" column="47" selection-start="46352" selection-end="46352" vertical-scroll-proportion="0.3125884" vertical-offset="18615" max-vertical-offset="21216">
+          <folding>
+            <element signature="e#0#156#0" expanded="false" />
+            <marker date="1405408550289" expanded="false" signature="1187:1201" placeholder="..." />
+            <marker date="1405408550289" expanded="true" signature="2632:2646" placeholder="..." />
+            <marker date="1405408550289" expanded="false" signature="16720:16746" placeholder="..." />
+            <marker date="1405408550289" expanded="false" signature="19310:19322" placeholder="..." />
+            <marker date="1405408550289" expanded="false" signature="36957:36996" placeholder="..." />
+            <marker date="1405408550289" expanded="false" signature="37972:38011" placeholder="..." />
+            <marker date="1405408550289" expanded="false" signature="49659:49678" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
