@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript" src="sw_define-1.0.2.js"></script>
+<script type="text/javascript">
+    /**
+     * create function A,return a private object
+     */
+    sw_define('A',function(){
+        var a = {
+            name: 'yangcheng'
+        }
+        return a;
+    });
+    /**
+     * create function B,return a private object
+     */
+    sw_define('B',function(){
+        var b = {
+            age: '25'
+        };
+        return b;
+    });
+    /**
+     * default function(main function)
+     */
+    sw_define(function(){
+        /**
+         * sw_define-1.0.1 style
+         */
+        var a = sw_always('A'),
+            b = sw_always('B');
+        console.log('大家好，我叫' + a.name + ' 我的年龄是' + b.age);
+        console.log(a.name);
+        /**
+         * sw_define-1.0.2 style
+         */
+        sw_module(['A','B'],function(a,b){
+            console.log('大家好，我叫' + a.name + ' 我的年龄是' + b.age);
+            sw_module(['A'],function(a){
+                console.log(a.name);
+            });
+        });
+    });
+    sw_execute('main');
+</script>
+</body>
+</html>

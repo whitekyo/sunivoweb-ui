@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sw_define/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sw_define/sw_define-1.0.2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\workspace-yc\sunivoweb\sunivoweb-ui\sw_define-1.0.1.js" afterPath="$PROJECT_DIR$/sw_define/sw_define-1.0.1.js" />
+      <change type="MOVED" beforePath="D:\workspace-yc\sunivoweb\sunivoweb-ui\sw_define-min-1.0.1.js" afterPath="$PROJECT_DIR$/sw_define/sw_define-min-1.0.1.js" />
     </list>
     <ignored path="sunivoweb-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,36 +31,27 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chosen/demo.html">
+        <entry file="file://$PROJECT_DIR$/sw_define/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="75" selection-start="1392" selection-end="1392" vertical-scroll-proportion="-17.653847" vertical-offset="204" max-vertical-offset="1020">
+            <state line="27" column="7" selection-start="549" selection-end="549" vertical-scroll-proportion="-11.076923" vertical-offset="171" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SunivoWeb-ui-1.0.2.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
+      <file leaf-file-name="demo.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1114" column="47" selection-start="46352" selection-end="46352" vertical-scroll-proportion="0.3125884" vertical-offset="18615" max-vertical-offset="21216">
-              <folding>
-                <element signature="e#0#156#0" expanded="false" />
-                <marker date="1405408550289" expanded="false" signature="1187:1201" placeholder="..." />
-                <marker date="1405408550289" expanded="true" signature="2632:2646" placeholder="..." />
-                <marker date="1405408550289" expanded="false" signature="16720:16746" placeholder="..." />
-                <marker date="1405408550289" expanded="false" signature="19310:19322" placeholder="..." />
-                <marker date="1405408550289" expanded="false" signature="36957:36996" placeholder="..." />
-                <marker date="1405408550289" expanded="false" signature="37972:38011" placeholder="..." />
-                <marker date="1405408550289" expanded="false" signature="49659:49678" placeholder="..." />
-              </folding>
+            <state line="20" column="5" selection-start="590" selection-end="590" vertical-scroll-proportion="0.48850575" vertical-offset="0" max-vertical-offset="1207">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icheck/demo.html">
+      <file leaf-file-name="sw_define-1.0.2.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sw_define/sw_define-1.0.2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="36" selection-start="1211" selection-end="1211" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="680">
+            <state line="59" column="6" selection-start="1676" selection-end="1685" vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="1547">
               <folding />
             </state>
           </provider>
@@ -99,6 +95,9 @@
         <option value="$PROJECT_DIR$/chosen/demo.html" />
         <option value="$PROJECT_DIR$/icheck/demo.html" />
         <option value="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
+        <option value="$PROJECT_DIR$/sw_define/sw_define-1.0.1.js" />
+        <option value="$PROJECT_DIR$/sw_define/sw_define-1.0.2.js" />
+        <option value="$PROJECT_DIR$/sw_define/demo.html" />
       </list>
     </option>
   </component>
@@ -134,6 +133,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,9 +152,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sunivoweb-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sunivoweb-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sw_define" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,21 +182,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\sw_define" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\slider\js" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\chosen\js" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\upload\js" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\sw_define" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -194,15 +203,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -265,12 +282,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748">
-          <folding>
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/demo.html">
@@ -289,12 +301,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748">
-          <folding>
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/demo.html">
@@ -313,12 +320,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748">
-          <folding>
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="492" column="53" selection-start="17388" selection-end="17388" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="17748" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/demo.html">
@@ -337,12 +339,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="14" selection-start="2873" selection-end="2873" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="3468">
-          <folding>
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="100" column="14" selection-start="2873" selection-end="2873" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="3468" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/jquery-migrate-1.2.1.min.js">
@@ -355,12 +352,12 @@
         <state line="17" column="14" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="867" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define-min-1.0.1.js">
+    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-min-1.0.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="784" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define-1.0.1.js">
+    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-1.0.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="22" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1258" />
       </provider>
@@ -380,12 +377,12 @@
         <state line="204" column="53" selection-start="7458" selection-end="7458" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="3655" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define-min-1.0.1.js">
+    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-min-1.0.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="784" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define-1.0.1.js">
+    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-1.0.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="22" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1258" />
       </provider>
@@ -425,16 +422,6 @@
         <state line="9" column="27" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/RES/RES/js/SunivoWeb-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="584" column="8" selection-start="22626" selection-end="23622" vertical-scroll-proportion="-1.1748942" vertical-offset="10659" max-vertical-offset="21369" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define-1.0.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="91" selection-start="287" selection-end="287" vertical-scroll-proportion="0.12195122" vertical-offset="0" max-vertical-offset="697" />
@@ -455,7 +442,7 @@
         <state line="142" column="6" selection-start="5953" selection-end="5953" vertical-scroll-proportion="0.47249648" vertical-offset="2079" max-vertical-offset="2788" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define-min-1.0.1.js">
+    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-min-1.0.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="784" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
@@ -468,11 +455,6 @@
     <entry file="file://E:/项目/logway/trunk/src/logway-web/src/main/webapp/RES/html/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="37" selection-start="4294" selection-end="4294" vertical-scroll-proportion="0.65153736" vertical-offset="1238" max-vertical-offset="1938" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="580" selection-end="580" vertical-scroll-proportion="0.12212644" vertical-offset="255" max-vertical-offset="1207" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base/demo.html">
@@ -507,12 +489,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="26" selection-start="3269" selection-end="3269" vertical-scroll-proportion="-18.407408" vertical-offset="1339" max-vertical-offset="17340">
-          <folding>
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405394062530" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="113" column="26" selection-start="3269" selection-end="3269" vertical-scroll-proportion="-18.407408" vertical-offset="1339" max-vertical-offset="17340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css">
@@ -524,45 +501,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/icheck/demo/js/zepto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/icheck/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26775">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26775" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1114" column="47" selection-start="46352" selection-end="46352" vertical-scroll-proportion="-0.1438646" vertical-offset="18938" max-vertical-offset="21216">
+          <folding>
+            <element signature="e#0#156#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icheck/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="36" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.73275864" vertical-offset="0" max-vertical-offset="696">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="75" selection-start="1392" selection-end="1392" vertical-scroll-proportion="-17.653847" vertical-offset="204" max-vertical-offset="1020">
+        <state line="39" column="75" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.6594828" vertical-offset="204" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/icheck/demo.html">
+    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-1.0.1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="1211" selection-end="1211" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="680">
+        <state line="20" column="52" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
+    <entry file="file://$PROJECT_DIR$/underscore-1.6.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1114" column="47" selection-start="46352" selection-end="46352" vertical-scroll-proportion="0.3125884" vertical-offset="18615" max-vertical-offset="21216">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709">
           <folding>
-            <element signature="e#0#156#0" expanded="false" />
-            <marker date="1405408550289" expanded="false" signature="1187:1201" placeholder="..." />
-            <marker date="1405408550289" expanded="true" signature="2632:2646" placeholder="..." />
-            <marker date="1405408550289" expanded="false" signature="16720:16746" placeholder="..." />
-            <marker date="1405408550289" expanded="false" signature="19310:19322" placeholder="..." />
-            <marker date="1405408550289" expanded="false" signature="36957:36996" placeholder="..." />
-            <marker date="1405408550289" expanded="false" signature="37972:38011" placeholder="..." />
-            <marker date="1405408550289" expanded="false" signature="49659:49678" placeholder="..." />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-1.0.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="6" selection-start="1676" selection-end="1685" vertical-scroll-proportion="0.0" vertical-offset="672" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sw_define/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="7" selection-start="549" selection-end="549" vertical-scroll-proportion="-11.076923" vertical-offset="171" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="590" selection-end="590" vertical-scroll-proportion="0.48850575" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
         </state>
       </provider>
     </entry>
