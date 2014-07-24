@@ -600,7 +600,6 @@
             var ctx = arguments.length > 0 ? arguments[0] : null,
                 t= $("input.icheck", ctx),
                 _types = ['blue', 'orange', 'red', 'green', 'yellow', 'grey', 'pink', 'purple', 'white'];
-            console.log(t);
             if (!t.length){
                 if(util.isJQueryDom(ctx)) t = ctx
                 else return 0
@@ -1043,6 +1042,60 @@
                     that.ajaxTurn2Page(contextSel,baseUrl,number,target,callback);
                 });
             }
+        },
+        /*scroll bar*/
+        scrollbars: function(){
+            $('.x-scroll').each(function(){
+                var content = $(this),$scroll = content.find('.x-scrollbar'),base,$show = content.find('.x-scrollcontent');
+                var showHeight = $show.outerHeight(),contentHeight = content.outerHeight();
+                $scroll.css({
+                    'height': contentHeight/showHeight*contentHeight
+                });
+                var marginTop = parseInt($scroll.css('top'));
+                console.log(marginTop);
+                currentHeight = contentHeight - $scroll.outerHeight();
+                $scroll.attr('flg','false');
+                $scroll.on('mousedown',function(e){
+                    base = e.clientY;
+                    $(this).attr('flg','true');
+                }).on('mouseup',function(){
+                    $(this).attr('flg','false');
+                    base = null;
+                }).on('mouseleave',function(){
+                    $(this).attr('flg','false');
+                    base = null;
+                }).on('mousemove',function(e){
+                    var displacement,_height,_content = $(this);
+                    if(_content.attr('flg') == 'true'){
+                        displacement = e.clientY - base;
+                        console.log(displacement);
+                        if(displacement>=0&&displacement <= currentHeight){
+                            if(marginTop >=0 && marginTop <= currentHeight-3){
+                                _height = marginTop + displacement;
+                                if(_height >= currentHeight-3){
+                                    _height = currentHeight-3;
+                                }
+                                _content.css({
+                                    'top': _height
+                                });
+                            }
+                        }
+                        if(displacement<0&&displacement>= -1*currentHeight){
+                            if(marginTop >=0 && marginTop <= currentHeight+3){
+                                _height = marginTop;
+                                _height = _height + displacement;
+                                console.log(_height);
+                                if(_height <= 0 ){
+                                    _height = 0;
+                                }
+                                _content.css({
+                                    'top': _height
+                                });
+                            }
+                        }
+                    }
+                });
+            });
         }
     };
     var clientSniff = {

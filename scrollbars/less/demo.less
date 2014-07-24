@@ -1,0 +1,41 @@
+/**
+ * @fileName demo
+ * @author leo<474398734@qq.com>
+ */
+@width: 200px;
+@height: 400px;
+@contentwidth: 420px;
+@baseWidth: 5px;
+@baseZindex: 0;
+.class1{
+  width:@width;
+  height:@height;
+  overflow: hidden;
+  position: relative;
+}
+.class2 {
+  width: 180px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.x-scrollbar {
+  width: @baseWidth;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 190px;
+  cursor: pointer;
+  border-radius: 2px;
+  z-index: @baseZindex+10;
+}
+.x-scrollbar-groove {
+  width: @baseWidth;
+  height: @height;
+  z-index: @baseZindex+1;
+  background-color: #c3bebe;
+  position: absolute;
+  top: 0px;
+  left: 190px;
+  border-radius: 2px;
+}

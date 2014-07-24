@@ -5,20 +5,13 @@
  * Time: 下午9:24
  * To change this template use File | Settings | File Templates.
  */
-(function (w) {
-    function randomNum(count){
-        var l = count || 32,
-            t = "ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz12345678",
-            num = '',i = 0;
-        for(i;i<l;i++){
-            num += t.charAt(Math.floor(Math.random()*48));
-        }
-        return num;
-    }
+
+(function(w){
     var globalQueue = [],
         _global = function(){};
     _global.findByName = function(name){
-        for(var i = 0,l=globalQueue.length;i<l;i++){
+        var i = 0,l;
+        for(i,l=globalQueue.length;i<l;i++){
             if(globalQueue[i].name == name){
                 return globalQueue[i];
             }
