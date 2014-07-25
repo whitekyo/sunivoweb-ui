@@ -32,6 +32,7 @@
 <p>2.插件目前没有提供结构的生成，需要自行书写结构，下面会做简单介绍</p>
 <br/>
 <h4>开始使用scrollbar.js</h4>
+<p style="color:red;">导入脚本</p>
 <pre>
 &lt;script type="text/javascript" src="jquery.js"&gt;&lt;script&gt;
 &lt;script type="text/javascript" src="scrollbar.js"&gt;&lt;script&gt;
