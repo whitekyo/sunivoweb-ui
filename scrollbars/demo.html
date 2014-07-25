@@ -31,7 +31,11 @@
 <script type="text/javascript" src="../jQuery-1.11.0.min.js"></script>
 <script type="text/javascript" src="scrollbars.js"></script>
 <script type="text/javascript">
-    $('.x-scroll').scrollbars();
+    $('.x-scroll').scrollbars({
+        callback: function(e){
+            console.log(e);
+        }
+    });
 </script>
 </body>
 </html>
