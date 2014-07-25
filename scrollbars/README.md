@@ -48,4 +48,55 @@
         &lt;div class="x-scrollbar"&gt;&lt;/div&gt;
     &lt;/div&gt;
 </div>
+1.我们可以看到x-scroll是整个插件的工作部分
+2.x-scrollcontent则是文字或者主体内容显示的部分
+3.x-scrollbar-groove为滚动条凹槽
+4.x-scrollbar则是滚动条
+5.因为没有在插件内部写死结构，小伙伴可以根据实际情况修改结果和样式。
 </pre>
+<p>添加上部分样式</p>
+<pre>
+.class1 {
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.class2 {
+  width: 180px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.x-scrollbar {
+  width: 5px;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  border-radius: 2px;
+  z-index: 10;
+}
+.x-scrollbar-groove {
+  width: 5px;
+  height: 400px;
+  z-index: 1;
+  background-color: #c3bebe;
+  position: absolute;
+  top: 0px;
+  left: 190px;
+  border-radius: 2px;
+}
+</pre>
+<p>初始化脚本，让滚动条动起来</p>
+<p>插件支持传入滚动条滚动时触发的方法。支持用户自定义</p>
+<pre>
+    $('.x-scroll').scrollbars({
+        callback: function(e){
+            console.log(e);
+        }
+    });
+</pre>
+<p>就这样，一个简单酷炫的滚动条就诞生了！</p>
+<p>如果有更好的建议或发现了bug，都可以联系我，请多关注我吧</p>
