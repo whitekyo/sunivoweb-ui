@@ -17,6 +17,8 @@
             this.createBar();
             this.bindEvent();
             this.mousewheel();
+            this.clearBlue();
+            this.reset();
         },
         createBar: function(){
             var contentHeight = this.elem.height(),
@@ -31,25 +33,27 @@
         bindEvent: function(){
             var that = this;
             this.bars.on('mousedown',function(e){
+                e.stopPropagation();
                 that.flg = true;
                 that.base = e.clientY;
                 that.marginTop = parseInt(that.bars.css('top'));
                 that.wordMt = parseInt(that.word.css('top'));
-            }).on('mouseup',function(){
+                that.clearBlue();
+            })
+            $(document).on('mouseup',that.bars,function(e){
+                e.stopPropagation();
                 that.flg = false;
                 that.base = null;
-            }).on('mouseleave',function(){
-                that.flg = false;
-                that.base = null;
-            }).on('mousemove',function(e){
+            }).on('mousemove',that.bars,function(e){
+                e.stopPropagation();
                 var displacement,_height,_wordHeight;
                 if(that.flg){
                     displacement = e.clientY - that.base;
-                    if(displacement>=0&&displacement <= that.currentHeight){
-                        that.up(displacement,_height,_wordHeight);
+                    if(displacement >= 0 && displacement <= that.currentHeight){
+                        that.up(displacement,_height,_wordHeight,e);
                     }
                     if(displacement<0&&displacement>= -1*that.currentHeight){
-                        that.down(displacement,_height,_wordHeight);
+                        that.down(displacement,_height,_wordHeight,e);
                     }
                 }
             });
@@ -126,6 +130,21 @@
                 }
             });
 
+        },
+        clearBlue: function(){
+            $('body').on('selectstart',function(){
+                return false;
+            });
+            $('body').css({
+                '-moz-user-select':'none',
+                '-khtml-user-select': 'none'
+            });
+        },
+        reset: function(){
+            this.word.on('mousedown',function(){
+                $('body').off('selectstart');
+                document.body.removeAttribute('style');
+            });
         }
     };
     $.fn.scrollbars = function(options){
