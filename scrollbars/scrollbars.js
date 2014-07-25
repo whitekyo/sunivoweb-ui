@@ -99,35 +99,32 @@
         },
         mousewheel: function(){
             var that = this;
-            if(document.all){
-                this.word.on('mousewheel',function(e){
-                    var displacement,_height,_content = $(this),_wordHeight;
-                    if(parseInt(e.originalEvent.wheelDelta) > 0){
-                        that.marginTop = parseInt(that.bars.css('top'));
-                        that.wordMt = parseInt(that.word.css('top'));
-                        that.down(-10,_height,_wordHeight,e);
-                    }else{
-                        that.marginTop = parseInt(that.bars.css('top'));
-                        that.wordMt = parseInt(that.word.css('top'));
-                        that.up(10,_height,_wordHeight,e);
-                    }
-                });
-            }else{
-                this.word.on('DOMMouseScroll',function(e){
-                    var displacement,_height,_content = $(this),_wordHeight;
-                    if(parseInt(e.originalEvent.detail) > 0){
-                        //down
-                        that.marginTop = parseInt(that.bars.css('top'));
-                        that.wordMt = parseInt(that.word.css('top'));
-                        that.up(10,_height,_wordHeight,e);
-                    }else{
-                        //up
-                        that.marginTop = parseInt(that.bars.css('top'));
-                        that.wordMt = parseInt(that.word.css('top'));
-                        that.down(-10,_height,_wordHeight,e);
-                    }
-                });
-            }
+            this.word.on('mousewheel',function(e){
+                var displacement,_height,_content = $(this),_wordHeight;
+                if(parseInt(e.originalEvent.wheelDelta) > 0){
+                    that.marginTop = parseInt(that.bars.css('top'));
+                    that.wordMt = parseInt(that.word.css('top'));
+                    that.down(-10,_height,_wordHeight,e);
+                }else{
+                    that.marginTop = parseInt(that.bars.css('top'));
+                    that.wordMt = parseInt(that.word.css('top'));
+                    that.up(10,_height,_wordHeight,e);
+                }
+            });
+            this.word.on('DOMMouseScroll',function(e){
+                var displacement,_height,_content = $(this),_wordHeight;
+                if(parseInt(e.originalEvent.detail) > 0){
+                    //down
+                    that.marginTop = parseInt(that.bars.css('top'));
+                    that.wordMt = parseInt(that.word.css('top'));
+                    that.up(10,_height,_wordHeight,e);
+                }else{
+                    //up
+                    that.marginTop = parseInt(that.bars.css('top'));
+                    that.wordMt = parseInt(that.word.css('top'));
+                    that.down(-10,_height,_wordHeight,e);
+                }
+            });
 
         }
     };
