@@ -1,10 +1,10 @@
 <h2>前端自定义滚动条scrollbars.js</h2>
 <h4>浏览器支持情况</h4>
 <table>
-    <th>
+    <tr>
         <td>浏览器</td>
         <td>是否兼容</td>
-    </th>
+    </tr>
     <tr>
         <td>IE7-11</td>
         <td>是</td>
@@ -17,12 +17,12 @@
         <td>google</td>
         <td>是</td>
     </tr>
-        <tr>
-            <td>safari</td>
-            <td>是</td>
-        </tr>
     <tr>
-                <td>opera</td>
-                <td>是</td>
-            </tr>
+        <td>safari</td>
+        <td>是</td>
+    </tr>
+    <tr>
+        <td>opera</td>
+        <td>是</td>
+    </tr>
 </table>
