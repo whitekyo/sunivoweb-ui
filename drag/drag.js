@@ -1,0 +1,115 @@
+/**
+ * Created by yangcheng on 14-7-29.
+ */
+(function(w,$){
+    var setting = {
+        irregular: 100
+    };
+    function Drag(content){
+        this.elem = content;
+        this.span = content.find('.x-drag-module');
+        this.database = [];
+        this.init();
+
+    }
+    Drag.prototype = {
+        constructor: Drag,
+        init: function(){
+            this.createDataBase();
+            this.bindEvent();
+        },
+        bindEvent: function(){
+            var that = this;
+            this.span.on('mousedown',function(e){
+                $(this).data('ready',true);
+                $(this).addClass('x-active');
+                that.clearBlue();
+                that.getPosition(e,this);
+                that.base = {mouseX: e.clientX,mouseY: e.clientY};
+            })
+            $('body').on('mousemove',function(e){
+                if($('.x-clone').length && $('.x-active').data('ready')){
+                    that.move(e);
+                }
+
+            }).on('mouseup',function(e){
+                that.resetBlue();
+                that.anastomose(e);
+                $('.x-active').removeClass('x-active').data('ready',false);
+                that.clearModal();
+            });
+        },
+        createModal: function(content,cssRule){
+            var $dialog = $('<span class="x-clone"></span>').css({
+                opacity: 0.7,
+                'z-index': 10,
+                'background-color': 'black',
+                'display': 'inline-block',
+                width: $(content).width(),
+                height: $(content).height(),
+                'position': 'absolute',
+                top: cssRule.top,
+                left: cssRule.left
+            }),fragment = content.innerHTML;
+            $dialog.html(fragment?fragment:'');
+            $('body').append($dialog);
+            return $dialog;
+        },
+        getPosition: function(e,content){
+            var $tg = $(content);
+            var _cloneLeft = $tg.offset().left,_cloneTop = $tg.offset().top;
+            this.dialog = this.createModal(content,{top:_cloneTop,left:_cloneLeft});
+            this.dialogBase = {top: _cloneTop,left: _cloneLeft};
+        },
+        move: function(e){
+            var mouseX = e.clientX,mouseY = e.clientY,_changeMouseX = mouseX - this.base.mouseX,_changeMouseY = mouseY - this.base.mouseY;
+            var cssRule = {
+                top: this.dialogBase.top + _changeMouseY,
+                left: this.dialogBase.left + _changeMouseX
+            };
+            this.dialog.css(cssRule);
+            return cssRule;
+        },
+        clearModal: function(){
+            this.dialog.remove();
+        },
+        anastomose: function(e){
+            var i= 0,_cssRule = this.move(e),str = '';
+            while(this.database[i]){
+                if(Math.abs(this.database[i].top - (_cssRule.top + this.dialog.height()/2) ) <= parseInt(setting.irregular) && Math.abs(this.database[i].left - (_cssRule.left + this.dialog.width()/2)) <= parseInt(setting.irregular) && !this.database[i].content.hasClass('x-active')){
+                    str = this.database[i].content[0].innerHTML;
+                    this.database[i].content.html(this.dialog[0].innerHTML);
+                    $('.x-active').html(str);
+                    return;
+                }
+                i++;
+            }
+        },
+        createDataBase: function(){
+            var that = this,tg;
+            this.span.each(function(){
+                tg = $(this);
+                that.database.push({top: tg.offset().top + tg.height()/2,left: tg.offset().left + tg.width()/2,content: tg});
+            });
+        },
+        clearBlue: function(){
+            $('body').on('selectstart',function(){
+                return false;
+            });
+            $('body').css({
+                '-moz-user-select':'none',
+                '-khtml-user-select': 'none'
+            });
+        },
+        resetBlue: function(){
+            $('body').off('selectstart');
+            document.body.removeAttribute('style');
+        }
+    };
+    $.fn.drag = function(){
+        if(!this.data('drag')){
+            this.data('drag',new Drag(this));
+        }
+    };
+    $.fn.drag.constructor = Drag;
+})(window,jQuery)
