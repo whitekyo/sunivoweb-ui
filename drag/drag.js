@@ -21,9 +21,12 @@
         bindEvent: function(){
             var that = this;
             this.span.on('mousedown',function(e){
-                $(this).data('ready',true);
-                $(this).addClass('x-active');
+                var _content = $(this),tg = $(e.target);
+                if(_content.hasClass('x-none')){ return ;}
+                _content.data('ready',true);
+                _content.addClass('x-active');
                 that.clearBlue();
+                if(tg.hasClass('x-stopProp')){ return ;}
                 that.getPosition(e,this);
                 that.base = {mouseX: e.clientX,mouseY: e.clientY};
             })
@@ -33,11 +36,12 @@
                 }
 
             }).on('mouseup',function(e){
-                that.resetBlue();
-                that.anastomose(e);
-                $('.x-active').removeClass('x-active').data('ready',false);
-                that.clearModal();
-            });
+                    that.resetBlue();
+                    if($(e.target).hasClass('x-stopProp')){ return ;}
+                    that.anastomose(e);
+                    $('.x-active').removeClass('x-active').data('ready',false);
+                    that.clearModal();
+                });
         },
         createModal: function(content,cssRule){
             var $dialog = $('<span class="x-clone"></span>').css({
@@ -89,7 +93,9 @@
             var that = this,tg;
             this.span.each(function(){
                 tg = $(this);
-                that.database.push({top: tg.offset().top + tg.height()/2,left: tg.offset().left + tg.width()/2,content: tg});
+                if(!tg.hasClass('x-none')){
+                    that.database.push({top: tg.offset().top + tg.height()/2,left: tg.offset().left + tg.width()/2,content: tg});
+                }
             });
         },
         clearBlue: function(){
@@ -106,9 +112,12 @@
             document.body.removeAttribute('style');
         }
     };
-    $.fn.drag = function(){
+    $.fn.drag = function(option){
         if(!this.data('drag')){
             this.data('drag',new Drag(this));
+        }
+        if(typeof option == 'string'){
+            Drag.prototype[option].call(this.data('drag'));
         }
     };
     $.fn.drag.constructor = Drag;

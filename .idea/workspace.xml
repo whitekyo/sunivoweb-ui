@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drag/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drag/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drag/css/drag.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drag/drag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drag/less/drag.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drag/drag.js" afterPath="$PROJECT_DIR$/drag/drag.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sunivoweb-ui.iws" />
@@ -34,46 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="drag.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="drag.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drag/drag.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drag.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drag/less/drag.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="25" selection-start="186" selection-end="186" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="204">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drag/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="659" selection-end="679" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/drag/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="18" selection-start="1860" selection-end="1860" vertical-scroll-proportion="0.9268293" vertical-offset="731" max-vertical-offset="1513">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drag.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drag/css/drag.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="59" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+            <state line="7" column="27" selection-start="137" selection-end="137" vertical-scroll-proportion="0.16784203" vertical-offset="0" max-vertical-offset="2193">
               <folding />
             </state>
           </provider>
@@ -128,6 +88,8 @@
         <option value="$PROJECT_DIR$/drag/less/drag.less" />
         <option value="$PROJECT_DIR$/drag/demo.html" />
         <option value="$PROJECT_DIR$/drag/README.md" />
+        <option value="$PROJECT_DIR$/imgEditor/demo.html" />
+        <option value="$PROJECT_DIR$/drag/drag.js" />
       </list>
     </option>
   </component>
@@ -195,24 +157,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drag" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -222,7 +166,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.externalTools" />
-    <property name="last_opened_file_path" value="E:/杂" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -348,11 +292,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chosen/js/jquery-migrate-1.2.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6876" selection-end="6876" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="14" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="867" />
@@ -483,11 +422,6 @@
         <state line="17" column="14" selection-start="568" selection-end="568" vertical-scroll-proportion="0.20689656" vertical-offset="145" max-vertical-offset="867" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slider/js/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="113" column="26" selection-start="3269" selection-end="3269" vertical-scroll-proportion="-18.407408" vertical-offset="1339" max-vertical-offset="17340" />
@@ -560,63 +494,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scrollbars/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="22" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1836">
-          <folding />
-        </state>
+        <state line="24" column="22" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrollbars/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="68" selection-start="419" selection-end="419" vertical-scroll-proportion="0.16954023" vertical-offset="86" max-vertical-offset="782">
-          <folding />
-        </state>
+        <state line="12" column="68" selection-start="419" selection-end="419" vertical-scroll-proportion="0.16954023" vertical-offset="86" max-vertical-offset="782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrollbars/scrollbars.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="33" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2754">
-          <folding />
-        </state>
+        <state line="40" column="33" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2754" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1134" column="21" selection-start="47297" selection-end="47316" vertical-scroll-proportion="0.0" vertical-offset="15050" max-vertical-offset="18513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drag/drag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
-          <folding />
-        </state>
+        <state line="1134" column="21" selection-start="47297" selection-end="47316" vertical-scroll-proportion="0.0" vertical-offset="15050" max-vertical-offset="18513" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drag/less/drag.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="186" selection-end="186" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
+        <state line="6" column="25" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drag/css/drag.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="59" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drag/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="659" selection-end="679" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="59" selection-end="352" vertical-scroll-proportion="0.09418283" vertical-offset="0" max-vertical-offset="722" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drag/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="18" selection-start="1860" selection-end="1860" vertical-scroll-proportion="0.9268293" vertical-offset="731" max-vertical-offset="1513">
+        <state line="64" column="23" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.5121951" vertical-offset="731" max-vertical-offset="1513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drag/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="28" selection-start="659" selection-end="679" vertical-scroll-proportion="0.43965518" vertical-offset="0" max-vertical-offset="696" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slider/js/slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drag/drag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="137" selection-end="137" vertical-scroll-proportion="0.16784203" vertical-offset="0" max-vertical-offset="2193">
           <folding />
         </state>
       </provider>
