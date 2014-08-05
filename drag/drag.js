@@ -9,6 +9,7 @@
         this.elem = content;
         this.span = content.find('.x-drag-module');
         this.database = [];
+        this.base = this.dialogBase = {};
         this.init();
 
     }
@@ -71,15 +72,20 @@
                 top: this.dialogBase.top + _changeMouseY,
                 left: this.dialogBase.left + _changeMouseX
             };
-            this.dialog.css(cssRule);
+            if(this.dialog){
+                this.dialog.css(cssRule);
+            }
             return cssRule;
         },
         clearModal: function(){
-            this.dialog.remove();
+            if(this.dialog){
+                this.dialog.remove();
+            }
         },
         anastomose: function(e){
             var i= 0,_cssRule = this.move(e),str = '';
             while(this.database[i]){
+                if(!this.dialog){ return;}
                 if(Math.abs(this.database[i].top - (_cssRule.top + this.dialog.height()/2) ) <= parseInt(setting.irregular) && Math.abs(this.database[i].left - (_cssRule.left + this.dialog.width()/2)) <= parseInt(setting.irregular) && !this.database[i].content.hasClass('x-active')){
                     str = this.database[i].content[0].innerHTML;
                     this.database[i].content.html(this.dialog[0].innerHTML);
