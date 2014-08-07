@@ -5,10 +5,12 @@
     var setting = {
         irregular: 100
     };
-    function Drag(content){
+    function Drag(content,option){
         this.elem = content;
+        this.option = option;
         this.span = content.find('.x-drag-module');
         this.database = [];
+        this.startMode = null;
         this.base = this.dialogBase = {};
         this.init();
 
@@ -24,13 +26,14 @@
             this.span.on('mousedown',function(e){
                 var _content = $(this),tg = $(e.target);
                 if(_content.hasClass('x-none')){ return ;}
+                that.startMode = tg;
                 _content.data('ready',true);
                 _content.addClass('x-active');
                 that.clearBlue();
                 if(tg.hasClass('x-stopProp')){ return ;}
                 that.getPosition(e,this);
                 that.base = {mouseX: e.clientX,mouseY: e.clientY};
-            })
+            });
             $('body').on('mousemove',function(e){
                 if($('.x-clone').length && $('.x-active').data('ready')){
                     that.move(e);
@@ -39,9 +42,13 @@
             }).on('mouseup',function(e){
                     that.resetBlue();
                     if($(e.target).hasClass('x-stopProp')){ return ;}
-                    that.anastomose(e);
+                    var endMode = that.anastomose(e),startMode = that.startMode;
                     $('.x-active').removeClass('x-active').data('ready',false);
                     that.clearModal();
+                    that.startMode = null;
+                    if(that.option&&that.option.mousupCallback){
+                        that.option.mousupCallback(startMode,endMode);
+                    }
                 });
         },
         createModal: function(content,cssRule){
@@ -90,7 +97,7 @@
                     str = this.database[i].content[0].innerHTML;
                     this.database[i].content.html(this.dialog[0].innerHTML);
                     $('.x-active').html(str);
-                    return;
+                    return this.database[i].content;
                 }
                 i++;
             }
@@ -119,8 +126,12 @@
         }
     };
     $.fn.drag = function(option){
+        var _obj = {};
+        if(typeof option == 'object'){
+            _obj = option;
+        }
         if(!this.data('drag')){
-            this.data('drag',new Drag(this));
+            this.data('drag',new Drag(this,_obj));
         }
         if(typeof option == 'string'){
             Drag.prototype[option].call(this.data('drag'));

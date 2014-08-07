@@ -16,7 +16,12 @@
     <script type="text/javascript" src="../jQuery-1.11.0.min.js"></script>
     <script type="text/javascript" src="drag.js"></script>
     <script type="text/javascript">
-        $('.x-drag').drag();
+        $('.x-drag').drag({
+            mousupCallback: function(start,end){
+                console.log(start);
+                console.log(end);
+            }
+        });
     </script>
 </body>
 </html>
