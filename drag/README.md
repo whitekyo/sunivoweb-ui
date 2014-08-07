@@ -79,5 +79,15 @@
 <pre>
     $('.x-drag').drag();
 </pre>
+<p>关于回调，目前提供鼠标松开时回调函数</p>
+<pre>
+    $('.x-drag').drag({
+        mousupCallback: function(start,end){
+            console.log(start);
+            console.log(end);
+        }
+    });
+    start表示拖拽起始的对象，end表示拖拽结束的对象。
+</pre>
 <p>就这样，一个简单酷炫的拖拽效果就诞生了！</p>
 <p>如果有更好的建议或发现了bug，都可以联系我，请多关注我吧</p>
