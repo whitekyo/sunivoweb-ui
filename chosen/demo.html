@@ -39,9 +39,9 @@
 <script type="text/javascript" src="js/chosen/chosen/chosen.jquery.js"></script>
 <script type="text/javascript" src="../SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js"></script>
 <script type="text/javascript">
-    var chosen = new sw(),
-        htmlFragment = '<div class="newScript"><select class="chosen"><option value="1">1</option><option value="2">2</option></select></div>';
+    var chosen = new sw();
     chosen.chosen();
+    var htmlFragment = '<div class="newScript"><select class="chosen"><option value="1">1</option><option value="2">2</option></select></div>';
     $('.addScript').on('click',function(){
         $('body').append(htmlFragment);
         chosen.chosen($('.newScript'));

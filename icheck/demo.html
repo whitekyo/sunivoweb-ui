@@ -20,9 +20,11 @@
 <script type="text/javascript" src="../underscore-1.6.js"></script>
 <script type="text/javascript" src="../SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js"></script>
 <script type="text/javascript">
-    var icheck = new sw(),
-            htmlFramgent = '<div class="newScript"><input type="checkbox" class="icheck"/></div>';
+    var icheck = new sw();
     icheck.icheck();
+
+
+    var htmlFramgent = '<div class="newScript"><input type="checkbox" class="icheck"/></div>';
     $('.addScript').on('click',function(){
         $('.insertDiv').append(htmlFramgent);
         icheck.icheck($('.newScript'));

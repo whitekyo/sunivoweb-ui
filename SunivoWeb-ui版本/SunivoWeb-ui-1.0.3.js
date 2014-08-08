@@ -773,30 +773,6 @@
 
                     }
                 });
-            }else if(options.moduleName == 'fixTip'){
-                var defaults = {
-                    type: 'alert-error',
-                    location: 'top'
-                };
-                options = _.extend(options,defaults);
-                _.extend(obj,{
-                    errorPlacement: function (errors, element) {
-                        var error = errors[0];
-                        var target = element;
-                        target.attr("style","border:1px solid #f00");
-                        if(target[0].nodeName.toLowerCase() == 'select'){ target.hide();}
-                        _context.errorInfo(options._context,options.type,element.attr('name') + ':' + error.innerHTML,target[0],options.location);
-                        $(target).trigger('classNameChage');
-                    },
-
-                    unhighlight: function (element) {
-                        var $element = $(element);
-                        var target = $element;
-                        target.removeAttr("style").removeClass('error');
-                        if(target[0].nodeName.toLowerCase() == 'select'){ target.hide();}
-                        _context.errorInfo(options._context,options.type,'',element,options.location);
-                    }
-                });
             }
             $.validator.setDefaults(obj);
             options._context.validate();

@@ -16,8 +16,8 @@
 <script type="text/javascript">
     var a = new sw();
     a.upload({
-        context: $('#yc'),
-        cssRule: {
+        context: $('#yc'),//当前file控件
+        cssRule: { //自定义file样式
             width: '100px',
             height: '30px',
             'background-color': 'black',
@@ -27,15 +27,15 @@
             'text-decoration': 'none',
             'font-family': '微软'
         },
-        async: {
-            url: 'www.baidu.com',
-            secureuri:false,
-            fileElementId:'yc',
-            dataType:'json',
-            success: function(){
+        async: { //实现异步上传
+            url: 'www.baidu.com', //地址
+            secureuri:false, //默认false
+            fileElementId:'yc', //file控件ID
+            dataType:'json', //返回类型数据
+            success: function(){  //成功回调
 
             },
-            error: function(){
+            error: function(){  //错误回调
 
             }
         }
