@@ -24,7 +24,7 @@
             var contentHeight = this.elem.height(),
                 showHeight = this.word.height();
             this.bars.css({
-                'height': (contentHeight/showHeight*contentHeight) + 'px'
+                'height': showHeight > contentHeight?(contentHeight/showHeight*contentHeight) + 'px': contentHeight + 'px'
             });
             this.marginTop = parseInt(this.bars.css('top'));
             this.wordMt = parseInt(this.word.css('top'));
@@ -45,18 +45,18 @@
                 that.flg = false;
                 that.base = null;
             }).on('mousemove',that.bars,function(e){
-                e.stopPropagation();
-                var displacement,_height,_wordHeight;
-                if(that.flg){
-                    displacement = e.clientY - that.base;
-                    if(displacement >= 0 && displacement <= that.currentHeight){
-                        that.up(displacement,_height,_wordHeight,e);
+                    e.stopPropagation();
+                    var displacement,_height,_wordHeight;
+                    if(that.flg){
+                        displacement = e.clientY - that.base;
+                        if(displacement >= 0 && displacement <= that.currentHeight){
+                            that.up(displacement,_height,_wordHeight,e);
+                        }
+                        if(displacement<0&&displacement>= -1*that.currentHeight){
+                            that.down(displacement,_height,_wordHeight,e);
+                        }
                     }
-                    if(displacement<0&&displacement>= -1*that.currentHeight){
-                        that.down(displacement,_height,_wordHeight,e);
-                    }
-                }
-            });
+                });
         },
         up: function(displacement,_height,_wordHeight,event){
             if(this.marginTop >=0 && this.marginTop <= this.currentHeight){
@@ -116,6 +116,8 @@
                 }
             });
             this.word.on('DOMMouseScroll',function(e){
+                e.stopPropagation();
+                e.preventDefault();
                 var displacement,_height,_content = $(this),_wordHeight;
                 if(parseInt(e.originalEvent.detail) > 0){
                     //down

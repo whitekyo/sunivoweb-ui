@@ -849,19 +849,25 @@
                 var color = originalColor[$(self).index()];
                 $(self).css('color', color);
             }
+            function checkPos(o){
+                return o.css('position');
+            }
             if(!isPlaceholder()) {
                 var texts = $(':text,:password');
                 var len = texts.length;
-                var originalColor = [];
+                var originalColor = [],_content;
                 for(var i = 0; i < len; i++) {
-                    var self = texts[i];
-                    var placeholder = $(self).attr('placeholder');
-                    if($(self).val() == "" && placeholder != null) {
-                        $(self).addClass("m-placeholder-input")
-                        $(self).wrap('<div style="display:inline-block; position:relative" class="x-placeholder-ie-layout"></div>');
-                        $(self).after('<span class="placeholer">'+placeholder+'</span>');
+                    var self = texts[i],_content = $(self);
+                    var placeholder = _content.attr('placeholder');
+                    if(_content.val() == "" && placeholder != null) {
+                        _content.addClass("m-placeholder-input");
+                        if(!checkPos(_content)){
+                            _content.wrap('<div style="display:inline-block; position: relative;" class="x-placeholder-ie-layout"></div>');
+                        }
+                        _content.after('<span class="placeholer">'+placeholder+'</span>');
                     }
                 }
+
                 texts.focus(function() {
                     $(this).next("span").hide();
                 })
@@ -881,7 +887,7 @@
                     var placeholder = $(self).attr('placeholder');
                     if($(self).html() == "" && placeholder != null) {
                         $(self).addClass("m-placeholder-input")
-                        $(self).wrap('<div style="display:inline-block; position:relative"></div>');
+                        $(self).wrap('<div style="display:inline-block; position: relative;"></div>');
                         $(self).after('<span class="placeholer">'+placeholder+'</span>');
                     }
                 }
@@ -899,14 +905,27 @@
                 var $father = $(this).closest('.x-placeholder-ie-layout'),$input = $(this).prev('.m-placeholder-input');
                 var left = $input.position().left;
                 var top = $input.position().top;
-                var setting = $.extend({
-                    position:"absolute",
-                    left:(left + $input.offset().left - $father.offset().left) + 'px',
-                    top:(top + $input.offset().top - $father.offset().top )+'px',
-                    padding:"5px 0 0 5px",
-                    color: $input.css('color'),
-                    width: $input.width()/2+'px'
-                },options);
+                var setting;
+                if($father[0]){
+                    setting = $.extend({
+                        position:"absolute",
+                        left:(left + $input.offset().left - $father.offset().left) + 'px',
+                        top:(top + $input.offset().top - $father.offset().top )+'px',
+                        padding:"5px 0 0 5px",
+                        color: $input.css('color'),
+                        width: $input.width()/2+'px'
+                    },options);
+                }else{
+                    setting = $.extend({
+                        position:"absolute",
+                        left:($input.position().left + 5) + 'px',
+                        top:($input.position().top + $(this).height()/2)+'px',
+                        padding:"5px 0 0 5px",
+                        color: $input.css('color'),
+                        width: $input.width()/2+'px'
+                    },options);
+                }
+
                 $(this).css(setting);
             });
             $(".placeholer").click(function(){
@@ -1020,6 +1039,7 @@
             }
         }
     };
+    var _SW = SW.prototype;
     var clientSniff = {
         client: function(){
             var engine = {
@@ -1205,7 +1225,7 @@
             var select = form.find('.chosen'),checkbox = form.find('.icheck');
             form[0].reset();
             select.trigger("liszt:updated");
-            checkbox.iCheck('uncheck');
+            _SW.icheck(checkbox);
         },
         trim: function(str){
             if(String.prototype.trim){
