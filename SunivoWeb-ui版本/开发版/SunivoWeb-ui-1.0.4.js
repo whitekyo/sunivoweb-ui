@@ -919,7 +919,7 @@
                     setting = $.extend({
                         position:"absolute",
                         left:($input.position().left + 5) + 'px',
-                        top:($input.position().top + $(this).height()/2)+'px',
+                        top:($input.position().top + $input.height()/2 -$(this).height()/2)+'px',
                         padding:"5px 0 0 5px",
                         color: $input.css('color'),
                         width: $input.width()/2+'px'
@@ -931,6 +931,14 @@
             $(".placeholer").click(function(){
                 $(this).hide();
                 $(this).prev('.m-placeholder-input').focus();
+            });
+            $('.m-placeholder-input').click(function(){
+                var content = $(this),$span = content.next();;
+                if($span[0].nodeName.toLowerCase() == 'span'){
+                    $span.hide();
+                }else{
+                    $span.next().hide();
+                }
             });
         },
         /*新版错误信息*/
