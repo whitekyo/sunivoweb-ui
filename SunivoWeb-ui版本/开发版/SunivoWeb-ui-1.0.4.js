@@ -679,52 +679,6 @@
             /**
              * 将原生select与其生成的chosen式的select进行关联。核心是监听原生select上的事件，关联后，chosen就可以将触发事件转移到其原生的select身上，再通过select的验证，再作用于chosen上，本功能只限于页面拥有chosen的情况。
              */
-            function workForChosenRelevance(){
-                var message = ['required','remote','email','url','date','dateISO','number','digits','creditcard','equalTo','maxlength','minlength','rangelength','range','max','min'];
-                var arr = [];
-                function testMessage(context){
-                    for(var i=0;i<message.length;i++){
-                        if(context.hasClass(message[i])){
-                            return context.addClass('chosen-validate');
-                        }
-                    }
-                }
-                function bindChosen(context){
-                    context.on('classNameChage',function(e){
-                        var $target = $(e.target),$a = $target.next().find('a');
-                        if(e.target.getAttribute('multiple')){
-                            $a = $target.next().find('.chzn-choices');
-                        }
-                        if($target.hasClass('error')){
-                            $a.attr("style","border:1px solid #f00");
-                            $a.addClass("error tooltips");
-                            $a.attr("data-original-title", $target.attr('data-original-title'));
-                            $a.tooltip();
-                        }else{
-                            $a.removeClass("error").removeClass("tooltips");
-                            $a.removeAttr("data-original-title");
-                            $a.removeAttr("style");
-                        }
-
-                    });
-                }
-                function chosenCallNativeSel(e){
-                    var $target = $(e.target),$sel;
-                    $sel = $target.closest('.chzn-container').prev();
-                    $sel.blur();
-                    $sel.trigger('classNameChage');
-                }
-                $('.chosen').each(function(i,v){
-                    var o = testMessage($(v));
-                    if(o){ arr.push(o);}
-                    bindChosen($(v));
-                });
-                $('.chosen').chosen();
-                /*$('.chosen').each(function(i,v){
-
-                 });*/
-                $('form').on('click','.chzn-container',chosenCallNativeSel).on('focusin focusout','.chzn-container',chosenCallNativeSel);
-            }
             function workForDateTimePickerRelevance(){
                 options._context.find('.datetime-picker','.time-picker','.date-picker').each(function(i,v){
                     $(this).on('change',function(){
@@ -739,7 +693,7 @@
                 });
             }
             if(options._context.find('.chosen').length){
-                workForChosenRelevance();
+                SW.workForChosenRelevance();
             }
             if(options._context.find('.datetime-picker','.time-picker','.date-picker').length){
                 workForDateTimePickerRelevance();
@@ -776,6 +730,20 @@
             }
             $.validator.setDefaults(obj);
             options._context.validate();
+        },
+        formErrorTip: function(element,error){
+            var error = error;
+            var target = element;
+            target.addClass("error tooltips");
+            target.attr("data-original-title", error);
+            target.attr("style","border:1px solid #f00");
+            if(target[0].nodeName.toLowerCase() == 'select'){ target.hide();}
+            target.tooltip({
+                placement: 'top',
+                trigger: 'hover'
+            });
+            $(target).trigger('classNameChage');
+            return ;
         },
         /**
          * 设置为首页
@@ -1225,6 +1193,52 @@
             context.parent().on('change',context,function(){//处理file控件只能触发一次的黑色魔法
                 $.ajaxFileUpload(async);
             });
+        },
+        workForChosenRelevance: function(){
+            var message = ['required','remote','email','url','date','dateISO','number','digits','creditcard','equalTo','maxlength','minlength','rangelength','range','max','min'];
+            var arr = [];
+            function testMessage(context){
+                for(var i=0;i<message.length;i++){
+                    if(context.hasClass(message[i])){
+                        return context.addClass('chosen-validate');
+                    }
+                }
+            }
+            function bindChosen(context){
+                context.on('classNameChage',function(e){
+                    var $target = $(e.target),$a = $target.next().find('a');
+                    if(e.target.getAttribute('multiple')){
+                        $a = $target.next().find('.chzn-choices');
+                    }
+                    if($target.hasClass('error')){
+                        $a.attr("style","border:1px solid #f00");
+                        $a.addClass("error tooltips");
+                        $a.attr("data-original-title", $target.attr('data-original-title'));
+                        $a.tooltip();
+                    }else{
+                        $a.removeClass("error").removeClass("tooltips");
+                        $a.removeAttr("data-original-title");
+                        $a.removeAttr("style");
+                    }
+
+                });
+            }
+            function chosenCallNativeSel(e){
+                var $target = $(e.target),$sel;
+                $sel = $target.closest('.chzn-container').prev();
+                $sel.blur();
+                $sel.trigger('classNameChage');
+            }
+            $('.chosen').each(function(i,v){
+                var o = testMessage($(v));
+                if(o){ arr.push(o);}
+                bindChosen($(v));
+            });
+            $('.chosen').chosen();
+            /*$('.chosen').each(function(i,v){
+
+             });*/
+            $('form').on('click','.chzn-container',chosenCallNativeSel).on('focusin focusout','.chzn-container',chosenCallNativeSel);
         }
     };
     //公共方法

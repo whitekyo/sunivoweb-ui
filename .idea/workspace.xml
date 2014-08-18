@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.3-min.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.3-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.3.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sunivoweb-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +30,38 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="SunivoWeb-ui-1.0.4.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="721" column="42" selection-start="29798" selection-end="29798" vertical-scroll-proportion="0.2788051" vertical-offset="13503" max-vertical-offset="23047">
+              <folding>
+                <element signature="e#47540#48109#0" expanded="false" />
+                <element signature="e#48168#48540#0" expanded="false" />
+                <element signature="e#48590#48817#0" expanded="false" />
+                <element signature="e#48861#50902#0" expanded="false" />
+                <marker date="1408365972635" expanded="false" signature="1187:1201" placeholder="..." />
+                <marker date="1408365972635" expanded="false" signature="2632:2646" placeholder="..." />
+                <marker date="1408365972635" expanded="false" signature="16720:16746" placeholder="..." />
+                <marker date="1408365972635" expanded="false" signature="19310:19322" placeholder="..." />
+                <marker date="1408365972635" expanded="false" signature="34114:34155" placeholder="..." />
+                <marker date="1408365972635" expanded="false" signature="35159:35200" placeholder="..." />
+                <marker date="1408365972635" expanded="false" signature="47652:47671" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SunivoWeb-ui-1.0.4-min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="23020" selection-start="23020" selection-end="23020" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -84,8 +114,8 @@
         <option value="$PROJECT_DIR$/drag/drag.js" />
         <option value="$USER_HOME$/Desktop/resource/html/demo.html" />
         <option value="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.3.js" />
-        <option value="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" />
         <option value="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.3-min.js" />
+        <option value="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" />
         <option value="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" />
       </list>
     </option>
@@ -250,6 +280,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -260,23 +298,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -595,36 +625,6 @@
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="879" column="14" selection-start="0" selection-end="51363" vertical-scroll-proportion="-15.72" vertical-offset="16308" max-vertical-offset="24073">
-          <folding>
-            <marker date="1408339438869" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1408339438869" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1408339438869" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1408339438869" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1408339438869" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1408339438869" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1408339438869" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1269" column="20" selection-start="51696" selection-end="51696" vertical-scroll-proportion="0.0" vertical-offset="17575" max-vertical-offset="24225">
-          <folding>
-            <marker date="1408339116041" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408339116041" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408339116041" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408339116041" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408339116041" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408339116041" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1408339116041" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22843" selection-start="22843" selection-end="22843" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
           <folding />
         </state>
       </provider>
@@ -633,6 +633,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="175" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23020" selection-start="23020" selection-end="23020" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="721" column="42" selection-start="29798" selection-end="29798" vertical-scroll-proportion="0.2788051" vertical-offset="13503" max-vertical-offset="23047">
+          <folding>
+            <element signature="e#47540#48109#0" expanded="false" />
+            <element signature="e#48168#48540#0" expanded="false" />
+            <element signature="e#48590#48817#0" expanded="false" />
+            <element signature="e#48861#50902#0" expanded="false" />
+            <marker date="1408365972635" expanded="false" signature="1187:1201" placeholder="..." />
+            <marker date="1408365972635" expanded="false" signature="2632:2646" placeholder="..." />
+            <marker date="1408365972635" expanded="false" signature="16720:16746" placeholder="..." />
+            <marker date="1408365972635" expanded="false" signature="19310:19322" placeholder="..." />
+            <marker date="1408365972635" expanded="false" signature="34114:34155" placeholder="..." />
+            <marker date="1408365972635" expanded="false" signature="35159:35200" placeholder="..." />
+            <marker date="1408365972635" expanded="false" signature="47652:47671" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
