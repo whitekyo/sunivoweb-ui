@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" />
     </list>
     <ignored path="sunivoweb-ui.iws" />
@@ -33,7 +32,7 @@
       <file leaf-file-name="SunivoWeb-ui-1.0.4.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1058" column="9" selection-start="43222" selection-end="43222" vertical-scroll-proportion="0.66714084" vertical-offset="1754" max-vertical-offset="3344">
+            <state line="1040" column="33" selection-start="42577" selection-end="42577" vertical-scroll-proportion="0.28876245" vertical-offset="2039" max-vertical-offset="3724">
               <folding>
                 <element signature="e#1746#2021#0" expanded="false" />
                 <element signature="e#2055#2101#0" expanded="false" />
@@ -92,19 +91,18 @@
                 <element signature="e#40640#40901#0" expanded="false" />
                 <element signature="e#40939#42424#0" expanded="false" />
                 <element signature="e#42434#42490#0" expanded="false" />
-                <element signature="e#42542#43222#0" expanded="false" />
-                <element signature="e#43308#48929#0" expanded="false" />
-                <element signature="e#49019#49588#0" expanded="false" />
-                <element signature="e#49647#50019#0" expanded="false" />
-                <element signature="e#50069#50296#0" expanded="false" />
-                <element signature="e#50340#52381#0" expanded="false" />
-                <marker date="1408428805479" expanded="true" signature="1187:1201" placeholder="..." />
-                <marker date="1408428805479" expanded="true" signature="2632:2646" placeholder="..." />
-                <marker date="1408428805479" expanded="true" signature="16720:16746" placeholder="..." />
-                <marker date="1408428805479" expanded="true" signature="19310:19322" placeholder="..." />
-                <marker date="1408428805479" expanded="true" signature="34795:34836" placeholder="..." />
-                <marker date="1408428805479" expanded="true" signature="35840:35881" placeholder="..." />
-                <marker date="1408428805479" expanded="true" signature="49131:49150" placeholder="..." />
+                <element signature="e#43360#48981#0" expanded="false" />
+                <element signature="e#49071#49640#0" expanded="false" />
+                <element signature="e#49699#50071#0" expanded="false" />
+                <element signature="e#50121#50348#0" expanded="false" />
+                <element signature="e#50392#52433#0" expanded="false" />
+                <marker date="1408432270959" expanded="true" signature="1187:1201" placeholder="..." />
+                <marker date="1408432270959" expanded="true" signature="2632:2646" placeholder="..." />
+                <marker date="1408432270959" expanded="true" signature="16720:16746" placeholder="..." />
+                <marker date="1408432270959" expanded="true" signature="19310:19322" placeholder="..." />
+                <marker date="1408432270959" expanded="true" signature="34795:34836" placeholder="..." />
+                <marker date="1408432270959" expanded="true" signature="35840:35881" placeholder="..." />
+                <marker date="1408432270959" expanded="true" signature="49183:49202" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -657,7 +655,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.3-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="175" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114" />
+        <state line="0" column="175" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js">
@@ -669,7 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1058" column="9" selection-start="43222" selection-end="43222" vertical-scroll-proportion="0.66714084" vertical-offset="1754" max-vertical-offset="3344">
+        <state line="1040" column="33" selection-start="42577" selection-end="42577" vertical-scroll-proportion="0.28876245" vertical-offset="2039" max-vertical-offset="3724">
           <folding>
             <element signature="e#1746#2021#0" expanded="false" />
             <element signature="e#2055#2101#0" expanded="false" />
@@ -728,19 +728,18 @@
             <element signature="e#40640#40901#0" expanded="false" />
             <element signature="e#40939#42424#0" expanded="false" />
             <element signature="e#42434#42490#0" expanded="false" />
-            <element signature="e#42542#43222#0" expanded="false" />
-            <element signature="e#43308#48929#0" expanded="false" />
-            <element signature="e#49019#49588#0" expanded="false" />
-            <element signature="e#49647#50019#0" expanded="false" />
-            <element signature="e#50069#50296#0" expanded="false" />
-            <element signature="e#50340#52381#0" expanded="false" />
-            <marker date="1408428805479" expanded="true" signature="1187:1201" placeholder="..." />
-            <marker date="1408428805479" expanded="true" signature="2632:2646" placeholder="..." />
-            <marker date="1408428805479" expanded="true" signature="16720:16746" placeholder="..." />
-            <marker date="1408428805479" expanded="true" signature="19310:19322" placeholder="..." />
-            <marker date="1408428805479" expanded="true" signature="34795:34836" placeholder="..." />
-            <marker date="1408428805479" expanded="true" signature="35840:35881" placeholder="..." />
-            <marker date="1408428805479" expanded="true" signature="49131:49150" placeholder="..." />
+            <element signature="e#43360#48981#0" expanded="false" />
+            <element signature="e#49071#49640#0" expanded="false" />
+            <element signature="e#49699#50071#0" expanded="false" />
+            <element signature="e#50121#50348#0" expanded="false" />
+            <element signature="e#50392#52433#0" expanded="false" />
+            <marker date="1408432270959" expanded="true" signature="1187:1201" placeholder="..." />
+            <marker date="1408432270959" expanded="true" signature="2632:2646" placeholder="..." />
+            <marker date="1408432270959" expanded="true" signature="16720:16746" placeholder="..." />
+            <marker date="1408432270959" expanded="true" signature="19310:19322" placeholder="..." />
+            <marker date="1408432270959" expanded="true" signature="34795:34836" placeholder="..." />
+            <marker date="1408432270959" expanded="true" signature="35840:35881" placeholder="..." />
+            <marker date="1408432270959" expanded="true" signature="49183:49202" placeholder="..." />
           </folding>
         </state>
       </provider>

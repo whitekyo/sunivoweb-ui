@@ -1038,22 +1038,23 @@
          * @param element
          */
         countDown: function(element,count,callback){
-            element.data('real',element.html());
             element.off('click');
+            element.data('real',element.html());
             element.attr({
                 'disable': 'disable'
             });
-            if(element.data('timer')){
-                clearInterval(element.data('timer'));
-            }
             element.addClass('disabled');
             element.data('timer',setInterval(function(){
-                if(count){
+                if(count > 0){
                     element.html('剩余时间'+ --count);
                 }else{
                     element.html(element.data('real'));
-                    element.on('click',callback);
                     element.removeClass('disabled');
+                    element.attr({
+                        'disable': ''
+                    });
+                    element.on('click',callback);
+                    clearInterval(element.data('timer'));
                 }
             },1000));
         }
