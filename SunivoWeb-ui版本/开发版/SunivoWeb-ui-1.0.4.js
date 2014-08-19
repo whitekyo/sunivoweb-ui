@@ -1032,6 +1032,30 @@
                     that.ajaxTurn2Page(contextSel,baseUrl,number,target,callback);
                 });
             }
+        },
+        /**
+         * 倒计时
+         * @param element
+         */
+        countDown: function(element,count,callback){
+            element.data('real',element.html());
+            element.off('click');
+            element.attr({
+                'disable': 'disable'
+            });
+            if(element.data('timer')){
+                clearInterval(element.data('timer'));
+            }
+            element.addClass('disabled');
+            element.data('timer',setInterval(function(){
+                if(count){
+                    element.html('剩余时间'+ --count);
+                }else{
+                    element.html(element.data('real'));
+                    element.on('click',callback);
+                    element.removeClass('disabled');
+                }
+            },1000));
         }
     };
     var _SW = SW.prototype;
