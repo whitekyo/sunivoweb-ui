@@ -731,6 +731,11 @@
             $.validator.setDefaults(obj);
             options._context.validate();
         },
+        /**
+         * 手动调用验证的错误显示,element表示对应的控件框，error表示显示的错误信息
+         * @param element
+         * @param error
+         */
         formErrorTip: function(element,error){
             var error = error;
             var target = element;
@@ -744,6 +749,20 @@
             });
             $(target).trigger('classNameChage');
             return ;
+        },
+        /**
+         * 手动调用关闭验证的错误显示，elements表示对应要关闭效果的控件框
+         * @param elements
+         */
+        hideFormErrorTip: function(elements){
+            elements.each(function(){
+                var target = $(this);
+                target.removeClass("error").removeClass("tooltips");
+                target.removeAttr("data-original-title");
+                target.removeAttr("style");
+                if(target[0].nodeName.toLowerCase() == 'select'){ target.hide();}
+                $(target).trigger('classNameChage');
+            });
         },
         /**
          * 设置为首页
