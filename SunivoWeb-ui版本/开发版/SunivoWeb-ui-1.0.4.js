@@ -155,7 +155,8 @@
     };
     //错误提示
     var errorinfoTmpl = $("<div class='alert'><button type='button' class='close' data-dismiss='alert'>脳</button><h4></h4><div class='info'></div></div>"),errArr = [],formArr = [];
-    SW.prototype = {
+
+    var _SW = SW.prototype = {
         constructor:SW,
         //UI绫�
         /**
@@ -729,13 +730,8 @@
                 });
             }
             $.validator.setDefaults(obj);
-            options._context.validate();
+            return options._context.validate();
         },
-        /**
-         * 手动调用验证的错误显示,element表示对应的控件框，error表示显示的错误信息
-         * @param element
-         * @param error
-         */
         formErrorTip: function(element,error){
             var error = error;
             var target = element;
@@ -748,12 +744,7 @@
                 trigger: 'hover'
             });
             $(target).trigger('classNameChage');
-            return ;
         },
-        /**
-         * 手动调用关闭验证的错误显示，elements表示对应要关闭效果的控件框
-         * @param elements
-         */
         hideFormErrorTip: function(elements){
             elements.each(function(){
                 var target = $(this);
@@ -900,16 +891,16 @@
                         top:(top + $input.offset().top - $father.offset().top )+'px',
                         padding:"5px 0 0 5px",
                         color: $input.css('color'),
-                        width: $input.width()/2+'px'
+                        width: $input.width()+'px'
                     },options);
                 }else{
                     setting = $.extend({
                         position:"absolute",
                         left:($input.position().left + 5) + 'px',
-                        top:($input.position().top + $input.height()/2 -$(this).height()/2)+'px',
+                        top:(top + $input.height() -$(this).height()/2 + 2 )+'px',
                         padding:"5px 0 0 5px",
                         color: $input.css('color'),
-                        width: $input.width()/2+'px'
+                        width: $input.width()+'px'
                     },options);
                 }
 
@@ -1057,9 +1048,39 @@
                     clearInterval(element.data('timer'));
                 }
             },1000));
+        },
+        partValidate: function(form,callback,map,validate){
+            var _golbal = SW.getGobalValidateMap(form,callback),i = 0,$form = $(form),_arr = [];
+            for(i;map[i];i++){
+                map[i].element.click(function(){
+                    var _str = '',_map = [],i = 0;
+                    for(i;map[i];i++){
+                        console.log(map[i].element);
+                        console.log(map[i].element[0].id);
+                        if(map[i].element[0].id == this.id){
+                            _map.push(map[i]);
+                        }
+                    }
+                    _.filter(_golbal,function(e){
+                        _.filter(_map,function(n){
+                            if(!_.contains(n.validate,e.element.id)){
+                                _arr.push(e);
+                            }
+                        });
+                    });
+                    console.log(_arr);
+                    _.each(_arr,function(e){
+                        _str += '#'+ e.element.id + ',';
+                    });
+                    validate.settings = $.extend( true, {}, $.validator.defaults, {
+                        ignore: _str.substring(0,_str.length-1)
+                    } );
+                    $form.valid();
+                    _arr = [];
+                });
+            }
         }
     };
-    var _SW = SW.prototype;
     var clientSniff = {
         client: function(){
             var engine = {
@@ -1283,6 +1304,17 @@
 
              });*/
             $('form').on('click','.chzn-container',chosenCallNativeSel).on('focusin focusout','.chzn-container',chosenCallNativeSel);
+        },
+        getGobalValidateMap: function(form,callback){
+            var arr = _SW.getElementFromForm(form,callback),
+                _global = [],i = 0;
+            for(i;arr[i];i++){
+                _global.push({
+                    element: arr[i],
+                    rule: $(arr[i]).rules()
+                });
+            }
+            return _global;
         }
     };
     //公共方法
@@ -1299,6 +1331,25 @@
             }else{
                 return str.replace(/(^\s*)|(\s*$)/g,'');
             }
+        },
+        /**
+         * 根据条件筛选form里的元素，form是表单，callback表示筛选方法。
+         * @param form
+         * @param callback
+         * @returns {Array}
+         */
+        getElementFromForm: function(form,callback){
+            var result = [];
+            form.find('input,select,textarea').each(function(){
+                if(callback){
+                    if(callback(this)){
+                        result.push(this);
+                    }
+                }else{
+                    result.push(this);
+                }
+            });
+            return result;
         }
     };
     _.extend(SW,tool);
