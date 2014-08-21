@@ -1055,8 +1055,6 @@
                 map[i].element.click(function(){
                     var _str = '',_map = [],i = 0;
                     for(i;map[i];i++){
-                        console.log(map[i].element);
-                        console.log(map[i].element[0].id);
                         if(map[i].element[0].id == this.id){
                             _map.push(map[i]);
                         }
@@ -1068,7 +1066,6 @@
                             }
                         });
                     });
-                    console.log(_arr);
                     _.each(_arr,function(e){
                         _str += '#'+ e.element.id + ',';
                     });
