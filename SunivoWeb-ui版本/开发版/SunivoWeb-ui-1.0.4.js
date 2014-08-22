@@ -262,13 +262,11 @@
         },
         upload: function(param){
             var context = param.context,async = param.async,i;
-            if(context){
-                context.each(function(){
-                    SW.createFormForUpload($(this),param);
-                    if(!_.isEmpty(async)){
-                        SW.bindUploadEvent($(this),async);
-                    }
-                });
+            if(context[0]){
+                SW.createFormForUpload(context,param);
+                if(!_.isEmpty(async)){
+                    SW.bindUploadEvent(context,async);
+                }
             }
 
         },
