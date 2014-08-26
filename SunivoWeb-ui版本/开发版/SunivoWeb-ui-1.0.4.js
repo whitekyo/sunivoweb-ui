@@ -74,6 +74,9 @@
                 pwd += $chars.charAt(Math.floor(Math.random()*48));
             }
             return pwd;
+        },
+        uuid: function(){
+            return this.randomNumber(8) + '-' + this.randomNumber(4) + '-' + this.randomNumber(4) + '-' + this.randomNumber(16);
         }
     };
     //为loading设置，如下为单例模式
