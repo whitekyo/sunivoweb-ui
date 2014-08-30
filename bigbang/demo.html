@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bigbang-demo</title>
+    <style type="text/css">
+        .bigbang {
+            position: absolute;
+            left:200px;
+            top: 100px;
+            width: 500px;
+            height: 600px;
+            background: url('1-1.jpg');
+        }
+    </style>
+</head>
+<body>
+<div class="bigbang"></div>
+<script type="text/javascript" src="../jQuery-1.11.0.min.js"></script>
+<script type="text/javascript" src="bigbang.js"></script>
+<script type="text/javascript">
+    $('.bigbang').bigbang({
+        src: '1-1.jpg'
+    });
+</script>
+</body>
+</html>

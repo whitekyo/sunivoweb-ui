@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" afterPath="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigbang/1-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigbang/bigbang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bigbang/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sunivoweb-ui.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="f19c76de-2b25-497a-8016-981de8cabadb" time="1409375367264" ignored="false" />
+    <file path="$USER_HOME$/Downloads/爆炸 (1)/爆炸/bigbang.js" changelist="f19c76de-2b25-497a-8016-981de8cabadb" time="1409375388857" ignored="false" />
+    <file path="/bigbang.js" changelist="f19c76de-2b25-497a-8016-981de8cabadb" time="1409375383815" ignored="false" />
+    <file path="/demo.html" changelist="f19c76de-2b25-497a-8016-981de8cabadb" time="1409375570364" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,97 +36,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SunivoWeb-ui-1.0.4.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
+      <file leaf-file-name="demo.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bigbang/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="768" column="10" selection-start="0" selection-end="55541" vertical-scroll-proportion="0.0" vertical-offset="1368" max-vertical-offset="3116">
-              <folding>
-                <element signature="e#286#392#0" expanded="false" />
-                <element signature="e#467#538#0" expanded="false" />
-                <element signature="e#567#1113#0" expanded="false" />
-                <element signature="e#1746#2021#0" expanded="false" />
-                <element signature="e#2055#2101#0" expanded="false" />
-                <element signature="e#2138#2405#0" expanded="false" />
-                <element signature="e#2431#2571#0" expanded="false" />
-                <element signature="e#2742#2908#0" expanded="false" />
-                <element signature="e#2947#3375#0" expanded="false" />
-                <element signature="e#3517#3594#0" expanded="false" />
-                <element signature="e#3635#3701#0" expanded="false" />
-                <element signature="e#3740#4032#0" expanded="false" />
-                <element signature="e#4062#4347#0" expanded="false" />
-                <element signature="e#4377#4662#0" expanded="false" />
-                <element signature="e#4699#4972#0" expanded="false" />
-                <element signature="e#5009#5100#0" expanded="false" />
-                <element signature="e#5379#5497#0" expanded="false" />
-                <element signature="e#5535#9380#0" expanded="false" />
-                <element signature="e#9409#9455#0" expanded="false" />
-                <element signature="e#9488#9772#0" expanded="false" />
-                <element signature="e#9782#9948#0" expanded="false" />
-                <element signature="e#9995#10874#0" expanded="false" />
-                <element signature="e#10884#10985#0" expanded="false" />
-                <element signature="e#11017#11919#0" expanded="false" />
-                <element signature="e#11929#11996#0" expanded="false" />
-                <element signature="e#12443#12577#0" expanded="false" />
-                <element signature="e#12636#15654#0" expanded="false" />
-                <element signature="e#15664#15769#0" expanded="false" />
-                <element signature="e#15794#16960#0" expanded="false" />
-                <element signature="e#17018#19269#0" expanded="false" />
-                <element signature="e#19279#19308#0" expanded="false" />
-                <element signature="e#19338#20118#0" expanded="false" />
-                <element signature="e#20152#21041#0" expanded="false" />
-                <element signature="e#21075#21710#0" expanded="false" />
-                <element signature="e#21748#22713#0" expanded="false" />
-                <element signature="e#22743#23148#0" expanded="false" />
-                <element signature="e#23178#24121#0" expanded="false" />
-                <element signature="e#24139#26270#0" expanded="false" />
-                <element signature="e#26280#26423#0" expanded="false" />
-                <element signature="e#26465#30347#0" expanded="false" />
-                <element signature="e#30394#30869#0" expanded="false" />
-                <element signature="e#30915#31324#0" expanded="false" />
-                <element signature="e#31334#31366#0" expanded="false" />
-                <element signature="e#31397#31660#0" expanded="false" />
-                <element signature="e#31670#31751#0" expanded="false" />
-                <element signature="e#31795#32152#0" expanded="false" />
-                <element signature="e#32162#32195#0" expanded="false" />
-                <element signature="e#32234#33348#0" expanded="false" />
-                <element signature="e#33358#33396#0" expanded="false" />
-                <element signature="e#33435#37956#0" expanded="false" />
-                <element signature="e#38004#38833#0" expanded="false" />
-                <element signature="e#38843#38879#0" expanded="false" />
-                <element signature="e#38911#39367#0" expanded="false" />
-                <element signature="e#39377#39413#0" expanded="false" />
-                <element signature="e#39447#40441#0" expanded="false" />
-                <element signature="e#40484#40745#0" expanded="false" />
-                <element signature="e#40783#42268#0" expanded="false" />
-                <element signature="e#42278#42334#0" expanded="false" />
-                <element signature="e#42386#43118#0" expanded="false" />
-                <element signature="e#43178#44310#0" expanded="false" />
-                <element signature="e#44368#49989#0" expanded="false" />
-                <element signature="e#50079#50648#0" expanded="false" />
-                <element signature="e#50707#51079#0" expanded="false" />
-                <element signature="e#51129#51356#0" expanded="false" />
-                <element signature="e#51400#53441#0" expanded="false" />
-                <element signature="e#53495#53808#0" expanded="false" />
-                <element signature="e#53884#54082#0" expanded="false" />
-                <element signature="e#54111#54285#0" expanded="false" />
-                <element signature="e#54295#54438#0" expanded="false" />
-                <element signature="e#54490#54852#0" expanded="false" />
-                <marker date="1408678356798" expanded="false" signature="1187:1201" placeholder="..." />
-                <marker date="1408678356798" expanded="false" signature="2798:2812" placeholder="..." />
-                <marker date="1408678356798" expanded="false" signature="16823:16849" placeholder="..." />
-                <marker date="1408678356798" expanded="false" signature="19413:19425" placeholder="..." />
-                <marker date="1408678356798" expanded="false" signature="34658:34699" placeholder="..." />
-                <marker date="1408678356798" expanded="false" signature="35703:35744" placeholder="..." />
-                <marker date="1408678356798" expanded="false" signature="50191:50210" placeholder="..." />
-              </folding>
+            <state line="11" column="44" selection-start="268" selection-end="268" vertical-scroll-proportion="0.45833334">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SunivoWeb-ui-1.0.4-min.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js">
+      <file leaf-file-name="bigbang.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bigbang/bigbang.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="24550" selection-start="24550" selection-end="24550" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
+            <state line="97" column="9" selection-start="3967" selection-end="3967" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,32 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/upload/demo.html" />
-        <option value="$PROJECT_DIR$/upload/js/ajaxfileupload.js" />
-        <option value="$PROJECT_DIR$/sw_define.js" />
-        <option value="$PROJECT_DIR$/sw_define-1.0.1.js" />
-        <option value="$PROJECT_DIR$/sw_define-min-1.0.1.js" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/demo.html" />
-        <option value="$USER_HOME$/Desktop/RES/RES/js/SunivoWeb-ui.js" />
-        <option value="E:/项目/logway/trunk/src/logway-web-in/src/main/webapp/RES/js/main.js" />
-        <option value="E:/项目/logway/trunk/src/logway-web-in/src/main/webapp/RES/js/sw-alert.js" />
-        <option value="E:/项目/logway/trunk/src/logway-web-in/src/main/webapp/RES/html/demo.html" />
-        <option value="E:/项目/logway/trunk/src/logway-web/src/main/webapp/RES/html/demo.html" />
-        <option value="$PROJECT_DIR$/SunivoWeb-ui-1.0.1.js" />
-        <option value="$PROJECT_DIR$/chosen/js/jquery-migrate-1.2.1.min.js" />
-        <option value="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js" />
-        <option value="$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css" />
-        <option value="$PROJECT_DIR$/chosen/js/SunivoWeb-ui-1.0.2.js" />
-        <option value="$PROJECT_DIR$/chosen/demo.html" />
-        <option value="$PROJECT_DIR$/icheck/demo.html" />
-        <option value="$PROJECT_DIR$/sw_define/sw_define-1.0.1.js" />
-        <option value="$PROJECT_DIR$/sw_define/demo.html" />
-        <option value="$PROJECT_DIR$/sw_define/sw_define-1.0.2.js" />
-        <option value="$PROJECT_DIR$/SunivoWeb-ui版本/SunivoWeb-ui-1.0.2.js" />
-        <option value="$PROJECT_DIR$/scrollbars/less/demo.less" />
-        <option value="$PROJECT_DIR$/scrollbars/css/demo.css" />
-        <option value="$PROJECT_DIR$/scrollbars/demo.html" />
         <option value="$PROJECT_DIR$/scrollbars/scrollbars.js" />
         <option value="$PROJECT_DIR$/scrollbars/README.md" />
         <option value="$PROJECT_DIR$/drag/less/drag.less" />
@@ -185,14 +86,16 @@
         <option value="$PROJECT_DIR$/dialog/demo.html" />
         <option value="$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js" />
         <option value="$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js" />
+        <option value="$PROJECT_DIR$/bigbang/bigbang.js" />
+        <option value="$PROJECT_DIR$/bigbang/demo.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1296" />
+    <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -248,57 +151,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SunivoWeb-ui版本" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="开发版" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SunivoWeb-ui版本" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="企业版" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scrollbars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunivoweb-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialog" />
+              <option name="myItemId" value="bigbang" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -314,42 +167,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\sunivo\sunivoweb-ui\bigbang" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\SunivoWeb-ui版本\企业版" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\SunivoWeb-ui版本\开发版" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\drag" />
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\sw_define" />
-      <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace-yc\sunivoweb\sunivoweb-ui\sw_define" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
       <option name="filePath" />
       <option name="scope" value="ALL" />
       <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -359,11 +198,7 @@
       <setting name="preferredDebugBrowser" value="CHROME" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <list size="0" />
@@ -396,20 +231,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="816" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18239392" sideWeight="0.67019665" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1821798" sideWeight="0.67019665" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -427,9 +262,58 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
     </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -437,96 +321,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/upload/js/ajaxfileupload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="53" selection-start="7458" selection-end="7458" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="3655" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-min-1.0.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="784" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-1.0.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="91" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="187" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/js/ajaxfileupload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="53" selection-start="7458" selection-end="7458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/js/ajaxfileupload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="50" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="64" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/js/ajaxfileupload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="65" selection-end="65" vertical-scroll-proportion="0.09418283" vertical-offset="0" max-vertical-offset="3655" />
-      </provider>
-    </entry>
-    <entry file="file://E:/项目/logway/trunk/src/logway-web-in/src/main/webapp/RES/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="421" selection-end="421" vertical-scroll-proportion="0.3531856" vertical-offset="0" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://E:/项目/logway/trunk/src/logway-web-in/src/main/webapp/RES/js/sw-alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="6" selection-start="5953" selection-end="5953" vertical-scroll-proportion="0.47249648" vertical-offset="2079" max-vertical-offset="2788" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-min-1.0.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="784" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://E:/项目/logway/trunk/src/logway-web-in/src/main/webapp/RES/html/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="0" selection-start="3931" selection-end="4017" vertical-scroll-proportion="-21.038462" vertical-offset="1068" max-vertical-offset="1751" />
-      </provider>
-    </entry>
-    <entry file="file://E:/项目/logway/trunk/src/logway-web/src/main/webapp/RES/html/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="37" selection-start="4294" selection-end="4294" vertical-scroll-proportion="0.65153736" vertical-offset="1238" max-vertical-offset="1938" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="405" selection-end="405" vertical-scroll-proportion="0.29310346" vertical-offset="0" max-vertical-offset="696" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/lib/chosen.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7208" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen-sprite.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -534,242 +328,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/jquery-migrate-1.2.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6876" selection-end="6876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119" />
+        <state line="1" column="0" selection-start="6876" selection-end="6876" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="568" selection-end="568" vertical-scroll-proportion="0.20689656" vertical-offset="145" max-vertical-offset="867" />
+        <state line="17" column="14" selection-start="568" selection-end="568" vertical-scroll-proportion="0.20689656" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="26" selection-start="3269" selection-end="3269" vertical-scroll-proportion="-18.407408" vertical-offset="1339" max-vertical-offset="17340" />
+        <state line="113" column="26" selection-start="3269" selection-end="3269" vertical-scroll-proportion="-18.407408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/js/chosen/chosen/chosen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="54" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.5323529" vertical-offset="743" max-vertical-offset="6324" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icheck/demo/js/zepto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icheck/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26775" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icheck/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.73275864" vertical-offset="0" max-vertical-offset="696" />
+        <state line="65" column="54" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.5323529" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chosen/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="75" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.6594828" vertical-offset="204" max-vertical-offset="1020" />
+        <state line="39" column="75" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.6594828" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/underscore-1.6.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="709" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-1.0.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="590" selection-end="590" vertical-scroll-proportion="-0.72321427" vertical-offset="664" max-vertical-offset="1207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="11" selection-start="888" selection-end="888" vertical-scroll-proportion="0.90848213" vertical-offset="273" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollbars/less/demo.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="21" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="782" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollbars/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="21" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="714" />
+        <state line="20" column="5" selection-start="590" selection-end="590" vertical-scroll-proportion="-0.72321427" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="91" selection-start="287" selection-end="287" vertical-scroll-proportion="0.12195122" vertical-offset="0" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollbars/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="22" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1836" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollbars/scrollbars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="33" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2754" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drag/less/drag.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drag/css/drag.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="59" selection-end="352" vertical-scroll-proportion="0.09418283" vertical-offset="0" max-vertical-offset="722" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drag/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="23" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.5121951" vertical-offset="731" max-vertical-offset="1513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drag/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="659" selection-end="679" vertical-scroll-proportion="0.43965518" vertical-offset="0" max-vertical-offset="696" />
+        <state line="5" column="91" selection-start="287" selection-end="287" vertical-scroll-proportion="0.12195122" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/slider/js/slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drag/drag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="609" selection-end="609" vertical-scroll-proportion="0.65427" vertical-offset="0" max-vertical-offset="2774" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-min-1.0.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="879" column="14" selection-start="0" selection-end="51363" vertical-scroll-proportion="-15.72" vertical-offset="16308" max-vertical-offset="24073" />
+        <state line="879" column="14" selection-start="0" selection-end="51363" vertical-scroll-proportion="-15.72" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.3-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="175" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dialog/jquery.easing.1.3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="24" selection-start="2002" selection-end="7363" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="2147" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sw_define/sw_define-1.0.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dialog/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.16569768" vertical-offset="0" max-vertical-offset="688" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrollbars/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="171" selection-end="171" vertical-scroll-proportion="0.06686047" vertical-offset="106" max-vertical-offset="874" />
+        <state line="0" column="175" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="768" column="10" selection-start="0" selection-end="55541" vertical-scroll-proportion="0.0" vertical-offset="1368" max-vertical-offset="3116">
-          <folding>
-            <element signature="e#286#392#0" expanded="false" />
-            <element signature="e#467#538#0" expanded="false" />
-            <element signature="e#567#1113#0" expanded="false" />
-            <element signature="e#1746#2021#0" expanded="false" />
-            <element signature="e#2055#2101#0" expanded="false" />
-            <element signature="e#2138#2405#0" expanded="false" />
-            <element signature="e#2431#2571#0" expanded="false" />
-            <element signature="e#2742#2908#0" expanded="false" />
-            <element signature="e#2947#3375#0" expanded="false" />
-            <element signature="e#3517#3594#0" expanded="false" />
-            <element signature="e#3635#3701#0" expanded="false" />
-            <element signature="e#3740#4032#0" expanded="false" />
-            <element signature="e#4062#4347#0" expanded="false" />
-            <element signature="e#4377#4662#0" expanded="false" />
-            <element signature="e#4699#4972#0" expanded="false" />
-            <element signature="e#5009#5100#0" expanded="false" />
-            <element signature="e#5379#5497#0" expanded="false" />
-            <element signature="e#5535#9380#0" expanded="false" />
-            <element signature="e#9409#9455#0" expanded="false" />
-            <element signature="e#9488#9772#0" expanded="false" />
-            <element signature="e#9782#9948#0" expanded="false" />
-            <element signature="e#9995#10874#0" expanded="false" />
-            <element signature="e#10884#10985#0" expanded="false" />
-            <element signature="e#11017#11919#0" expanded="false" />
-            <element signature="e#11929#11996#0" expanded="false" />
-            <element signature="e#12443#12577#0" expanded="false" />
-            <element signature="e#12636#15654#0" expanded="false" />
-            <element signature="e#15664#15769#0" expanded="false" />
-            <element signature="e#15794#16960#0" expanded="false" />
-            <element signature="e#17018#19269#0" expanded="false" />
-            <element signature="e#19279#19308#0" expanded="false" />
-            <element signature="e#19338#20118#0" expanded="false" />
-            <element signature="e#20152#21041#0" expanded="false" />
-            <element signature="e#21075#21710#0" expanded="false" />
-            <element signature="e#21748#22713#0" expanded="false" />
-            <element signature="e#22743#23148#0" expanded="false" />
-            <element signature="e#23178#24121#0" expanded="false" />
-            <element signature="e#24139#26270#0" expanded="false" />
-            <element signature="e#26280#26423#0" expanded="false" />
-            <element signature="e#26465#30347#0" expanded="false" />
-            <element signature="e#30394#30869#0" expanded="false" />
-            <element signature="e#30915#31324#0" expanded="false" />
-            <element signature="e#31334#31366#0" expanded="false" />
-            <element signature="e#31397#31660#0" expanded="false" />
-            <element signature="e#31670#31751#0" expanded="false" />
-            <element signature="e#31795#32152#0" expanded="false" />
-            <element signature="e#32162#32195#0" expanded="false" />
-            <element signature="e#32234#33348#0" expanded="false" />
-            <element signature="e#33358#33396#0" expanded="false" />
-            <element signature="e#33435#37956#0" expanded="false" />
-            <element signature="e#38004#38833#0" expanded="false" />
-            <element signature="e#38843#38879#0" expanded="false" />
-            <element signature="e#38911#39367#0" expanded="false" />
-            <element signature="e#39377#39413#0" expanded="false" />
-            <element signature="e#39447#40441#0" expanded="false" />
-            <element signature="e#40484#40745#0" expanded="false" />
-            <element signature="e#40783#42268#0" expanded="false" />
-            <element signature="e#42278#42334#0" expanded="false" />
-            <element signature="e#42386#43118#0" expanded="false" />
-            <element signature="e#43178#44310#0" expanded="false" />
-            <element signature="e#44368#49989#0" expanded="false" />
-            <element signature="e#50079#50648#0" expanded="false" />
-            <element signature="e#50707#51079#0" expanded="false" />
-            <element signature="e#51129#51356#0" expanded="false" />
-            <element signature="e#51400#53441#0" expanded="false" />
-            <element signature="e#53495#53808#0" expanded="false" />
-            <element signature="e#53884#54082#0" expanded="false" />
-            <element signature="e#54111#54285#0" expanded="false" />
-            <element signature="e#54295#54438#0" expanded="false" />
-            <element signature="e#54490#54852#0" expanded="false" />
-            <marker date="1408678356798" expanded="false" signature="1187:1201" placeholder="..." />
-            <marker date="1408678356798" expanded="false" signature="2798:2812" placeholder="..." />
-            <marker date="1408678356798" expanded="false" signature="16823:16849" placeholder="..." />
-            <marker date="1408678356798" expanded="false" signature="19413:19425" placeholder="..." />
-            <marker date="1408678356798" expanded="false" signature="34658:34699" placeholder="..." />
-            <marker date="1408678356798" expanded="false" signature="35703:35744" placeholder="..." />
-            <marker date="1408678356798" expanded="false" signature="50191:50210" placeholder="..." />
-          </folding>
+        <state line="768" column="10" selection-start="0" selection-end="55541" vertical-scroll-proportion="0.040257648">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/企业版/SunivoWeb-ui-1.0.4-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24550" selection-start="24550" selection-end="24550" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
+        <state line="0" column="24550" selection-start="24550" selection-end="24550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigbang/bigbang.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="9" selection-start="3967" selection-end="3967" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigbang/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="44" selection-start="268" selection-end="268" vertical-scroll-proportion="0.45833334">
           <folding />
         </state>
       </provider>
