@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+</head>
+<body>
+<yc sw-name="1"></yc>
+
+<script type="text/javascript" src="sw_directives.js"></script>
+<script type="text/javascript">
+    var demo = new Directive();
+    demo.directive('yc',function(){
+        return {
+            template:
+                    '<form>' +
+                    '  <input type="text" name="id" id="username"/>' +
+                    '  <input type="text" name="password" id="psd"/>' +
+                    '  <input type="button" value="submit" id="btn">' +
+                    '</form>',
+            controller: function(o){
+                console.log(o['sw-name']);
+            }
+        };
+    });
+</script>
+</body>
+</html>
