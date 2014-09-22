@@ -810,10 +810,20 @@
                 }
             });
         },
+        placeholder: function(content){
+            var browser = parseInt(SW.client().browser.ie);
+            if(browser > 0 && browser <= 9 ){
+                content = content?content:$(document);
+                content.find(':text,:password').each(function(){
+                    var content = $(this);
+                    SW.createHolder(content);
+                });
+            }
+        },
         /**
          * Placeholder
          */
-        placeholder: function(options){
+        /*placeholder: function(options){
             function isPlaceholder() {
                 var input = document.createElement('input');
                 return 'placeholder' in input;
@@ -919,7 +929,7 @@
                     $span.next().hide();
                 }
             });
-        },
+        },*/
         /*新版错误信息*/
         infoTip: function(){
             var _ = arguments[0],
@@ -1313,6 +1323,45 @@
                 });
             }
             return _global;
+        },
+        /* 创建placeholder形式的span*/
+        createHolder: function(content){
+            var cssRule = SW.getPlaceholderCssStyle(content);
+            var str = '';
+            if(cssRule.position == 'static' || cssRule.position == 'relative'){
+                content.wrap('<div class="x-placeholder-ie-layout"></div>');
+                str = '<span style="color:'+ cssRule.color +';position:absolute;width:'+ cssRule.width/2 +';height:'+ cssRule.height + ';top:2px;left:2px;">'+ cssRule.text + '</span>';
+                content.after(str);
+            }else if(cssRule.position == 'absolute'){
+                str = '<span style="color:'+ cssRule.color +';position:absolute;width:'+ cssRule.width/2 +';height:'+ cssRule.height + ';top:'+ (cssRule.top + 2) + 'px' +';left:'+ (cssRule.left + 2) + 'px' + ';">'+ cssRule.text + '</span>'
+                content.after(str);
+            }
+            this.bindPlaceholderEvent(content);
+        },
+        /* 为了创建placeholder先获取表单框上的具体样式*/
+        getPlaceholderCssStyle: function(content){
+            return {
+                position: content.css('position'),
+                color: content.css('color'),
+                width: content.width()?content.width():0,
+                height: content.height()?content.height():0,
+                left: content.position().left?content.position().left:0,
+                top: content.position().top?content.position().top:0,
+                text: content.attr('placeholder')
+            }
+        },
+        /* 为placeholder绑定事件*/
+        bindPlaceholderEvent: function(content){
+            content.focus(function(){
+                $(this).next("span").hide();
+            });
+            content.blur(function(){
+                $(this).next("span").show();
+            });
+            content.on('placeholderChange',function(){
+                var placeholder = this.getAttribute('placeholder');
+                $(this).next().html(placeholder);
+            });
         }
     };
     //公共方法

@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8"/>
     <title></title>
+    <style type="text/css">
+        .x-placeholder-ie-layout { position: relative;}
+        #p1 { position: absolute; top: 10px; left:10px; width:200px; height: 50px;}
+    </style>
 </head>
 <body>
+<div style="position: relative;">
+    <input type="text" placeholder="1" id="p1"/>
+</div>
+
 <script type="text/javascript" src="underscore-1.6.js"></script>
 <script type="text/javascript" src="jQuery-1.11.0.min.js"></script>
-<script type="text/javascript" src="SunivoWeb-ui版本/SunivoWeb-ui-1.0.3.js"></script>
+<script type="text/javascript" src="SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js"></script>
 <script type="text/javascript">
     var a = new sw();
-    console.log(a.randomNumber(10));
+    a.placeholder();
+    $('#p1').attr('placeholder','2');
+    $('#p1').trigger('placeholderChange');
 </script>
 </body>
 </html>

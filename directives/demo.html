@@ -4,7 +4,7 @@
     <title>demo</title>
 </head>
 <body>
-<yc sw-name="1"></yc>
+<yc uid="yangcheng" id="1" upassword="123456" url="getId/26"></yc>
 
 <script type="text/javascript" src="sw_directives.js"></script>
 <script type="text/javascript">
@@ -18,7 +18,12 @@
                     '  <input type="button" value="submit" id="btn">' +
                     '</form>',
             controller: function(o){
-                console.log(o['sw-name']);
+                var oBtn = document.getElementById('btn');
+                document.getElementById('username').value  = o.uid;
+                document.getElementById('psd').value = o.upassword;
+                oBtn.onclick = function(){
+                    alert(o.url);
+                };
             }
         };
     });
