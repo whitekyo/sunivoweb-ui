@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19c76de-2b25-497a-8016-981de8cabadb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sunivo-amd/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sunivo-amd/sunivo-amd.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sunivoweb-ui.iws" />
@@ -34,7 +32,7 @@
       <file leaf-file-name="sunivo-amd.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sunivo-amd/sunivo-amd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="9" selection-start="911" selection-end="911" vertical-scroll-proportion="0.82033426" vertical-offset="0" max-vertical-offset="988">
+            <state line="31" column="31" selection-start="885" selection-end="885" vertical-scroll-proportion="0.4206128" vertical-offset="249" max-vertical-offset="988">
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -45,7 +43,7 @@
       <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sunivo-amd/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="49" selection-start="142" selection-end="142" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="285">
+            <state line="7" column="49" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -127,6 +125,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,7 +160,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,6 +185,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -197,23 +203,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -268,11 +266,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -294,18 +292,30 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/port-selector/port-Selector.js">
+    <entry file="file://$PROJECT_DIR$/sunivo-amd/sunivo-amd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="46" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8550">
+        <state line="31" column="31" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="988">
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunivo-amd/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="285">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/port-selector/port-Selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="46" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8550" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/port-selector/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171">
-          <folding />
-        </state>
+        <state line="3" column="23" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui-demo.html">
@@ -320,9 +330,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1362" column="49" selection-start="56152" selection-end="56152" vertical-scroll-proportion="0.0" vertical-offset="25878" max-vertical-offset="27189">
-          <folding />
-        </state>
+        <state line="1362" column="49" selection-start="56152" selection-end="56152" vertical-scroll-proportion="0.0" vertical-offset="25878" max-vertical-offset="27189" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bigbang/demo.html">
@@ -417,9 +425,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SunivoWeb-ui版本/开发版/SunivoWeb-ui-1.0.4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1362" column="49" selection-start="56152" selection-end="56152" vertical-scroll-proportion="0.0" vertical-offset="25878" max-vertical-offset="27189">
-          <folding />
-        </state>
+        <state line="1362" column="49" selection-start="56152" selection-end="56152" vertical-scroll-proportion="0.0" vertical-offset="25878" max-vertical-offset="27189" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -434,28 +440,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/port-selector/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="207" selection-end="207" vertical-scroll-proportion="0.08382353" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
+        <state line="3" column="23" selection-start="207" selection-end="207" vertical-scroll-proportion="0.08382353" vertical-offset="0" max-vertical-offset="680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/port-selector/port-Selector.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="46" selection-start="944" selection-end="944" vertical-scroll-proportion="-4.716312" vertical-offset="3990" max-vertical-offset="8550">
-          <folding />
-        </state>
+        <state line="35" column="46" selection-start="944" selection-end="944" vertical-scroll-proportion="-4.716312" vertical-offset="3990" max-vertical-offset="8550" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sunivo-amd/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="142" selection-end="142" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="285">
+        <state line="7" column="49" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="285">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sunivo-amd/sunivo-amd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="9" selection-start="911" selection-end="911" vertical-scroll-proportion="0.82033426" vertical-offset="0" max-vertical-offset="988">
+        <state line="31" column="31" selection-start="885" selection-end="885" vertical-scroll-proportion="0.4206128" vertical-offset="249" max-vertical-offset="988">
           <folding>
             <element signature="e#0#44#0" expanded="false" />
           </folding>
