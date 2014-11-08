@@ -8,14 +8,6 @@
 
 (function($,_,w){
     /*针对IE8，9需要在F12中才能调用console，在debug状态中查看console*/
-
-    var anonymity = function(){},console = w.console || {
-        info: anonymity,
-        log: anonymity,
-        warn: anonymity,
-        error: anonymity
-    };
-    w.console = w.console || console;
     (function(_console){
         var method,
             log = _console.log || new Function,
