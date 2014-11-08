@@ -16,6 +16,19 @@
         error: anonymity
     };
     w.console = w.console || console;
+    (function(_console){
+        var method,
+            log = _console.log || new Function,
+            methods = [
+                'log','debug','error','info','warn','dir','dirxml','table','trace',
+                'assert','count','markTimeline','profile','profileEnd','time','timeEnd',
+                'timeStamp','timeline','timelineEnd','group','groupCollapsed',
+                'groundEnd','clear','memory'
+            ];
+        while(method = methods.pop()){
+            _console[method] = _console[method] || log;
+        }
+    })(w.console = w.console || {})
     var SW = function(){},
         /**
          * defaultConfig和Defmodal是关于方法createModal的初始化参数
