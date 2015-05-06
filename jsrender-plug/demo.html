@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- To run the current sample code in your own environment, copy this to an html page. -->
+
+<html>
+<head>
+    <script type="text/javascript" src="jquery-1.7.2-min.js"></script>
+    <script type="text/javascript" src="jsview.min.js"></script>
+</head>
+<body>
+
+<div id="result"></div>
+
+<script id="theTmpl" type="text/x-jsrender">
+    <div>
+      Edit: <input type="checkbox" data-link="editable"/>
+      <em>Name:</em> {^{:name}}
+      {^{if showNickname && nickname}}
+        (Goes by <em data-link="nickname"></em>)
+      {{/if}}
+      {^{if editable}}
+        <div>
+          <input data-link="name trigger=true"/>
+          <input data-link="nickname trigger=true"/>
+          <input type="checkbox" data-link="showNickname"/>
+        </div>
+      {{/if}}
+    </div>
+
+</script>
+
+<script>
+    var data = [
+        {
+            "name": "Robert",
+            "nickname": "Bob",
+            "showNickname": true
+        },
+        {
+            "name": "Susan",
+            "nickname": "Sue",
+            "showNickname": false
+        }
+    ];
+
+    var template = $.templates("#theTmpl");
+
+    template.link("#result", data);
+</script>
+
+</body>
+</html>
